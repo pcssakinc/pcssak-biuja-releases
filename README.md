@@ -3,6 +3,9 @@
 [한국어](README.ko.md) · [Product website](https://pcssak.com/biuja) ·
 [Latest release](https://github.com/pcssakinc/pcssak-biuja-releases/releases/latest)
 
+> **Current release: Free Early Access (pre-1.0)** — Features, translations, and file-handling
+> rules may change, and undiscovered defects may remain. Keep a separate backup of important files.
+
 **Review first, organize safely, and keep control of your files.** PCssak Biuja prepares a
 sorting preview for files in a user-selected scope, records completed work, and supports
 rollback without intentionally overwriting or permanently deleting the originals.
