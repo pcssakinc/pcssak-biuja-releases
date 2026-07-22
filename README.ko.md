@@ -41,6 +41,10 @@ Get-FileHash -Algorithm SHA256 '.\DOWNLOADED-INSTALLER.exe'
 > 경로에서만 내려받고 SHA-256을 확인하세요. 설치를 위해 SmartScreen, Microsoft Defender,
 > 다른 보안 제품을 끄지 마세요. 출처·파일 이름·해시를 확인할 수 없다면 실행하지 마세요.
 
+앱 화면은 11개 언어를 지원하지만 현재 법률·안전 문서는 한국어와 영어로 제공합니다. 적용
+법률이 허용하는 범위에서 한국어 법률 문구를 기준으로 하며 영어는 참고 번역입니다. 적용 약관과
+안전 한계를 이해할 수 있을 때만 Early Access를 설치하세요.
+
 ## 현재 무료 Early Access 기능
 
 1. 사용자가 선택한 범위의 파일을 확인하고 지원 규칙에 따라 자동 정리 계획을 준비합니다.
@@ -134,8 +138,12 @@ Biuja의 공식 검증 예정 범위에 포함하지 않습니다.
 - [이슈·기여 원칙](CONTRIBUTING.md)
 - [개인정보 처리방침](PRIVACY.md)
 - [최종 사용자 이용약관](EULA.md)
+- [제3자 소프트웨어 라이선스 고지](THIRD-PARTY-NOTICES.txt)
+- [MPL 구성요소의 정확한 원본 소스](docs/THIRD-PARTY-SOURCE.md)
 - [릴리스 노트](https://github.com/pcssakinc/pcssak-biuja-releases/releases)
 
 PCssak Biuja 바이너리는 독점 소프트웨어이며 릴리스에 포함된 조건에 따라 사용합니다. 제3자
 오픈소스 구성요소는 각각의 라이선스와 고지문을 따릅니다. 일반 문의는
 `pcssakinc@gmail.com`으로 보내주세요.
+
+앱 UI는 외부 웹 글꼴이나 글꼴 파일을 포함하지 않고 Windows의 언어별 기본 글꼴을 사용합니다.

@@ -45,6 +45,11 @@ corresponding entry in `SHA256SUMS.txt`.
 > another security product to install PCssak Biuja. If the source, filename, or hash cannot be
 > confirmed, do not run the file.
 
+The application interface supports 11 languages, but the current legal and safety documents
+are published in Korean and English. The Korean legal text is authoritative to the extent
+permitted by applicable law, and English is a reference translation. Install the Early Access
+build only if you can understand the applicable terms and safety limits.
+
 ## Current Free Early Access features
 
 1. Inspect files within a scope selected by the user and automatically prepare an organization
@@ -143,8 +148,13 @@ confidential documents in a public issue. Replace them with the smallest synthet
 - [Issue and contribution guidelines](CONTRIBUTING.md)
 - [Privacy Policy](PRIVACY.md)
 - [End User License Agreement](EULA.md)
+- [Third-party software notices](THIRD-PARTY-NOTICES.txt)
+- [Exact upstream source for MPL components](docs/THIRD-PARTY-SOURCE.md)
 - [Release notes](https://github.com/pcssakinc/pcssak-biuja-releases/releases)
 
 PCssak Biuja binaries are proprietary software and are licensed under the terms included with
 the release. Third-party open-source components remain under their own licenses and notices.
 For general inquiries, contact `pcssakinc@gmail.com`.
+
+The app UI uses the language-appropriate Windows system fonts and does not bundle font files or
+external web fonts.

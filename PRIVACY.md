@@ -5,16 +5,10 @@
 - Operator / 운영자: PCSSAK
 - Contact / 문의: `pcssakinc@gmail.com`
 
-> **Pre-release draft / 공개 전 초안**
+> The Korean text is authoritative to the extent permitted by applicable law; the English text
+> is a reference translation.
 >
-> This document describes the current implementation but is neither final legal advice nor a
-> professionally reviewed final text. It requires the operator's final
-> approval before publication. The Korean text is authoritative to the extent permitted by
-> applicable law; the English text is a reference translation.
->
-> 이 문서는 현재 구현을 설명하지만 최종 법률 자문이나 전문 법률 검토를 마친 문서가 아닙니다.
-> 공개 전에 운영자의 최종 승인이 필요합니다. 적용 법률이 허용하는 범위에서 국문을
-> 기준으로 하며 영문은 참고 번역입니다.
+> 적용 법률이 허용하는 범위에서 국문을 기준으로 하며 영문은 참고 번역입니다.
 
 ## 국문
 
