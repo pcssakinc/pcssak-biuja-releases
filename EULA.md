@@ -1,0 +1,280 @@
+# PCssak Biuja End User License Agreement / 최종 사용자 이용약관
+
+- Last updated / 최종 수정: 2026-07-22
+- Provider / 제공자: PCSSAK
+- Contact / 문의: `pcssakinc@gmail.com`
+- Applies to / 적용 대상: PCssak Biuja Free Early Access for Windows
+
+> **Pre-release draft / 공개 전 초안**
+>
+> This document reflects the current Free Early Access product, but it is neither final legal
+> advice nor a professionally reviewed final text. It requires the
+> operator's final approval before public release. The Korean text is authoritative to the
+> extent permitted by applicable law; the English text is a reference translation.
+>
+> 이 문서는 현재 무료 Early Access 제품 상태를 반영하지만 최종 법률 자문이나 전문 법률 검토를
+> 마친 문서가 아닙니다. 공개 전에 운영자의 최종 승인이 필요합니다. 적용 법률이
+> 허용하는 범위에서 국문을 기준으로 하며 영문은 참고 번역입니다.
+
+## 국문
+
+### 제1조 (동의와 적용 범위)
+
+사용자는 PCssak Biuja를 설치하거나 실행하기 전에 이 약관을 확인해야 합니다. 동의하지 않으면
+설치·실행하지 말고 이미 설치했다면 제거하세요. 이 약관은 현재 Windows용 무료 Early Access
+배포본에 적용됩니다.
+
+### 제2조 (무료 Early Access 상태)
+
+현재 공개 버전은 정식 1.0 이전의 무료 Early Access입니다. 기능·화면·번역·정리 규칙·지원
+환경이 바뀌거나 제거될 수 있고 아직 발견되지 않은 오류가 남아 있을 수 있습니다. 로드맵,
+예정 기능과 향후 에디션은 제공 약속이 아닙니다. 현재 무료 배포본에는 유료 구매, 결제 또는
+유료 권한이 포함되지 않습니다.
+
+### 제3조 (사용권)
+
+운영자는 이 약관을 지키는 사용자 또는 조직에 PCssak Biuja를 자신이 소유하거나 관리하는
+지원 Windows 기기에서 합법적인 개인 용도 또는 조직 내부 업무 용도로 사용할 수 있는 제한적·
+비독점적·양도 불가능한 사용권을 무료로 부여합니다.
+
+이 사용권은 소프트웨어나 소스 코드의 소유권을 이전하지 않습니다. 향후 별도 에디션이나 유료
+기능이 출시되면 그 배포본에는 별도의 조건이 적용될 수 있습니다.
+
+### 제4조 (소유권과 금지 행위)
+
+PCssak Biuja 애플리케이션 소스는 비공개 독점 소프트웨어이며 운영자에게 권리가 있습니다.
+관련 법률이 명시적으로 허용하는 범위를 제외하고 다음 행위를 할 수 없습니다.
+
+- 소프트웨어·설치 파일을 수정·재포장하거나 제3자 배포처에 다시 올리는 행위
+- 소프트웨어를 판매·대여·재라이선스하거나 서비스 형태로 제공하는 행위
+- 기술적 보호조치를 우회하거나 소스 코드를 얻기 위해 역공학·역컴파일·분해하는 행위
+- 상표, 저작권, 라이선스 또는 제3자 고지문을 제거·변경하는 행위
+- 악성코드 배포, 무단 접근 또는 다른 위법 행위에 사용하는 행위
+
+공식 릴리스 링크를 다른 사람에게 안내하는 것은 허용됩니다. 제3자 오픈소스 구성요소에는 해당
+구성요소의 라이선스가 우선 적용됩니다.
+
+### 제5조 (파일 작업과 사용자 확인)
+
+PCssak Biuja는 사용자가 선택한 폴더와 규칙에 따라 파일을 검사하고 자동 정리 계획을 만들며,
+지원되는 경우 파일을 이동·복사하거나 Windows 휴지통으로 보낼 수 있습니다. 정리 실행 전
+미리보기, 작업저널, 되돌리기, 기존 대상 덮어쓰기 금지와 영구 삭제 금지 안전 장치를 제공합니다.
+
+사용자는 다음 사항을 지켜야 합니다.
+
+1. 실행 전에 선택한 폴더, 규칙, 원본과 대상의 미리보기를 확인합니다.
+2. 대체할 수 없는 파일은 PCssak Biuja와 별개의 검증된 백업을 유지합니다.
+3. 보호 폴더, 네트워크·이동식 저장장치, 클라우드 동기화 폴더, 다른 앱이 사용 중인 파일에는
+   특별히 주의합니다.
+4. 예상하지 않은 미리보기, 충돌, 일부 실패 또는 작업저널 오류가 보이면 실행을 중단하고
+   결과를 확인합니다.
+
+덮어쓰기 금지와 영구 삭제 금지는 PCssak Biuja가 수행하는 지원 작업의 원칙입니다. 다른 앱,
+클라우드 동기화, 사용자 작업, 하드웨어 장애, 악성코드나 운영체제 문제가 파일을 변경·삭제하는
+것까지 막는 보장은 아닙니다.
+
+### 제6조 (작업저널과 되돌리기의 한계)
+
+작업저널은 완료된 지원 작업의 로컬 기록이며 파일 사본이나 백업이 아닙니다. 되돌리기는 기록된
+작업과 현재 파일시스템 상태가 다른 파일을 덮어쓰지 않는 안전한 역작업을 허용할 때만 가능합니다.
+파일이 변경·교체·삭제·이름 변경·잠김·외부 동기화됐거나 저장장치·권한을 사용할 수 없으면
+되돌리기가 거부되거나 실패할 수 있습니다.
+
+여러 파일 작업은 일부가 완료된 뒤 중단될 수 있습니다. 사용자는 결과와 작업저널을 확인해야
+하며 PCssak Biuja를 유일한 복구 수단으로 사용하면 안 됩니다.
+
+### 제7조 (업데이트와 외부 연결)
+
+GitHub 배포용 독립형 빌드는 공식 `pcssakinc` GitHub 릴리스에서 업데이트 정보를 자동으로
+확인할 수 있습니다. 업데이트 설치 파일은 사용자가 다운로드·설치를 승인한 뒤에만 내려받으며
+설치 전에 PCSSAK Tauri 업데이트 서명을 검증합니다. 업데이트 확인이 실패해도 핵심 로컬 정리
+기능은 계속 사용할 수 있어야 합니다.
+
+필수 Microsoft Edge WebView2 Runtime이 없거나 복구가 필요하면 Windows 또는 설치
+프로그램이 Microsoft 배포 서비스에 연결할 수 있습니다. 연결과 개인정보에 관한 자세한 내용은
+[개인정보 처리방침](PRIVACY.md)을 따릅니다.
+
+### 제8조 (제3자 소프트웨어)
+
+소프트웨어에는 제3자 오픈소스 구성요소와 Microsoft WebView2 Runtime이 포함되거나 함께
+사용될 수 있습니다. 제3자 구성요소의 저작권·라이선스·소스 위치는 배포본의
+`THIRD-PARTY-NOTICES.txt`와 해당 고지문을 따릅니다.
+
+### 제9조 (개인정보)
+
+파일 정리 자체는 기기에서 로컬 처리됩니다. 업데이트 확인·다운로드, WebView2 설치·업데이트,
+사용자가 직접 여는 외부 링크·GitHub Issue·이메일에는 제3자 서비스의 처리가 발생할 수
+있습니다. 구체적인 데이터와 삭제 방법은 [개인정보 처리방침](PRIVACY.md)을 확인하세요.
+
+### 제10조 (무보증과 Early Access 위험)
+
+PCssak Biuja는 적용 법률이 허용하는 범위에서 “있는 그대로” 제공됩니다. 운영자는 발견되지 않은
+결함, 특정 분류 결과, 모든 파일시스템·기기·보안 제품과의 호환성, 중단 없는 동작 또는 모든
+상황의 되돌리기를 보장하지 않습니다. 무료 Early Access는 백업·데이터 복구·보안 삭제·백신
+서비스가 아닙니다.
+
+이 조항은 관련 법률상 배제하거나 제한할 수 없는 소비자 권리나 명시적 법정 책임을 제한하지
+않습니다.
+
+### 제11조 (책임 제한)
+
+적용 법률이 허용하는 범위에서 운영자는 사용자가 적절한 백업 없이 사용하거나, 미리보기를
+확인하지 않거나, 미지원 환경·보호 폴더·외부 동기화 환경에서 사용해 발생한 간접·부수·특별·
+결과적 손해에 책임을 지지 않습니다. 다만 운영자의 고의·중대한 과실이나 그 밖에 법률상 제한할
+수 없는 책임은 제외하지 않습니다.
+
+### 제12조 (사용권 종료와 로컬 데이터)
+
+사용자가 이 약관을 중대하게 위반하면 운영자는 적용 법률이 허용하는 범위에서 사용권을 종료할
+수 있습니다. 사용권이 끝나면 소프트웨어 사용을 중단하고 제거해야 합니다.
+
+프로그램 제거만으로 설정·작업저널·로그 등 로컬 앱 데이터가 모두 자동 삭제되지 않을 수
+있습니다. 제거 화면의 앱 데이터 삭제 선택지 또는 [개인정보 처리방침](PRIVACY.md)의 수동 삭제
+안내를 확인하세요. Windows 휴지통과 사용자가 정리한 실제 파일은 앱 데이터 폴더와 별개입니다.
+
+### 제13조 (약관 변경)
+
+제품 기능, 배포 방식이나 법적 요구가 바뀌면 이 약관을 갱신할 수 있습니다. 중요한 변경은
+문서와 공식 제품 페이지에 게시하고 최종 수정일을 바꿉니다. 새 버전에 별도 동의가 필요하면
+설치 또는 사용 전에 안내합니다.
+
+### 제14조 (준거법과 소비자 권리)
+
+이 약관은 대한민국 법률을 기준으로 해석하되, 사용자의 거주지에 적용되는 강행적 소비자 보호
+규정이 있으면 그 규정이 우선합니다. 분쟁 관할은 적용되는 법률과 민사소송 절차에 따릅니다.
+
+### 제15조 (문의)
+
+약관과 제품에 관한 일반 문의: `pcssakinc@gmail.com`
+
+---
+
+## English reference translation
+
+### 1. Agreement and scope
+
+Review these terms before installing or running PCssak Biuja. If you do not agree, do not
+install or run it; uninstall it if already installed. These terms apply to the current Windows
+Free Early Access distribution.
+
+### 2. Free Early Access status
+
+The public build is Free Early Access before version 1.0. Features, interface, translations,
+sorting rules, and supported environments may change or be removed, and undiscovered defects
+may remain. A roadmap, planned feature, or possible future edition is not a promise of delivery.
+The current public build includes no paid purchase, payment processing, or paid entitlement.
+
+### 3. License grant
+
+Subject to these terms, PCSSAK grants an individual or organization a limited, non-exclusive,
+non-transferable, no-fee license to use PCssak Biuja for lawful personal purposes or internal
+business work on supported Windows devices that the user or organization owns or controls.
+
+This license transfers no ownership of the software or source code. A later edition or paid
+feature, if released, may use separate terms.
+
+### 4. Ownership and restrictions
+
+The PCssak Biuja application source is private, proprietary software. Except where applicable
+law expressly permits it, you may not modify or repackage the software; upload the installer to
+a third-party distribution location; sell, rent, sublicense, or offer it as a service; bypass a
+technical protection; reverse engineer, decompile, or disassemble it to obtain source code;
+remove legal or third-party notices; or use it for malware, unauthorized access, or another
+unlawful purpose.
+
+You may share a link to the official release. Third-party open-source licenses control their
+respective components.
+
+### 5. File operations and user review
+
+PCssak Biuja inspects files in user-selected folders, prepares an automatic organization plan
+from user-selected rules, and, where supported, can move, copy, or send files to the Windows
+Recycle Bin. It provides preview, a work journal, rollback, no intentional overwrite of an
+existing destination, and no permanent deletion by the sorting workflow.
+
+You must review the selected folders, rules, sources, and destinations before execution; keep a
+separate tested backup of irreplaceable data; use special care with protected, network,
+removable, cloud-synchronized, and in-use locations; and stop to review unexpected previews,
+collisions, partial failures, or journal errors.
+
+No-overwrite and no-permanent-delete controls govern supported actions performed by PCssak
+Biuja. They cannot guarantee protection from another application, cloud synchronization, a
+manual action, hardware failure, malware, or an operating-system problem.
+
+### 6. Journal and rollback limits
+
+The work journal is local metadata about supported completed actions, not a file copy or backup.
+Rollback is available only when the recorded action and current filesystem state permit a safe
+reverse operation without overwriting another file. It can be refused or fail after a file is
+changed, replaced, removed, renamed, locked, externally synchronized, or when storage or
+permissions are unavailable.
+
+A multi-file operation may stop after partial completion. Review the result and journal and do
+not use PCssak Biuja as the only recovery plan.
+
+### 7. Updates and external connections
+
+The standalone GitHub build may automatically check the official `pcssakinc` GitHub release for
+update information. It downloads the installation asset only after the user approves download
+and installation and verifies the PCSSAK Tauri update signature before installation. Failure of
+the update check should not disable the core local organization workflow.
+
+If Microsoft Edge WebView2 Runtime is absent or requires repair, Windows or the installer may
+connect to Microsoft's distribution service. See the [Privacy Policy](PRIVACY.md) for details.
+
+### 8. Third-party software
+
+The software includes or operates with third-party open-source components and Microsoft
+WebView2 Runtime. Their copyrights, licenses, and source locations are governed by
+`THIRD-PARTY-NOTICES.txt` and the applicable notices shipped with the release.
+
+### 9. Privacy
+
+File organization is processed locally on the device. Third-party processing can occur for
+update checks and downloads, WebView2 installation or updating, and external links, GitHub
+Issues, or email that the user chooses to open. See the [Privacy Policy](PRIVACY.md).
+
+### 10. No warranty and Early Access risk
+
+To the extent permitted by applicable law, PCssak Biuja is provided “as is.” PCSSAK does not
+guarantee that it has no undiscovered defects, produces a particular classification, works with
+every filesystem, device, or security product, operates without interruption, or can roll back
+every situation. Free Early Access is not backup, data recovery, secure deletion, or antivirus
+service.
+
+Nothing in this section limits a mandatory consumer right or statutory liability that cannot
+lawfully be excluded or limited.
+
+### 11. Limitation of liability
+
+To the extent permitted by applicable law, PCSSAK is not liable for indirect, incidental,
+special, or consequential loss resulting from use without an appropriate backup, failure to
+review a preview, or use in an unsupported, protected, or externally synchronized environment.
+This does not exclude liability for intentional misconduct, gross negligence, or another
+liability that applicable law does not allow PCSSAK to limit.
+
+### 12. Termination and local data
+
+PCSSAK may terminate the license for a material violation of these terms to the extent allowed
+by law. After termination, stop using and uninstall the software.
+
+Uninstalling may not automatically remove all local settings, journal, and log data. Use the
+uninstaller's app-data option or the manual deletion instructions in the
+[Privacy Policy](PRIVACY.md). Files organized by the user and items in the Windows Recycle Bin
+are separate from the application's data folders.
+
+### 13. Changes
+
+These terms may be updated when product features, distribution, or legal requirements change.
+Material changes will be posted in this document and on the official product page with a new
+last-updated date. A new version will present additional acceptance when required.
+
+### 14. Governing law and consumer rights
+
+These terms are interpreted under the laws of the Republic of Korea, but mandatory consumer
+protections in the user's place of residence prevail where applicable. Jurisdiction follows the
+applicable law and civil-procedure rules.
+
+### 15. Contact
+
+General inquiries about these terms or the product: `pcssakinc@gmail.com`

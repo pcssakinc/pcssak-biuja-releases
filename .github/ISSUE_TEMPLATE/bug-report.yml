@@ -1,0 +1,149 @@
+name: Bug report / 버그 제보
+description: Report a reproducible PCssak Biuja problem / 재현 가능한 문제를 알려주세요
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Free Early Access. Search existing issues first. Never post full personal paths, real filenames, directory listings, file contents, customer data, credentials, or confidential material. For an exploitable security issue, stop here and follow SECURITY.md instead.
+
+        무료 Early Access 개선에 도움을 주셔서 감사합니다. 기존 이슈를 먼저 검색하세요. 전체 개인 경로, 실제 파일 이름, 폴더 목록, 파일 내용, 고객 자료, 자격증명이나 회사 비밀을 올리지 마세요. 악용 가능한 보안 문제는 공개하지 말고 SECURITY.md를 따르세요.
+  - type: input
+    id: app-version
+    attributes:
+      label: App version / 앱 버전
+      description: Check the version shown by PCssak Biuja. / PCssak Biuja에 표시된 버전을 확인하세요.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows-architecture
+    attributes:
+      label: Windows and architecture / Windows와 아키텍처
+      options:
+        - Windows 11 Home x64
+        - Windows 11 Pro x64
+        - Windows 10 Home x64
+        - Windows 10 Pro x64
+        - Windows 10 x86 beta / Windows 10 x86 베타
+        - Windows on ARM emulation (unsupported) / Windows ARM 에뮬레이션(미지원)
+        - Other unsupported platform / 기타 미지원 환경
+        - Unknown / 모름
+    validations:
+      required: true
+  - type: input
+    id: windows-build
+    attributes:
+      label: Windows build / Windows 빌드
+      description: Enter the safe version shown by winver; do not include a device or account name. / winver의 버전만 적고 기기명·계정명은 제외하세요.
+      placeholder: "Example: 26100.x"
+  - type: dropdown
+    id: install-source
+    attributes:
+      label: Install source / 설치 출처
+      options:
+        - pcssak.com/biuja
+        - Official pcssakinc GitHub release / 공식 pcssakinc GitHub 릴리스
+        - In-app update / 앱 내부 업데이트
+        - Other or unknown / 기타 또는 모름
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Affected step / 문제가 생긴 단계
+      options:
+        - Installation or startup / 설치 또는 시작
+        - Update check or installation / 업데이트 확인 또는 설치
+        - Folder scan or preview / 폴더 검사 또는 미리보기
+        - Apply sorting plan / 정리 계획 실행
+        - Work journal or history / 작업저널 또는 기록
+        - Rollback / 되돌리기
+        - Interface or translation / 화면 또는 번역
+        - Other / 기타
+    validations:
+      required: true
+  - type: dropdown
+    id: location-type
+    attributes:
+      label: Location type / 위치 종류
+      description: Do not enter the real path. / 실제 경로는 적지 마세요.
+      options:
+        - Small synthetic folder on a local fixed drive / 로컬 고정 드라이브의 작은 합성 폴더
+        - Ordinary local folder / 일반 로컬 폴더
+        - Cloud-synchronized folder / 클라우드 동기화 폴더
+        - Removable drive / 이동식 드라이브
+        - Network location / 네트워크 위치
+        - Protected or application folder / 보호 또는 프로그램 폴더
+        - Other or unknown / 기타 또는 모름
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / 어떤 문제가 생겼나요?
+      description: Describe the actual result and user impact without sensitive file information. / 민감한 파일 정보 없이 실제 결과와 사용자 영향을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 기대한 결과
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Safest minimal reproduction steps / 가장 안전한 최소 재현 절차
+      description: Use synthetic files. Do not repeat a step that could cause further loss or overwrite. / 합성 파일을 사용하고 추가 손실·덮어쓰기 위험이 있는 단계는 반복하지 마세요.
+      placeholder: |
+        1. Create a synthetic folder...
+        2. Open PCssak Biuja...
+        3. Preview...
+        4. Observe...
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency / 발생 빈도
+      options:
+        - Every safe attempt / 안전하게 시도할 때마다
+        - Often / 자주
+        - Sometimes / 가끔
+        - Once; not repeated because of data risk / 한 번, 데이터 위험 때문에 반복하지 않음
+        - Unknown / 모름
+    validations:
+      required: true
+  - type: dropdown
+    id: file-safety
+    attributes:
+      label: File-safety result / 파일 안전 결과
+      options:
+        - No file changed / 파일 변경 없음
+        - Operation safely refused / 작업이 안전하게 거부됨
+        - Preview and applied result differed / 미리보기와 실행 결과가 다름
+        - File moved to an unexpected location / 예상하지 않은 위치로 이동됨
+        - Rollback was unavailable or refused / 되돌리기를 사용할 수 없거나 거부됨
+        - Possible overwrite, deletion, or missing file (do not retry) / 덮어쓰기·삭제·파일 누락 가능성(재시도 금지)
+        - Other or unknown / 기타 또는 모름
+    validations:
+      required: true
+  - type: textarea
+    id: safe-evidence
+    attributes:
+      label: Sanitized error text or safe evidence / 정리한 오류 문구 또는 안전한 자료
+      description: Replace paths and filenames with placeholders. Do not attach the real affected folder or full journal. / 경로·파일명은 가짜 값으로 바꾸고 실제 문제 폴더나 전체 저널은 첨부하지 마세요.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation / 확인
+      options:
+        - label: I searched existing issues and am reporting the latest available release when practical. / 기존 이슈를 검색했고 가능한 경우 최신 릴리스를 기준으로 제보합니다.
+          required: true
+        - label: I removed personal paths, filenames, contents, secrets, customer data, and confidential information. / 개인 경로·파일명·내용·비밀정보·고객·회사 자료를 제거했습니다.
+          required: true
+        - label: This is not an exploitable security report; security details will be sent privately under SECURITY.md. / 악용 가능한 보안 제보가 아니며 보안 내용은 SECURITY.md에 따라 비공개로 보냅니다.
+          required: true
