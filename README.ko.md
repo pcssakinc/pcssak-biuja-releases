@@ -1,6 +1,6 @@
 # PCssak Biuja - 공식 Windows 다운로드
 
-[English](README.md) · [제품 홈페이지](https://pcssak.com/biuja) ·
+[English](README.md) · [제품 홈페이지](https://pcssak.co.kr/biuja) ·
 [최신 릴리스](https://github.com/pcssakinc/pcssak-biuja-releases/releases/latest)
 
 > **현재 배포본: 1.0 이전 무료 얼리 액세스** — 기능·번역·파일 처리 규칙이 바뀔 수 있고
@@ -17,7 +17,7 @@
 ## 다운로드
 
 [최신 공식 릴리스](https://github.com/pcssakinc/pcssak-biuja-releases/releases/latest) 또는
-[PCssak Biuja 제품 페이지](https://pcssak.com/biuja)에서만 내려받으세요.
+[PCssak Biuja 제품 페이지](https://pcssak.co.kr/biuja)에서만 내려받으세요.
 
 - 일반 사용에는 Windows 11 Home/Pro용 **x64**를 선택합니다. Windows 11 x64가 권장 환경이자
   공식 검증 예정 대상입니다.
