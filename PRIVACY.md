@@ -1,6 +1,6 @@
 # PCssak Biuja Privacy Policy / 개인정보 처리방침
 
-- Last updated / 최종 수정: 2026-07-22
+- Last updated / 최종 수정: 2026-07-27
 - Applies to / 적용 대상: PCssak Biuja Free Early Access for Windows
 - Operator / 운영자: PCSSAK
 - Contact / 문의: `pcssakinc@gmail.com`
@@ -89,7 +89,7 @@ PCssak Biuja는 WebView2 설치 요청에 정리 대상 파일, 파일 이름, �
 
 | 데이터 | 일반적인 위치 | 내용과 보관 |
 |---|---|---|
-| 설정 | `%APPDATA%\com.pcssak.biuja\config.json` | 사용자가 선택한 폴더 경로, 정리 규칙, 일정, 언어·테마 등. 손상된 설정은 같은 위치에 백업 파일이 생길 수 있습니다. |
+| 설정 및 가져오기 복구 | `%APPDATA%\com.pcssak.biuja\config.json`, `config.before-import.json`, `config.before-import.pending.json` | 사용자가 선택한 폴더 경로, 정리 규칙, 일정, 언어·테마 등. 가져오기 직전·직후 설정은 가장 최근 가져오기 한 번을 안전하게 되돌리기 위한 로컬 복구 파일에 보관될 수 있습니다. 시간 기준 자동 만료는 없으며, 가져오기 되돌리기 성공·오래되어 거부된 되돌리기 시도·다음 가져오기의 복구점 정리 때 삭제됩니다. 그 전에는 앱 데이터와 함께 사용자가 삭제할 때까지 남을 수 있습니다. 손상된 설정은 같은 위치에 별도 백업 파일이 생길 수 있습니다. |
 | 작업저널 | `%APPDATA%\com.pcssak.biuja\journal.db`와 SQLite 보조 파일 | 원본·대상 경로, 작업 종류·시각·상태, 안전한 되돌리기를 위한 크기·수정 시각·파일 식별·지문 정보 등. 현재 최대 20,000개 작업 행을 유지하고 오래된 행을 정리합니다. 파일 내용 사본은 아닙니다. |
 | 로컬 로그 | `%LOCALAPPDATA%\com.pcssak.biuja\logs` | 시작·오류 진단용 기술 로그. 문제 상황에 따라 로컬 경로나 작업 관련 기술 정보가 포함될 수 있지만 자동 전송되지 않습니다. |
 | WebView2 데이터 | `%LOCALAPPDATA%\com.pcssak.biuja\EBWebView` 등 앱별 WebView2 위치 | 화면 렌더링에 필요한 Microsoft WebView2 캐시와 환경설정 |
@@ -233,7 +233,7 @@ PCSSAK. Displayed paths can vary slightly by Windows version and installation en
 
 | Data | Typical location | Contents and retention |
 |---|---|---|
-| Settings | `%APPDATA%\com.pcssak.biuja\config.json` | User-selected folder paths, organization rules, schedules, language, theme, and related settings. A damaged configuration can produce a backup beside it. |
+| Settings and import recovery | `%APPDATA%\com.pcssak.biuja\config.json`, `config.before-import.json`, and `config.before-import.pending.json` | User-selected folder paths, organization rules, schedules, language, theme, and related settings. The settings immediately before and after the most recent import can be retained in local recovery files for safe one-level Import Undo. There is no time-based automatic expiry. The files are removed after a successful Import Undo, a stale Undo attempt is rejected, or the next import cleans up the recovery point; until then, they can remain with app data until the user deletes it. A damaged configuration can produce another backup beside it. |
 | Work journal | `%APPDATA%\com.pcssak.biuja\journal.db` and SQLite companion files | Source and destination paths, operation type, time, status, and size, modification time, file identity, and fingerprint evidence needed for safe rollback. The current implementation keeps up to 20,000 action rows and prunes older rows. It is not a copy of file contents. |
 | Local logs | `%LOCALAPPDATA%\com.pcssak.biuja\logs` | Technical startup and error diagnostics. A local path or operation-related technical context can appear in an error case, but logs are not automatically uploaded. |
 | WebView2 data | `%LOCALAPPDATA%\com.pcssak.biuja\EBWebView` and related app-specific WebView2 locations | Microsoft WebView2 cache and settings needed to render the interface. |
