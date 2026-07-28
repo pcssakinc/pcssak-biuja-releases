@@ -1,11 +1,11 @@
 # MPL-2.0 구성요소 원본 소스 / MPL-2.0 Component Source
 
-PCssak Biuja 0.1.2는 아래의 수정하지 않은 MPL-2.0 구성요소를 바이너리 형태로 포함합니다.
+PCssak Biuja 0.1.3은 아래의 수정하지 않은 MPL-2.0 구성요소를 바이너리 형태로 포함합니다.
 각 링크는 이번 릴리스에 고정된 정확한 버전의 원본 소스 압축 파일을 가리킵니다. 이 문서는
 PCssak Biuja 자체 소스코드의 라이선스를 변경하지 않습니다.
 
 동일한 5개 원본 패키지를 묶고 `Cargo.lock` 체크섬으로 검증한 보관본은
-[`PCssak-Biuja-0.1.2-MPL-Sources.zip`](https://github.com/pcssakinc/pcssak-biuja-releases/releases/download/v0.1.2/PCssak-Biuja-0.1.2-MPL-Sources.zip)에서 받을 수 있습니다.
+[`PCssak-Biuja-0.1.3-MPL-Sources.zip`](https://github.com/pcssakinc/pcssak-biuja-releases/releases/download/v0.1.3/PCssak-Biuja-0.1.3-MPL-Sources.zip)에서 받을 수 있습니다.
 
 | 구성요소 | 버전 | 원본 소스 |
 | --- | ---: | --- |
@@ -22,13 +22,13 @@ PCssak Biuja 자체 소스코드의 라이선스를 변경하지 않습니다.
 
 ---
 
-PCssak Biuja 0.1.2 includes the following unmodified MPL-2.0 components in binary form. Each
+PCssak Biuja 0.1.3 includes the following unmodified MPL-2.0 components in binary form. Each
 link points to the upstream source archive for the exact version locked into this release. This
 document does not change the license of PCssak Biuja's own source code.
 
 An archived copy of the same five source packages, verified against the `Cargo.lock` checksums,
 is available as
-[`PCssak-Biuja-0.1.2-MPL-Sources.zip`](https://github.com/pcssakinc/pcssak-biuja-releases/releases/download/v0.1.2/PCssak-Biuja-0.1.2-MPL-Sources.zip).
+[`PCssak-Biuja-0.1.3-MPL-Sources.zip`](https://github.com/pcssakinc/pcssak-biuja-releases/releases/download/v0.1.3/PCssak-Biuja-0.1.3-MPL-Sources.zip).
 
 | Component | Version | Upstream source |
 | --- | ---: | --- |
