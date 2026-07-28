@@ -57,6 +57,11 @@ vendor technical support that Windows 10 no longer receives.
   does not remove first-install reputation warnings.
 - Automatic update checking and download require access to the official GitHub release service.
   Offline sorting does not require that connection.
+- In v0.1.3 and earlier, the application checks for an update only once shortly after the process
+  starts. If Biuja was already running in the tray before a release or that first request failed,
+  do not merely close the window with X: right-click the PCSSAK tray icon, choose **Exit**, restart
+  the application, and wait 15 to 20 seconds. A manual check and safe automatic rechecking are
+  planned for the next maintenance release.
 - If WebView2 Runtime is missing or needs repair, Windows or the installer may need to connect
   to Microsoft's WebView2 distribution service.
 
