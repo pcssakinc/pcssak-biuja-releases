@@ -60,13 +60,18 @@ vendor technical support that Windows 10 no longer receives.
 - In v0.1.3 and earlier, the application checks for an update only once shortly after the process
   starts. If Biuja was already running in the tray before a release or that first request failed,
   do not merely close the window with X: right-click the PCSSAK tray icon, choose **Exit**, restart
-  the application, and wait 15 to 20 seconds. A manual check and safe automatic rechecking are
-  planned for the next maintenance release.
+  the application, and wait 15 to 20 seconds.
+- From v0.1.4, **Check for updates** in the sidebar requests an immediate check. A tray-resident
+  process also rechecks at a six-hour success interval and with bounded failure backoff.
+  Startup, manual, online-return, focus, and timer requests remain single-flight.
 - If WebView2 Runtime is missing or needs repair, Windows or the installer may need to connect
   to Microsoft's WebView2 distribution service.
 
 ## Sorting decisions and preview
 
+- From v0.1.4, a folder-card action means **Preview this folder**, while the sidebar's
+  **Organize all folders** action applies to every enabled folder. Saving a rule automatically
+  opens the same folder's preview. Follow the first-run guided tutorial or replay it in Settings.
 - PCssak Biuja can only apply the supported rules and metadata visible to the application. It
   cannot know a user's personal meaning, contractual filing requirement, retention policy, or
   preferred project structure.

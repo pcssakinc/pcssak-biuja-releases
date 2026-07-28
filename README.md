@@ -69,6 +69,21 @@ build only if you can understand the applicable terms and safety limits.
 The current public build is **Free Early Access** below version 1.0. Features, translations,
 and file-handling rules may change before a stable release, and undiscovered defects may remain.
 
+## First use
+
+Starting with v0.1.4, a seven-step guide spotlights the actual controls. Existing users see it
+once after updating, and new users see it after their first onboarding preview. Replay it at any
+time from **Settings → Replay tutorial**.
+
+1. Use **Add folder** to register the base folder to organize.
+2. Open **Manage rules** on a numbered, colored folder card and save its conditions and action.
+3. When organizing into a subfolder, keep the **Organized files** default or replace it with one
+   valid one-level folder name. Repeated runs reuse that saved folder.
+4. Review the selected card in **Preview this folder**, which opens automatically after saving.
+5. **Organize all folders** in the sidebar applies to every enabled folder, not just one card.
+   Folder-specific preview is recommended while learning the workflow.
+6. Review completed work in **History**. Undo is available only while its safety conditions hold.
+
 ## Local processing and network exceptions
 
 - File organization itself is processed **100% locally**: file names, paths, sorting decisions,
