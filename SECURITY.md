@@ -12,7 +12,7 @@ reporting route; it is not a warranty that the application is free of vulnerabil
 
 ## Report a vulnerability privately
 
-Do not post exploitable details in a public issue. Email `pcssakinc@gmail.com` when a problem
+Do not post exploitable details in a public issue. Email `support@pcssak.com` when a problem
 could enable or contribute to:
 
 - bypassing update-signature verification or substituting an untrusted update;
@@ -60,7 +60,7 @@ check where practical. This is not a guaranteed response-time, fix-deadline, or 
 Early Access에는 발견되지 않은 오류가 남아 있을 수 있으며, 이 정책은 보안 결함이 없다는
 보증이 아니라 안전한 제보 경로를 설명합니다.
 
-다음 문제는 공개 Issue에 악용 가능한 세부 내용을 올리지 말고 `pcssakinc@gmail.com`으로
+다음 문제는 공개 Issue에 악용 가능한 세부 내용을 올리지 말고 `support@pcssak.com`으로
 보내주세요.
 
 - 업데이트 서명 검증 우회 또는 신뢰하지 않은 업데이트 바꿔치기

@@ -18,7 +18,7 @@ PCssak Biuja 자체 소스코드의 라이선스를 변경하지 않습니다.
 전체 제3자 구성요소, 저작권 및 라이선스 전문은 저장소 루트의
 [`THIRD-PARTY-NOTICES.txt`](../THIRD-PARTY-NOTICES.txt)를 확인하세요. 설치 프로그램도 같은
 고지 파일을 설치 폴더에 배치합니다. 소스 링크가 작동하지 않거나 특정 구성요소의 정확한
-소스 사본이 필요하면 `pcssakinc@gmail.com`으로 제품 버전과 구성요소 이름을 보내주세요.
+소스 사본이 필요하면 `support@pcssak.com`으로 제품 버전과 구성요소 이름을 보내주세요.
 
 ---
 
@@ -41,5 +41,5 @@ is available as
 See [`THIRD-PARTY-NOTICES.txt`](../THIRD-PARTY-NOTICES.txt) at the repository root for the full
 component inventory, copyright notices, and license texts. The installer also places the same
 notice file in the installation directory. If a source link becomes unavailable or you need an
-exact source copy for a component, email `pcssakinc@gmail.com` with the product version and
+exact source copy for a component, email `support@pcssak.com` with the product version and
 component name.

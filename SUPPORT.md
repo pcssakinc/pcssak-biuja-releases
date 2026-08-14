@@ -21,7 +21,7 @@ Early Access support has no guaranteed response or fix deadline.
 Use the GitHub [bug report form](../../issues/new?template=bug-report.yml) for a reproducible
 application defect. Use the [feature request form](../../issues/new?template=feature-request.yml)
 for a recurring user problem that PCssak Biuja could solve. General inquiries can be sent to
-`pcssakinc@gmail.com`.
+`support@pcssak.com`.
 
 For a useful bug report, include:
 
@@ -79,7 +79,7 @@ PCssak Biuja는 1인 개발자가 운영합니다. 문의는 접수 순서만이
 
 재현 가능한 오류는 GitHub [버그 제보 양식](../../issues/new?template=bug-report.yml), 반복되는
 사용자 문제는 [기능 제안 양식](../../issues/new?template=feature-request.yml)을 사용하세요. 일반
-문의는 `pcssakinc@gmail.com`으로 보낼 수 있습니다.
+문의는 `support@pcssak.com`으로 보낼 수 있습니다.
 
 오류 제보에는 기대 결과와 실제 결과, 번호를 붙인 최소 재현 절차, 미리보기와 실제 결과가
 달랐는지 여부, 기존 대상·잠긴 파일·클라우드 동기화 폴더·네트워크 위치·이동식 드라이브·권한
