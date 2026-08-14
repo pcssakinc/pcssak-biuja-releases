@@ -172,7 +172,7 @@ confidential documents in a public issue. Replace them with the smallest synthet
 
 PCssak Biuja binaries are proprietary software and are licensed under the terms included with
 the release. Third-party open-source components remain under their own licenses and notices.
-For general inquiries, contact `pcssakinc@gmail.com`.
+For general inquiries, contact `support@pcssak.com`.
 
 The app UI uses the language-appropriate Windows system fonts and does not bundle font files or
 external web fonts.

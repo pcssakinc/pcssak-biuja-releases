@@ -1,8 +1,8 @@
 PCssak Biuja End User License Agreement / 최종 사용자 이용약관
 
-- Last updated / 최종 수정: 2026-07-22
+- Last updated / 최종 수정: 2026-08-15
 - Provider / 제공자: PCSSAK
-- Contact / 문의: pcssakinc@gmail.com
+- Contact / 문의: support@pcssak.com
 - Applies to / 적용 대상: PCssak Biuja Free Early Access for Windows
 
 The Korean text is authoritative to the extent permitted by applicable law; the English text
@@ -139,7 +139,7 @@ PCssak Biuja는 적용 법률이 허용하는 범위에서 “있는 그대로�
 
 제15조 (문의)
 
-약관과 제품에 관한 일반 문의: pcssakinc@gmail.com
+약관과 제품에 관한 일반 문의: support@pcssak.com
 ============================================================
 English reference translation
 
@@ -272,4 +272,4 @@ applicable law and civil-procedure rules.
 
 15. Contact
 
-General inquiries about these terms or the product: pcssakinc@gmail.com
+General inquiries about these terms or the product: support@pcssak.com

@@ -1,9 +1,9 @@
 # PCssak Biuja Privacy Policy / 개인정보 처리방침
 
-- Last updated / 최종 수정: 2026-07-27
+- Last updated / 최종 수정: 2026-08-15
 - Applies to / 적용 대상: PCssak Biuja Free Early Access for Windows
 - Operator / 운영자: PCSSAK
-- Contact / 문의: `pcssakinc@gmail.com`
+- Contact / 문의: `privacy@pcssak.com`
 
 > The Korean text is authoritative to the extent permitted by applicable law; the English text
 > is a reference translation.
@@ -100,16 +100,22 @@ PCssak Biuja는 WebView2 설치 요청에 정리 대상 파일, 파일 이름, �
 
 ### 6. 사용자가 직접 연락하거나 공개하는 정보
 
-사용자가 GitHub Issue를 작성하거나 `pcssakinc@gmail.com`으로 이메일을 보내면 사용자가
-입력한 내용은 각각 GitHub 또는 이메일 서비스가 처리하고 PCSSAK이 문의 대응을 위해 보게
-됩니다. 이 동작은 자동 수집이 아니며 사용자가 직접 시작합니다.
+사용자가 GitHub Issue를 작성하거나 제품·지원·보안 문의를 `support@pcssak.com`으로,
+개인정보 관련 문의·삭제 요청을 `privacy@pcssak.com`으로 이메일을 보내면 사용자가 입력한
+내용은 각각 GitHub 또는 이메일 서비스가 처리하고 PCSSAK이 문의 대응을 위해 보게 됩니다.
+이 동작은 자동 수집이 아니며 사용자가 직접 시작합니다.
+
+두 도메인 이메일 주소는 현재 Cloudflare Email Routing을 통해 검증된 Gmail 수신 주소로
+전달됩니다. 따라서 사용자가 보낸 이메일의 내용과 전달에 필요한 정보는 Cloudflare와 Gmail이
+각자의 서비스 제공·보안·악용 방지 목적에 따라 처리할 수 있습니다. 이 구성은 수신 전달용이며,
+도메인 발신 사서함 또는 도메인 표시 회신을 보장하지 않습니다.
 
 실제 전체 경로, 파일 이름, 폴더 목록, 파일 내용, 고객 자료, 비밀번호·토큰·개인키나 회사
 비밀을 보내지 마세요. 합성 예제와 가린 화면을 사용하세요. 보안 문제는 `SECURITY.md`의 비공개
 절차를 따르세요.
 
 운영자는 문의에서 받은 연락처와 내용을 답변, 오류 재현, 보안 대응과 필요한 기록 보존 범위에서
-사용합니다. 삭제 요청은 `pcssakinc@gmail.com`으로 보낼 수 있으나 법적 의무, 보안 조사 또는
+사용합니다. 삭제 요청은 `privacy@pcssak.com`으로 보낼 수 있으나 법적 의무, 보안 조사 또는
 분쟁 대응에 필요한 최소 정보는 허용되는 기간 동안 보존될 수 있습니다.
 
 ### 7. 로컬 데이터 삭제
@@ -132,10 +138,11 @@ NSIS 제거 화면에서 **앱 데이터 삭제**를 선택할 수 있습니다.
 ### 8. 제3자 처리와 국외 처리 가능성
 
 PCSSAK은 앱 사용 데이터를 광고업체나 데이터 중개업체에 판매하지 않습니다. 자동 업데이트를
-위한 GitHub, WebView2를 위한 Microsoft, 사용자가 선택한 이메일·GitHub Issue는 각 사업자가
-독립적으로 제공합니다. 해당 사업자는 자신의 인프라 위치와 정책에 따라 통상적인 네트워크·
-문의 데이터를 여러 국가 또는 지역에서 처리할 수 있습니다. 구체적인 범위와 권리는 각 사업자의
-공식 개인정보 정책을 확인하세요.
+위한 GitHub, WebView2를 위한 Microsoft, 도메인 이메일 수신 전달을 위한 Cloudflare Email
+Routing과 Gmail, 사용자가 선택한 GitHub Issue는 각 사업자가 독립적으로 제공합니다. 해당
+사업자는 자신의 인프라 위치와 정책에 따라 통상적인 네트워크·문의 데이터를 여러 국가 또는
+지역에서 처리할 수 있습니다. 구체적인 범위와 권리는 각 사업자의 공식 개인정보 정책을
+확인하세요.
 
 ### 9. 아동의 개인정보
 
@@ -149,7 +156,7 @@ PCssak Biuja는 아동을 대상으로 계정·광고·분석 서비스를 제�
 갱신하고 최종 수정일을 변경합니다.
 
 - 제품 페이지: [https://pcssak.com/biuja](https://pcssak.com/biuja)
-- 개인정보 문의: `pcssakinc@gmail.com`
+- 개인정보 문의: `privacy@pcssak.com`
 
 ---
 
@@ -244,9 +251,16 @@ not sent to PCSSAK, and the journal is not a file copy or backup.
 
 ### 6. Information the user chooses to send or publish
 
-When a user opens a GitHub Issue or emails `pcssakinc@gmail.com`, GitHub or the email provider
+When a user opens a GitHub Issue, emails `support@pcssak.com` about the product, support, or
+security, or emails `privacy@pcssak.com` about privacy or deletion, GitHub or the email service
 processes what the user enters, and PCSSAK receives it to handle the request. This is a
 user-initiated action, not automatic application collection.
+
+The two domain email addresses currently forward to a verified Gmail recipient through
+Cloudflare Email Routing. Cloudflare and Gmail may process the message contents and information
+needed to deliver them for their respective service, security, and abuse-prevention purposes.
+This configuration is for inbound forwarding; it does not promise a domain-branded outbound
+mailbox or reply address.
 
 Do not send real full paths, filenames, directory listings, file contents, customer data,
 passwords, tokens, private keys, or confidential business material. Use a synthetic example and
@@ -254,7 +268,7 @@ redacted screenshot. Follow `SECURITY.md` for a private vulnerability report.
 
 PCSSAK uses contact information and report contents for support, reproduction, security
 response, and necessary recordkeeping. A deletion request can be sent to
-`pcssakinc@gmail.com`; minimal information needed for a legal obligation, security
+`privacy@pcssak.com`; minimal information needed for a legal obligation, security
 investigation, or dispute may be retained for the permitted period.
 
 ### 7. Deleting local data
@@ -277,10 +291,10 @@ Biuja are separate from these app-data folders and are not removed with applicat
 ### 8. Independent third parties and possible international processing
 
 PCSSAK does not sell application-usage data to advertisers or data brokers. GitHub provides the
-update-delivery service, Microsoft provides WebView2, and the user chooses any email or GitHub
-Issue interaction. Each provider can process ordinary network or contact data in countries or
-regions used by its infrastructure and policies. Consult each provider's official privacy
-statement for the applicable scope and rights.
+update-delivery service, Microsoft provides WebView2, Cloudflare Email Routing and Gmail provide
+domain-email receipt, and the user chooses any GitHub Issue interaction. Each provider can
+process ordinary network or contact data in countries or regions used by its infrastructure and
+policies. Consult each provider's official privacy statement for the applicable scope and rights.
 
 ### 9. Children's privacy
 
@@ -294,4 +308,4 @@ If network behavior, local storage, distribution, or legal requirements change, 
 and the official product page will be updated with a new last-updated date.
 
 - Product page: [https://pcssak.com/biuja](https://pcssak.com/biuja)
-- Privacy inquiry: `pcssakinc@gmail.com`
+- Privacy inquiry: `privacy@pcssak.com`
