@@ -39,10 +39,14 @@ PCSSAK 계정, 광고, 사용 분석, 추적 SDK, 클라우드 파일 색인이�
 - 정리 규칙, 미리보기, 작업저널과 되돌리기 기록
 - 사용 횟수, 버튼 사용, 화면 체류 시간 등의 분석 정보
 - 자동 오류 보고서나 로그 업로드
-- 계정, 로그인, 결제 또는 유료 라이선스 정보
+- 계정, 로그인 또는 결제 정보
 
-현재 무료 배포본은 앱 안에서 결제를 처리하거나 구매 이메일을 수집하지 않습니다. 향후 별도
-유료 기능이 출시되면 실제 처리 방식이 확정된 뒤 이 방침과 관련 약관을 먼저 갱신해야 합니다.
+현재 무료 배포본은 앱 안에서 결제를 처리하거나 구매 이메일을 PCSSAK 서버로 전송하지
+않습니다. 다만 사용자가 PCSSAK이 별도로 발급한 PB1 라이선스 키를 직접 활성화하면, 키에
+서명되어 들어 있는 이메일과 평생 이용권 정보가 키 원문과 함께 사용자 PC의
+`license.json`에 저장됩니다. 이 파일은 자동 전송되지 않으며 아래 5절의 로컬 보관·삭제
+설명이 적용됩니다. 향후 별도 유료 기능이 출시되면 실제 결제·발급 방식이 확정된 뒤 이
+방침과 관련 약관을 먼저 갱신해야 합니다.
 
 ### 3. GitHub 자동 업데이트 확인과 다운로드
 
@@ -91,6 +95,7 @@ PCssak Biuja는 WebView2 설치 요청에 정리 대상 파일, 파일 이름, �
 |---|---|---|
 | 설정 및 가져오기 복구 | `%APPDATA%\com.pcssak.biuja\config.json`, `config.before-import.json`, `config.before-import.pending.json` | 사용자가 선택한 폴더 경로, 정리 규칙, 일정, 언어·테마 등. 가져오기 직전·직후 설정은 가장 최근 가져오기 한 번을 안전하게 되돌리기 위한 로컬 복구 파일에 보관될 수 있습니다. 시간 기준 자동 만료는 없으며, 가져오기 되돌리기 성공·오래되어 거부된 되돌리기 시도·다음 가져오기의 복구점 정리 때 삭제됩니다. 그 전에는 앱 데이터와 함께 사용자가 삭제할 때까지 남을 수 있습니다. 손상된 설정은 같은 위치에 별도 백업 파일이 생길 수 있습니다. |
 | 작업저널 | `%APPDATA%\com.pcssak.biuja\journal.db`와 SQLite 보조 파일 | 원본·대상 경로, 작업 종류·시각·상태, 안전한 되돌리기를 위한 크기·수정 시각·파일 식별·지문 정보 등. 현재 최대 20,000개 작업 행을 유지하고 오래된 행을 정리합니다. 파일 내용 사본은 아닙니다. |
+| 라이선스 | `%APPDATA%\com.pcssak.biuja\license.json` | 사용자가 활성화한 서명 PB1 키 원문. 키 안에는 발급 이메일과 `lifetime` 이용권 정보가 들어 있습니다. 별도 암호화 없이 현재 Windows 사용자 프로필의 파일 접근 권한에 의존하며 PCSSAK 서버로 자동 전송되지 않습니다. 라이선스 해제, NSIS 제거 화면의 **앱 데이터 삭제**, 또는 앱을 완전히 종료한 뒤 이 파일이나 AppData 폴더를 직접 삭제할 때까지 남습니다. |
 | 로컬 로그 | `%LOCALAPPDATA%\com.pcssak.biuja\logs` | 시작·오류 진단용 기술 로그. 문제 상황에 따라 로컬 경로나 작업 관련 기술 정보가 포함될 수 있지만 자동 전송되지 않습니다. |
 | WebView2 데이터 | `%LOCALAPPDATA%\com.pcssak.biuja\EBWebView` 등 앱별 WebView2 위치 | 화면 렌더링에 필요한 Microsoft WebView2 캐시와 환경설정 |
 | 창·자동 시작 상태 | 앱별 로컬 설정과 사용자가 켠 경우 Windows 자동 시작 등록 | 창 크기·위치와 Windows 로그인 시 실행 여부 |
@@ -121,8 +126,8 @@ PCssak Biuja는 WebView2 설치 요청에 정리 대상 파일, 파일 이름, �
 ### 7. 로컬 데이터 삭제
 
 작업저널은 현재 최대 20,000개 작업 행을 유지하며 한도를 넘은 오래된 행을 정리합니다. 설정,
-로그와 WebView2 데이터는 사용자가 삭제하거나 앱 제거 과정에서 삭제를 선택할 때까지 남을 수
-있습니다.
+라이선스, 로그와 WebView2 데이터는 사용자가 삭제하거나 앱 제거 과정에서 삭제를 선택할 때까지
+남을 수 있습니다. 앱의 라이선스 해제 기능은 `license.json`을 삭제합니다.
 
 NSIS 제거 화면에서 **앱 데이터 삭제**를 선택할 수 있습니다. 선택하지 않으면 업데이트 또는
 재설치를 위해 로컬 데이터가 남을 수 있습니다. 앱을 완전히 종료하고 제거한 뒤 다음 앱별 폴더를
@@ -131,9 +136,9 @@ NSIS 제거 화면에서 **앱 데이터 삭제**를 선택할 수 있습니다.
 - `%APPDATA%\com.pcssak.biuja`
 - `%LOCALAPPDATA%\com.pcssak.biuja`
 
-폴더를 삭제하면 설정과 작업저널을 되돌릴 수 없으므로 필요한 기록을 먼저 확인하세요. Windows
-휴지통에 있는 파일과 PCssak Biuja가 정리한 실제 사용자 폴더는 위 앱 데이터 폴더와 별개이며,
-앱 제거 또는 앱 데이터 삭제로 함께 삭제되지 않습니다.
+폴더를 삭제하면 설정·로컬 라이선스와 작업저널을 되돌릴 수 없으므로 필요한 기록을 먼저
+확인하세요. Windows 휴지통에 있는 파일과 PCssak Biuja가 정리한 실제 사용자 폴더는 위 앱
+데이터 폴더와 별개이며, 앱 제거 또는 앱 데이터 삭제로 함께 삭제되지 않습니다.
 
 ### 8. 제3자 처리와 국외 처리 가능성
 
@@ -187,12 +192,15 @@ these requests.
 The public Free Early Access application does not automatically send to PCSSAK or collect in a
 central PCSSAK database the files being organized; file contents; filenames; full folder paths;
 directory listings; rules; previews; journal or rollback records; product-usage analytics;
-automatically uploaded error logs; account information; login information; payment details; or
-paid-license information.
+automatically uploaded error logs; account information; login information; or payment details.
 
-The current free build does not process payment or collect a purchase email in the application.
-If a separate paid feature is released later, this policy and the relevant terms must be updated
-after the actual processing and distribution model is decided.
+The current free build does not process payment in the application or send a purchase email to a
+PCSSAK server. If the user manually activates a PB1 license key separately issued by PCSSAK, the
+signed email and lifetime entitlement embedded in that key are stored with the full key in the
+user's local `license.json`. The file is not uploaded automatically and is subject to the local
+retention and deletion details in section 5 below. If a separate paid feature is released later,
+this policy and the relevant terms must be updated after the actual payment and issuance model is
+decided.
 
 ### 3. GitHub automatic update check and download
 
@@ -242,6 +250,7 @@ PCSSAK. Displayed paths can vary slightly by Windows version and installation en
 |---|---|---|
 | Settings and import recovery | `%APPDATA%\com.pcssak.biuja\config.json`, `config.before-import.json`, and `config.before-import.pending.json` | User-selected folder paths, organization rules, schedules, language, theme, and related settings. The settings immediately before and after the most recent import can be retained in local recovery files for safe one-level Import Undo. There is no time-based automatic expiry. The files are removed after a successful Import Undo, a stale Undo attempt is rejected, or the next import cleans up the recovery point; until then, they can remain with app data until the user deletes it. A damaged configuration can produce another backup beside it. |
 | Work journal | `%APPDATA%\com.pcssak.biuja\journal.db` and SQLite companion files | Source and destination paths, operation type, time, status, and size, modification time, file identity, and fingerprint evidence needed for safe rollback. The current implementation keeps up to 20,000 action rows and prunes older rows. It is not a copy of file contents. |
+| License | `%APPDATA%\com.pcssak.biuja\license.json` | The full signed PB1 key activated by the user. The key contains the issued email and `lifetime` entitlement. It is not separately encrypted, relies on the current Windows user-profile file permissions, and is not uploaded automatically to a PCSSAK server. It remains until the user deactivates the license, selects **Delete app data** in the NSIS uninstaller, or deletes this file or the AppData folder after fully closing the app. |
 | Local logs | `%LOCALAPPDATA%\com.pcssak.biuja\logs` | Technical startup and error diagnostics. A local path or operation-related technical context can appear in an error case, but logs are not automatically uploaded. |
 | WebView2 data | `%LOCALAPPDATA%\com.pcssak.biuja\EBWebView` and related app-specific WebView2 locations | Microsoft WebView2 cache and settings needed to render the interface. |
 | Window and startup state | App-specific local settings and, when enabled by the user, Windows startup registration | Window size and position and whether to launch at Windows sign-in. |
@@ -274,8 +283,9 @@ investigation, or dispute may be retained for the permitted period.
 ### 7. Deleting local data
 
 The current journal keeps up to 20,000 action rows and prunes older rows beyond the limit.
-Settings, logs, and WebView2 data can remain until the user removes them or selects deletion
-during uninstall.
+Settings, the local license, logs, and WebView2 data can remain until the user removes them or
+selects deletion during uninstall. The in-app license deactivation function deletes
+`license.json`.
 
 The NSIS uninstaller offers a **Delete app data** option. If it is not selected, local data can
 remain for an update or reinstallation. After fully closing and uninstalling the application,
@@ -284,9 +294,10 @@ the user can also remove:
 - `%APPDATA%\com.pcssak.biuja`
 - `%LOCALAPPDATA%\com.pcssak.biuja`
 
-Deleting these folders permanently removes settings and the journal, so review any needed
-records first. Files in the Windows Recycle Bin and actual user folders organized by PCssak
-Biuja are separate from these app-data folders and are not removed with application data.
+Deleting these folders permanently removes settings, the locally stored license, and the journal,
+so review any needed records first. Files in the Windows Recycle Bin and actual user folders
+organized by PCssak Biuja are separate from these app-data folders and are not removed with
+application data.
 
 ### 8. Independent third parties and possible international processing
 
