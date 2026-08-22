@@ -21,7 +21,7 @@ PCSSAK 계정, 광고, 사용 분석, 추적 SDK, 클라우드 파일 색인이�
 다만 “로컬 처리”가 네트워크를 전혀 사용하지 않는다는 뜻은 아닙니다. 다음의 제한된 전달·연락
 예외가 있습니다.
 
-1. 앱 시작 약 3.5초 뒤 공식 GitHub의 업데이트 `latest.json` 자동 확인
+1. 앱 시작 약 3.5초 뒤와 이후 v0.1.5의 제한된 주기에 따른 공식 GitHub 업데이트 `latest.json` 자동 확인
 2. 사용자가 승인한 경우에만 공식 GitHub 업데이트 설치 파일 다운로드
 3. 필요한 Microsoft Edge WebView2 Runtime 설치·복구와 독립적인 업데이트
 4. 사용자가 직접 여는 홈페이지·GitHub Issue·이메일 등 외부 서비스
@@ -51,7 +51,13 @@ PCSSAK 계정, 광고, 사용 분석, 추적 SDK, 클라우드 파일 색인이�
 ### 3. GitHub 자동 업데이트 확인과 다운로드
 
 GitHub 배포용 독립형 빌드는 앱 시작 약 **3.5초 후** 다음 공식 릴리스의 `latest.json`을 자동으로
-확인합니다.
+확인합니다. 공개 v0.1.5는 최신 버전임을 확인하면 6시간 뒤 다시 확인합니다. 창 포커스는
+마지막 확인 시도부터 최소 5분이 지난 경우 확인을 시작할 수 있고, 네트워크 온라인 복귀는
+별도 최소 간격 없이 확인을 요청합니다. 실패하면 1분, 5분, 15분, 1시간, 6시간 순으로 간격을
+늘리고 이후에는 6시간 간격을 유지합니다. 사용자가 누른 수동 확인은 즉시 요청할 수 있습니다.
+동시에 둘 이상을 실행하지 않지만, 진행 중 이벤트가 겹치면 우선순위가 가장 높은 후속 확인
+하나가 현재 확인 직후 실행될 수 있습니다. 이 문단은 현재 공개 v0.1.5의 동작을 설명하며,
+후속 버전에서 요청 제한이 강화되면 실제 배포 시점에 맞춰 다시 갱신합니다.
 
 - `https://github.com/pcssakinc/pcssak-biuja-releases/releases/latest/download/latest.json`
 
@@ -177,7 +183,7 @@ automatic crash upload.
 delivery and contact exceptions are:
 
 1. an automatic request for the official GitHub update `latest.json` approximately 3.5 seconds
-   after application startup;
+   after application startup and thereafter on the limited v0.1.5 schedule;
 2. download of an official GitHub update asset only after the user approves it;
 3. installation, repair, or independent updating of Microsoft Edge WebView2 Runtime when
    required; and
@@ -204,7 +210,14 @@ decided.
 ### 3. GitHub automatic update check and download
 
 Approximately **3.5 seconds after startup**, the standalone GitHub build automatically requests
-the official release manifest:
+the official release manifest. Public v0.1.5 checks again 6 hours after confirming that it is
+current. Window focus can request a check once at least 5 minutes have elapsed since the last
+attempt, while return to online status has no separate minimum interval. Failure retries increase
+through 1 minute, 5 minutes, 15 minutes, 1 hour, and 6 hours, then remain at 6 hours. A user can
+request a manual check immediately. Checks do not run concurrently, but when events overlap an
+in-progress check, one highest-priority follow-up can run immediately afterward. This paragraph
+describes the currently public v0.1.5 behavior and will be updated when stronger request limits
+are actually released in a later version:
 
 - `https://github.com/pcssakinc/pcssak-biuja-releases/releases/latest/download/latest.json`
 
