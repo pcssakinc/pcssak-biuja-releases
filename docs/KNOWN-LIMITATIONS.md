@@ -69,9 +69,10 @@ vendor technical support that Windows 10 no longer receives.
 
 ## Sorting decisions and preview
 
-- From v0.1.4, a folder-card action means **Preview this folder**, while the sidebar's
-  **Organize all folders** action applies to every enabled folder. Saving a rule automatically
-  opens the same folder's preview. Follow the first-run guided tutorial or replay it in Settings.
+- A folder-card action means **Preview this folder**. From v0.1.6, the sidebar's
+  **Preview all folders** action builds one review screen for every enabled folder; no file is
+  changed until the user reviews selections and explicitly starts the run. Saving a rule opens
+  the same folder's preview. Follow the first-run guided tutorial or replay it in Settings.
 - PCssak Biuja can only apply the supported rules and metadata visible to the application. It
   cannot know a user's personal meaning, contractual filing requirement, retention policy, or
   preferred project structure.
@@ -82,6 +83,12 @@ vendor technical support that Windows 10 no longer receives.
 - A successful preview does not guarantee every operation will later succeed. Permissions,
   locks, available space, disconnected storage, path restrictions, or a newly created
   destination can cause a safe refusal or partial completion.
+- Cancel requests stop new items and later folders after the current operation reaches a safe
+  boundary. Cancellation is not an atomic rollback; review the reported partial result and use
+  condition-checked Undo where it remains available.
+- Content conditions inspect supported local text files and DOCX within safety limits. PDF
+  content extraction is disabled in v0.1.6 until it can run in an isolated process with enforced
+  memory and time limits. PDF files can still be organized by extension, name, size, and date.
 
 ## No-overwrite and no-permanent-delete boundary
 
