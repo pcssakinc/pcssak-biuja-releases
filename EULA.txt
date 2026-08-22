@@ -1,6 +1,6 @@
 PCssak Biuja End User License Agreement / 최종 사용자 이용약관
 
-- Last updated / 최종 수정: 2026-08-15
+- Last updated / 최종 수정: 2026-08-22
 - Provider / 제공자: PCSSAK
 - Contact / 문의: support@pcssak.com
 - Applies to / 적용 대상: PCssak Biuja Free Early Access for Windows
@@ -122,9 +122,9 @@ PCssak Biuja는 적용 법률이 허용하는 범위에서 “있는 그대로�
 사용자가 이 약관을 중대하게 위반하면 운영자는 적용 법률이 허용하는 범위에서 사용권을 종료할
 수 있습니다. 사용권이 끝나면 소프트웨어 사용을 중단하고 제거해야 합니다.
 
-프로그램 제거만으로 설정·작업저널·로그 등 로컬 앱 데이터가 모두 자동 삭제되지 않을 수
-있습니다. 제거 화면의 앱 데이터 삭제 선택지 또는 개인정보 처리방침 (https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/PRIVACY.md)의 수동 삭제
-안내를 확인하세요. Windows 휴지통과 사용자가 정리한 실제 파일은 앱 데이터 폴더와 별개입니다.
+프로그램 제거 시 설정·작업저널·로그 등 로컬 앱 데이터는 파일시스템 안전을 위해 보존됩니다.
+앱을 완전히 종료하고 제거한 뒤 개인정보 처리방침 (https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/PRIVACY.md)의 수동 삭제 안내를 확인하세요.
+Windows 휴지통과 사용자가 정리한 실제 파일은 앱 데이터 폴더와 별개입니다.
 
 제13조 (약관 변경)
 
@@ -253,8 +253,8 @@ liability that applicable law does not allow PCSSAK to limit.
 PCSSAK may terminate the license for a material violation of these terms to the extent allowed
 by law. After termination, stop using and uninstall the software.
 
-Uninstalling may not automatically remove all local settings, journal, and log data. Use the
-uninstaller's app-data option or the manual deletion instructions in the
+For filesystem safety, uninstalling preserves local settings, the journal, logs, and other app
+data. Fully close and uninstall the app, then follow the manual deletion instructions in the
 Privacy Policy (https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/PRIVACY.md). Files organized by the user and items in the Windows Recycle Bin
 are separate from the application's data folders.
 

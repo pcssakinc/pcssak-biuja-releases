@@ -80,8 +80,8 @@ time from **Settings → Replay tutorial**.
 3. When organizing into a subfolder, keep the **Organized files** default or replace it with one
    valid one-level folder name. Repeated runs reuse that saved folder.
 4. Review the selected card in **Preview this folder**, which opens automatically after saving.
-5. **Organize all folders** in the sidebar applies to every enabled folder, not just one card.
-   Folder-specific preview is recommended while learning the workflow.
+5. **Preview all folders** opens one review screen for every enabled folder. Expand each folder,
+   review destinations, exclude files if needed, and explicitly start the selected work.
 6. Review completed work in **History**. Undo is available only while its safety conditions hold.
 
 ## Local processing and network exceptions

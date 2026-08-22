@@ -13,7 +13,8 @@ PCssak Biuja is built around a reviewable sequence:
 1. The user selects the intended scope.
 2. The application inspects supported entries and prepares a sorting plan.
 3. The user reviews a preview before applying changes.
-4. The native file-operation boundary rechecks conditions needed for each supported action.
+4. Execution receives a short-lived preview token and the native file-operation boundary
+   rechecks the plan, source path, destination, and conditions needed for each supported action.
 5. An existing destination is not intentionally overwritten, and user files are not
    permanently deleted.
 6. Completed supported actions are recorded in a local work journal.
@@ -23,6 +24,10 @@ PCssak Biuja is built around a reviewable sequence:
 A refusal is preferable to guessing when the path, identity, permission, destination, or
 current state is no longer safe. This model reduces risk but does not turn a sequence of
 filesystem operations into an atomic transaction or a backup.
+
+Cancel requests are cooperative rather than transactional: they prevent later work after a safe
+boundary, but already completed operations remain recorded as a partial result. The user can
+then apply condition-checked rollback where it is still safe.
 
 ## Preview is a decision checkpoint
 
@@ -95,9 +100,9 @@ The release process is designed to require:
 - rejection of tracked private keys, signing passwords, tokens, or unrelated internal files.
 
 The updater signature protects the in-app update path. It does **not** make the installer
-Authenticode-signed. The initial installer remains unsigned at the Windows publisher level and
-can show Unknown publisher or SmartScreen. Users must verify SHA-256 and must not disable
-Windows security controls.
+Authenticode-signed. The public v0.1.5 installer is unsigned at the Windows publisher level and
+can show Unknown publisher or SmartScreen. That version-specific exception does not approve a
+later release. Users must verify SHA-256 and must not disable Windows security controls.
 
 ## Verification layers
 
