@@ -100,7 +100,7 @@ The release process is designed to require:
 - rejection of tracked private keys, signing passwords, tokens, or unrelated internal files.
 
 The updater signature protects the in-app update path. It does **not** make the installer
-Authenticode-signed. The public v0.1.5 installer is unsigned at the Windows publisher level and
+Authenticode-signed. The public v0.1.6 installer is unsigned at the Windows publisher level and
 can show Unknown publisher or SmartScreen. That version-specific exception does not approve a
 later release. Users must verify SHA-256 and must not disable Windows security controls.
 

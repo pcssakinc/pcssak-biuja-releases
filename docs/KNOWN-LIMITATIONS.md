@@ -61,9 +61,18 @@ vendor technical support that Windows 10 no longer receives.
   starts. If Biuja was already running in the tray before a release or that first request failed,
   do not merely close the window with X: right-click the PCSSAK tray icon, choose **Exit**, restart
   the application, and wait 15 to 20 seconds.
-- From v0.1.4, **Check for updates** in the sidebar requests an immediate check. A tray-resident
-  process also rechecks at a six-hour success interval and with bounded failure backoff.
-  Startup, manual, online-return, focus, and timer requests remain single-flight.
+- Historical v0.1.4 and v0.1.5 builds let the user request an immediate check with
+  **Check for updates** in the sidebar and rechecked six hours after a successful current-version
+  result, with bounded failure retries. That six-hour description applies to those installed
+  builds; it is not the schedule of the current Latest release, v0.1.6.
+- Current Latest v0.1.6 schedules its next automatic check 24 hours after a successful
+  current-version result. Automatic checks stop for a session after an update is found. If the
+  app restarts without installing it, the notification-recovery check waits until six hours
+  after discovery. Failure delays progress through 15 minutes, 1 hour, 6 hours, 12 hours, and
+  24 hours, then remain at 24 hours. The next-check time and failure stage are stored locally, so
+  window focus, return to online status, and a normal app restart cannot bring the schedule
+  forward or bypass the limit. An already-due check can resume, and a user-requested
+  **Check for updates** still runs once immediately outside the automatic schedule.
 - If WebView2 Runtime is missing or needs repair, Windows or the installer may need to connect
   to Microsoft's WebView2 distribution service.
 

@@ -1,6 +1,6 @@
 # PCssak Biuja Privacy Policy / 개인정보 처리방침
 
-- Last updated / 최종 수정: 2026-08-22
+- Last updated / 최종 수정: 2026-08-24
 - Applies to / 적용 대상: PCssak Biuja Free Early Access for Windows
 - Operator / 운영자: PCSSAK
 - Contact / 문의: `privacy@pcssak.com`
@@ -12,9 +12,8 @@
 
 ## 국문
 
-> **버전별 적용:** GitHub 일반 Latest가 v0.1.5인 동안에는 아래 3절의 v0.1.5 주기가 현재
-> 공개 동작입니다. v0.1.6 주기는 v0.1.6이 일반 Latest로 공개된 뒤 해당 버전을 설치하거나
-> 업데이트한 앱에만 적용됩니다. 이전 v0.1.5 설치본은 v0.1.6으로 업데이트하기 전까지 자체
+> **버전별 적용:** 현재 GitHub 일반 Latest는 v0.1.6이며, 아래 3절의 v0.1.6 주기가 현재
+> 공개 동작입니다. 이전 v0.1.5 설치본은 v0.1.6으로 업데이트하기 전까지 자체의 역사적
 > v0.1.5 주기를 계속 사용합니다.
 
 ### 1. 핵심 요약
@@ -186,10 +185,9 @@ PCssak Biuja는 아동을 대상으로 계정·광고·분석 서비스를 제�
 
 ## English reference translation
 
-> **Version applicability:** While GitHub General Latest is v0.1.5, the v0.1.5 schedule in
-> section 3 is the behavior of the public release. The v0.1.6 schedule applies only after v0.1.6
-> becomes General Latest and that version is installed or reached through an update. An older
-> v0.1.5 installation keeps its own v0.1.5 schedule until it updates.
+> **Version applicability:** GitHub General Latest is now v0.1.6, and the v0.1.6 schedule in
+> section 3 is the current public behavior. An older v0.1.5 installation keeps its historical
+> v0.1.5 schedule until it updates to v0.1.6.
 
 ### 1. Summary
 
