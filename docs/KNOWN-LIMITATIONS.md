@@ -64,9 +64,10 @@ vendor technical support that Windows 10 no longer receives.
 - Historical v0.1.4 and v0.1.5 builds let the user request an immediate check with
   **Check for updates** in the sidebar and rechecked six hours after a successful current-version
   result, with bounded failure retries. That six-hour description applies to those installed
-  builds; it is not the schedule of the current Latest release, v0.1.6.
-- Current Latest v0.1.6 schedules its next automatic check 24 hours after a successful
-  current-version result. Automatic checks stop for a session after an update is found. If the
+  builds; it is not the schedule of v0.1.6-and-later installations.
+- v0.1.6-and-later installations, including v0.1.7, schedule the next automatic check 24 hours
+  after a successful current-version result. Automatic checks stop for a session
+  after an update is found. If the
   app restarts without installing it, the notification-recovery check waits until six hours
   after discovery. Failure delays progress through 15 minutes, 1 hour, 6 hours, 12 hours, and
   24 hours, then remain at 24 hours. The next-check time and failure stage are stored locally, so
@@ -96,7 +97,7 @@ vendor technical support that Windows 10 no longer receives.
   boundary. Cancellation is not an atomic rollback; review the reported partial result and use
   condition-checked Undo where it remains available.
 - Content conditions inspect supported local text files and DOCX within safety limits. PDF
-  content extraction is disabled in v0.1.6 until it can run in an isolated process with enforced
+  content extraction is disabled in v0.1.6 and later until it can run in an isolated process with enforced
   memory and time limits. PDF files can still be organized by extension, name, size, and date.
 
 ## No-overwrite and no-permanent-delete boundary

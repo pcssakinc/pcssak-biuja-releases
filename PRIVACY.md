@@ -1,6 +1,6 @@
 # PCssak Biuja Privacy Policy / 개인정보 처리방침
 
-- Last updated / 최종 수정: 2026-08-24
+- Last updated / 최종 수정: 2026-08-31
 - Applies to / 적용 대상: PCssak Biuja Free Early Access for Windows
 - Operator / 운영자: PCSSAK
 - Contact / 문의: `privacy@pcssak.com`
@@ -12,9 +12,10 @@
 
 ## 국문
 
-> **버전별 적용:** 현재 GitHub 일반 Latest는 v0.1.6이며, 아래 3절의 v0.1.6 주기가 현재
-> 공개 동작입니다. 이전 v0.1.5 설치본은 v0.1.6으로 업데이트하기 전까지 자체의 역사적
-> v0.1.5 주기를 계속 사용합니다.
+> **버전별 적용:** 이 문서는 v0.1.7 공개를 위해 준비했으며, 아래 3절의 업데이트 주기는
+> v0.1.6 이후 설치본에 공통으로 적용됩니다. 현재 공개 버전은 GitHub 일반 Latest에서 확인하세요.
+> 이전 v0.1.5 설치본은 v0.1.6 이상으로 업데이트하기 전까지 자체의 역사적 v0.1.5 주기를
+> 계속 사용합니다.
 
 ### 1. 핵심 요약
 
@@ -52,6 +53,11 @@ PCSSAK 계정, 광고, 사용 분석, 추적 SDK, 클라우드 파일 색인이�
 설명이 적용됩니다. 향후 별도 유료 기능이 출시되면 실제 결제·발급 방식이 확정된 뒤 이
 방침과 관련 약관을 먼저 갱신해야 합니다.
 
+v0.1.7부터 유효한 PB1 키를 활성화하거나 앱에서 해제한 적이 있는 경우
+`license.json.surface`에 고정 제품 표식만 남을 수 있습니다. 이 표식에는 키·이메일·계정
+식별자·해시가 없고 Pro 권한을 부여하지 않으며, 해제 뒤 기존 키를 다시 입력할 화면만
+유지합니다. PCSSAK 서버로 자동 전송되지 않습니다.
+
 ### 3. GitHub 자동 업데이트 확인과 다운로드
 
 공개 v0.1.5는 앱 시작 약 **3.5초 후** 확인하고, 최신 버전이면 6시간 뒤 다시 확인합니다.
@@ -60,7 +66,8 @@ PCSSAK 계정, 광고, 사용 분석, 추적 SDK, 클라우드 파일 색인이�
 단계를 재시작 사이에 저장하지 않습니다. 따라서 온라인 상태 변화나 정상 재시작으로 확인이
 추가될 수 있습니다. 이 동작은 v0.1.6으로 업데이트되기 전 v0.1.5 설치본에도 계속 적용됩니다.
 
-v0.1.6은 유효한 로컬 예약이 없거나 예약 시각이 이미 지났으면 앱 시작 약 **3.5초 후** 다음
+v0.1.6 이후 버전은 유효한 로컬 예약이 없거나 예약 시각이 이미 지났으면 앱 시작 약
+**3.5초 후** 다음
 공식 릴리스의 `latest.json`을 자동으로 확인합니다. 미래 예약이 남아 있으면 그 남은 시간을
 먼저 지킵니다. 최신 버전이면 다음 자동 확인은 24시간 뒤로 예약합니다.
 업데이트를 찾은 현재 앱 세션에서는 자동 확인을 멈추며, 설치하지 않고 앱을 다시 시작한 경우
@@ -114,6 +121,7 @@ PCssak Biuja는 WebView2 설치 요청에 정리 대상 파일, 파일 이름, �
 | 설정 및 가져오기 복구 | `%APPDATA%\com.pcssak.biuja\config.json`, `config.before-import.json`, `config.before-import.pending.json` | 사용자가 선택한 폴더 경로, 정리 규칙, 일정, 언어·테마 등. 가져오기 직전·직후 설정은 가장 최근 가져오기 한 번을 안전하게 되돌리기 위한 로컬 복구 파일에 보관될 수 있습니다. 시간 기준 자동 만료는 없으며, 가져오기 되돌리기 성공·오래되어 거부된 되돌리기 시도·다음 가져오기의 복구점 정리 때 삭제됩니다. 그 전에는 앱 데이터와 함께 사용자가 삭제할 때까지 남을 수 있습니다. 손상된 설정은 같은 위치에 별도 백업 파일이 생길 수 있습니다. |
 | 작업저널 | `%APPDATA%\com.pcssak.biuja\journal.db`와 SQLite 보조 파일 | 원본·대상 경로, 작업 종류·시각·상태, 안전한 되돌리기를 위한 크기·수정 시각·파일 식별·지문 정보 등. 현재 최대 20,000개 작업 행을 유지하고 오래된 행을 정리합니다. 파일 내용 사본은 아닙니다. |
 | 라이선스 | `%APPDATA%\com.pcssak.biuja\license.json` | 사용자가 활성화한 서명 PB1 키 원문. 키 안에는 발급 이메일과 `lifetime` 이용권 정보가 들어 있습니다. 별도 암호화 없이 현재 Windows 사용자 프로필의 파일 접근 권한에 의존하며 PCSSAK 서버로 자동 전송되지 않습니다. 라이선스 해제 또는 앱을 완전히 종료한 뒤 이 파일이나 AppData 폴더를 직접 삭제할 때까지 남습니다. |
+| 라이선스 재활성화 표식(v0.1.7부터) | `%APPDATA%\com.pcssak.biuja\license.json.surface` | 고정 문자열 `PCSSAK_BIUJA_LICENSE_SURFACE_V1`만 저장합니다. 키·이메일·계정 식별자·해시는 포함하지 않고 Pro 권한을 열지 않으며, 유효 PB1 사용자가 해제 뒤 키 입력 화면으로 돌아갈 수 있게만 합니다. 앱별 AppData 폴더 또는 이 파일을 직접 삭제할 때까지 남을 수 있습니다. |
 | 로컬 로그 | `%LOCALAPPDATA%\com.pcssak.biuja\logs` | 시작·오류 진단용 기술 로그. 문제 상황에 따라 로컬 경로나 작업 관련 기술 정보가 포함될 수 있지만 자동 전송되지 않습니다. |
 | 업데이트 확인 예약(v0.1.6부터) | 앱별 WebView2 로컬 저장소 | v0.1.6은 앱 데이터가 정상 유지되는 재시작으로 자동 확인 제한을 우회하지 않도록 다음 자동 확인 시각과 연속 실패 단계만 저장합니다. v0.1.5는 이 예약 값을 저장하지 않습니다. 파일·폴더·사용자 식별 정보는 포함하지 않으며 앱 데이터와 함께 사용자가 삭제할 때까지 남을 수 있습니다. 이 로컬 데이터가 삭제되거나 저장소를 사용할 수 없으면 v0.1.6의 새 앱 세션은 시작 확인부터 다시 예약합니다. |
 | WebView2 데이터 | `%LOCALAPPDATA%\com.pcssak.biuja\EBWebView` 등 앱별 WebView2 위치 | 화면 렌더링에 필요한 Microsoft WebView2 캐시와 환경설정 |
@@ -145,8 +153,10 @@ PCssak Biuja는 WebView2 설치 요청에 정리 대상 파일, 파일 이름, �
 ### 7. 로컬 데이터 삭제
 
 작업저널은 현재 최대 20,000개 작업 행을 유지하며 한도를 넘은 오래된 행을 정리합니다. 설정,
-라이선스, 로그와 WebView2 데이터는 사용자가 직접 삭제할 때까지 남을 수 있습니다. 앱의
-라이선스 해제 기능은 `license.json`을 삭제합니다.
+라이선스, 재활성화 표식, 로그와 WebView2 데이터는 사용자가 직접 삭제할 때까지 남을 수
+있습니다. 앱의 라이선스 해제 기능은 키·이메일이 든 `license.json`을 삭제하지만,
+v0.1.7부터 기존 사용자의 재활성화 화면을 보존하기 위한 비민감 `license.json.surface`는
+남을 수 있습니다. 이 화면도 필요 없으면 앱을 완전히 종료한 뒤 표식 파일을 직접 삭제합니다.
 
 NSIS 제거 프로그램은 파일시스템 안전을 위해 앱 데이터를 항상 보존하고 이 사실을 제거 화면에
 안내합니다. 앱을 완전히 종료하고 제거한 뒤 다음 앱별 폴더를 직접 삭제할 수 있습니다.
@@ -185,9 +195,10 @@ PCssak Biuja는 아동을 대상으로 계정·광고·분석 서비스를 제�
 
 ## English reference translation
 
-> **Version applicability:** GitHub General Latest is now v0.1.6, and the v0.1.6 schedule in
-> section 3 is the current public behavior. An older v0.1.5 installation keeps its historical
-> v0.1.5 schedule until it updates to v0.1.6.
+> **Version applicability:** This document is prepared for v0.1.7, and the update schedule in
+> section 3 applies to v0.1.6-and-later installations. Check GitHub General Latest for the
+> currently public version. An older v0.1.5 installation keeps its historical v0.1.5 schedule
+> until it updates to v0.1.6 or later.
 
 ### 1. Summary
 
@@ -224,6 +235,11 @@ retention and deletion details in section 5 below. If a separate paid feature is
 this policy and the relevant terms must be updated after the actual payment and issuance model is
 decided.
 
+Starting with v0.1.7, activating a valid PB1 key or deactivating it in the app may leave
+`license.json.surface`, which contains only a fixed product marker. It contains no key, email,
+account identifier, or hash, grants no Pro entitlement, and only preserves the key-entry screen
+for an existing user after deactivation. It is not uploaded automatically to a PCSSAK server.
+
 ### 3. GitHub automatic update check and download
 
 Public v0.1.5 checks approximately **3.5 seconds after startup** and, when current, checks again
@@ -233,7 +249,7 @@ through 1 minute, 5 minutes, 15 minutes, 1 hour, and 6 hours. v0.1.5 does not pe
 time or failure stage across restarts, so online-state changes or a normal restart can add a check.
 This remains true for an installed v0.1.5 until it updates to v0.1.6.
 
-In v0.1.6, when no valid local schedule remains or its time has passed, approximately **3.5 seconds
+In v0.1.6 and later, when no valid local schedule remains or its time has passed, approximately **3.5 seconds
 after startup** the standalone GitHub build automatically requests the official release manifest.
 If a future schedule remains, the application first honors that remaining delay. If the application
 is current, it schedules the next automatic check 24 hours later. After an update is found,
@@ -290,6 +306,7 @@ PCSSAK. Displayed paths can vary slightly by Windows version and installation en
 | Settings and import recovery | `%APPDATA%\com.pcssak.biuja\config.json`, `config.before-import.json`, and `config.before-import.pending.json` | User-selected folder paths, organization rules, schedules, language, theme, and related settings. The settings immediately before and after the most recent import can be retained in local recovery files for safe one-level Import Undo. There is no time-based automatic expiry. The files are removed after a successful Import Undo, a stale Undo attempt is rejected, or the next import cleans up the recovery point; until then, they can remain with app data until the user deletes it. A damaged configuration can produce another backup beside it. |
 | Work journal | `%APPDATA%\com.pcssak.biuja\journal.db` and SQLite companion files | Source and destination paths, operation type, time, status, and size, modification time, file identity, and fingerprint evidence needed for safe rollback. The current implementation keeps up to 20,000 action rows and prunes older rows. It is not a copy of file contents. |
 | License | `%APPDATA%\com.pcssak.biuja\license.json` | The full signed PB1 key activated by the user. The key contains the issued email and `lifetime` entitlement. It is not separately encrypted, relies on the current Windows user-profile file permissions, and is not uploaded automatically to a PCSSAK server. It remains until the user deactivates the license or deletes this file or the AppData folder after fully closing the app. |
+| License reactivation marker (v0.1.7 and later) | `%APPDATA%\com.pcssak.biuja\license.json.surface` | Stores only the fixed string `PCSSAK_BIUJA_LICENSE_SURFACE_V1`. It contains no key, email, account identifier, or hash, does not grant Pro entitlement, and only lets an existing PB1 user return to the key-entry screen after deactivation. It may remain until this file or the app-specific AppData folder is deleted. |
 | Local logs | `%LOCALAPPDATA%\com.pcssak.biuja\logs` | Technical startup and error diagnostics. A local path or operation-related technical context can appear in an error case, but logs are not automatically uploaded. |
 | Update-check schedule (v0.1.6 and later) | App-specific WebView2 local storage | v0.1.6 stores only the next automatic-check timestamp and consecutive-failure stage so a normal restart with app data intact does not bypass the automatic request limit or reset its backoff. v0.1.5 does not store this schedule. It contains no file, folder, or user identifier and can remain until the user deletes app data. If this local data is deleted or storage is unavailable, a new v0.1.6 app session schedules the startup check again. |
 | WebView2 data | `%LOCALAPPDATA%\com.pcssak.biuja\EBWebView` and related app-specific WebView2 locations | Microsoft WebView2 cache and settings needed to render the interface. |
@@ -323,8 +340,11 @@ investigation, or dispute may be retained for the permitted period.
 ### 7. Deleting local data
 
 The current journal keeps up to 20,000 action rows and prunes older rows beyond the limit.
-Settings, the local license, logs, and WebView2 data can remain until the user removes them. The
-in-app license deactivation function deletes `license.json`.
+Settings, the local license, the reactivation marker, logs, and WebView2 data can remain until the
+user removes them. The in-app license deactivation function deletes `license.json`, which contains
+the key and email. Starting with v0.1.7, the non-sensitive `license.json.surface` marker may remain
+to preserve the existing user's reactivation screen. Fully close the app and delete the marker if
+that screen is no longer wanted.
 
 For filesystem safety, the NSIS uninstaller always preserves application data and explains this
 on the uninstall screen. After fully closing and uninstalling the application, the user can

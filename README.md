@@ -55,6 +55,11 @@ build only if you can understand the applicable terms and safety limits.
 
 ## Current Free Early Access features
 
+Starting with v0.1.7, the ordinary public surface supports up to **3 managed folders** and
+**10 rules in total**. Manual preview, explicit execution, History, and condition-checked Undo
+have no daily product quota. Purchase, payment, subscription, pricing, and a seven-day trial are
+not activated.
+
 1. Inspect files within a scope selected by the user and automatically prepare an organization
    plan from the supported rules.
 2. Preview intended sorting actions before files are changed.
