@@ -100,9 +100,10 @@ The release process is designed to require:
 - rejection of tracked private keys, signing passwords, tokens, or unrelated internal files.
 
 The updater signature protects the in-app update path. It does **not** make the installer
-Authenticode-signed. The public v0.1.6 installer is unsigned at the Windows publisher level and
-can show Unknown publisher or SmartScreen. That version-specific exception does not approve a
-later release. Users must verify SHA-256 and must not disable Windows security controls.
+Authenticode-signed. The v0.1.7 release contract requires an exact unsigned state at the Windows
+publisher level, so the public installer can show Unknown publisher or SmartScreen. This exception
+is locked to the approved free v0.1.7 release and does not approve a paid or later release. Users
+must verify SHA-256 and must not disable Windows security controls.
 
 ## Verification layers
 
@@ -116,8 +117,10 @@ and reviewed. The relevant layers include:
 - clean x64 build and installed-application smoke testing on the documented Windows 11
   Home/Pro x64 target;
 - separate Windows 10 best-effort beta checks where a release claims them;
-- x86 build and beta smoke testing on 32-bit Windows 10 and x64 Windows compatibility mode
-  before an x86 artifact is offered;
+- i686-target build and automated tests plus a 32-bit-application compatibility smoke test on
+  x64 Windows before an x86 artifact is offered;
+- explicit release-note and limitation disclosure, with x86 offered only as limited best-effort
+  beta compatibility, when a physical 32-bit Windows 10 device test has not been completed;
 - installer, update-manifest, signature, checksum, upgrade, and rollback-path checks;
 - tests involving locked files, permissions, occupied destinations, external changes, cloud or
   removable storage warnings, and interrupted multi-file work where supported.
