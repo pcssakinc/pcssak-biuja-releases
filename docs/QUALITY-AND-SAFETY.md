@@ -6,6 +6,29 @@ This document explains the PCssak Biuja safety model and the checks expected bef
 release. It is evidence of engineering intent and process, not a promise that the application
 has no defects or that rollback can recover every external filesystem change.
 
+## v0.1.7 verification snapshot
+
+Documentation review date: **2026-09-03**. The engineering results below summarize the
+**2026-08-31 through 2026-09-01** release records; they were not rerun for this documentation update.
+The [v0.1.7 release](https://github.com/pcssakinc/pcssak-biuja-releases/releases/tag/v0.1.7)
+provides the release scope and published artifacts.
+
+| Evidence | Recorded result and boundary |
+| --- | --- |
+| Automated release checks | Frontend: 164 tests passed. Rust x64 and i686: 296 passed per target, 0 failed, 3 explicitly excluded physical/performance cases per target. These do not replace physical device testing. |
+| Actual x64 update | One v0.1.6-to-v0.1.7 updater-mode transition preserved configuration, journal, install location, language, startup registration, and shortcuts. |
+| License preservation distinction | That physical test device had no `license.json`. Preservation of an existing valid PB1 license was covered by automated regression checks, not proven by that device transition. |
+| Not completed by those records | Physical x86 transition and every Windows 10/11 Home/Pro, filesystem, storage, security-product, and power-interruption combination. |
+
+On 2026-09-03, a read-only metadata check confirmed v0.1.7 as the normal latest release
+(not a draft or prerelease) with eight published assets. This check did not download or reverify
+the installers, checksums, updater signatures, or actual application behavior.
+
+PCSSAK's developer reviews AI-assisted work and remains responsible for testing and release
+decisions. Dependency-notice checks are not a complete provenance audit of every manually added
+asset or source fragment; outstanding provenance checks remain open. Neither the release record
+nor source privacy certifies originality, absence of infringement, or absence of vulnerabilities.
+
 ## File-operation safety model
 
 PCssak Biuja is built around a reviewable sequence:

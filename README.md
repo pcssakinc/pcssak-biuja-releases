@@ -15,6 +15,14 @@ rollback without intentionally overwriting or permanently deleting the originals
 > proprietary. A public repository does not make the application open source, and this
 > repository does not contain the product source code.
 
+## Development and responsibility
+
+PCSSAK is a solo development project using AI assistance. The developer remains responsible
+for product design, review, testing, release decisions, and maintenance. Biuja keeps its
+application source private while sharing supported behavior, known limitations, and improvement
+records. This is not a claim of entirely original technology or independent security certification.
+See [Quality and safety](docs/QUALITY-AND-SAFETY.md) for the dated v0.1.7 verification summary.
+
 ## Download
 
 Download only from the
@@ -153,10 +161,15 @@ See [Known limitations](docs/KNOWN-LIMITATIONS.md) for the complete Early Access
 
 ## Help improve the beta
 
+- Use [Discussions](https://github.com/pcssakinc/pcssak-biuja-releases/discussions) for general
+  questions, usage experiences, and ideas. If Discussions is unavailable, use the email in
+  [Support](SUPPORT.md).
 - Use the [bug report form](../../issues/new?template=bug-report.yml) for a reproducible defect.
 - Use the [feature request form](../../issues/new?template=feature-request.yml) to describe the
   user problem before proposing a solution.
 - Read [Support](SUPPORT.md) before attaching screenshots, paths, journals, or logs.
+- Read [contribution and compensation guidance](CONTRIBUTING.md) before submitting documentation
+  or translations. Receiving a suggestion does not promise adoption or payment.
 - Report exploitable security details privately under [Security](SECURITY.md).
 
 Never post full personal paths, file names, directory listings, customer data, credentials, or
