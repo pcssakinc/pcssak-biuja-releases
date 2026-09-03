@@ -12,8 +12,10 @@ reporting route; it is not a warranty that the application is free of vulnerabil
 
 ## Report a vulnerability privately
 
-Do not post exploitable details in a public issue. Email `support@pcssak.com` when a problem
-could enable or contribute to:
+Do not post exploitable details in a public issue or Discussion. Use
+[GitHub private vulnerability reporting](https://github.com/pcssakinc/pcssak-biuja-releases/security/advisories/new),
+which is enabled for this repository. If you cannot use GitHub, email `support@pcssak.com`.
+These private reporting routes are for problems that could enable or contribute to:
 
 - bypassing update-signature verification or substituting an untrusted update;
 - escaping the user-selected folder scope through path manipulation, links, junctions, or
@@ -42,6 +44,11 @@ PCSSAK will triage reports according to user impact, file-loss risk, exploitabil
 reproducibility; investigate within solo-maintainer capacity; and prepare a fix and regression
 check where practical. This is not a guaranteed response-time, fix-deadline, or bounty program.
 
+After reviewing the impact and coordinating a safe response, PCSSAK aims to publish the affected
+versions, available fixes or mitigations, and remaining limits without exposing reporter identity,
+private data, or unnecessary exploit details. This is an operating policy, not evidence that a
+report has already been received or resolved.
+
 ## Authenticity checks
 
 - Download only from [pcssak.com/biuja](https://pcssak.com/biuja) or this official `pcssakinc`
@@ -60,8 +67,9 @@ check where practical. This is not a guaranteed response-time, fix-deadline, or 
 Early Access에는 발견되지 않은 오류가 남아 있을 수 있으며, 이 정책은 보안 결함이 없다는
 보증이 아니라 안전한 제보 경로를 설명합니다.
 
-다음 문제는 공개 Issue에 악용 가능한 세부 내용을 올리지 말고 `support@pcssak.com`으로
-보내주세요.
+다음 문제는 공개 이슈나 토론에 악용 가능한 세부 내용을 올리지 말고, 이 저장소에서 활성화한
+[GitHub 비공개 취약점 제보](https://github.com/pcssakinc/pcssak-biuja-releases/security/advisories/new)를
+이용하세요. GitHub를 이용하기 어려우면 `support@pcssak.com`으로 보내주세요.
 
 - 업데이트 서명 검증 우회 또는 신뢰하지 않은 업데이트 바꿔치기
 - 경로 조작, 링크, 정션이나 파일시스템 예외를 이용한 사용자 선택 폴더 범위 이탈
@@ -81,6 +89,10 @@ Early Access에는 발견되지 않은 오류가 남아 있을 수 있으며, �
 PCSSAK은 사용자 영향, 파일 손실 위험, 악용 가능성과 재현 가능성을 기준으로 우선순위를 정하고
 1인 운영 범위에서 조사하며, 가능한 경우 수정과 회귀 검증을 준비합니다. 응답 시간·수정 기한·
 포상금을 보장하는 제도는 아닙니다.
+
+영향을 검토하고 안전한 대응을 조율한 뒤 영향 버전·수정 또는 완화 방법·남은 한계를 알리는 것을
+운영 원칙으로 합니다. 제보자 신원·개인정보·불필요한 악용 세부사항은 공개하지 않습니다. 이
+원칙은 특정 제보를 이미 접수하거나 해결했다는 실적 발표가 아닙니다.
 
 공식 설치 파일은 [pcssak.com/biuja](https://pcssak.com/biuja) 또는 이 `pcssakinc` 공식
 저장소에서만 받고 같은 릴리스의 `SHA256SUMS.txt`와 비교하세요. 앱 내부 업데이트는 PCSSAK

@@ -20,8 +20,10 @@ Early Access support has no guaranteed response or fix deadline.
 
 Use the GitHub [bug report form](../../issues/new?template=bug-report.yml) for a reproducible
 application defect. Use the [feature request form](../../issues/new?template=feature-request.yml)
-for a recurring user problem that PCssak Biuja could solve. General inquiries can be sent to
-`support@pcssak.com`.
+for a recurring user problem that PCssak Biuja could solve. Use
+[Discussions](https://github.com/pcssakinc/pcssak-biuja-releases/discussions) for general questions,
+usage experiences, and ideas. If GitHub or Discussions is unavailable to you, email
+`support@pcssak.com`. Review [contribution guidance](CONTRIBUTING.md) before sharing work.
 
 For a useful bug report, include:
 
@@ -36,6 +38,19 @@ For a useful bug report, include:
 Do not attach the original affected folder. A synthetic reproduction is safer and usually more
 useful. Exploitable security issues must follow [SECURITY.md](SECURITY.md) and must not be posted
 publicly.
+
+## How feedback is handled
+
+PCSSAK distinguishes received, needs more information, under review, planned, implemented,
+deferred, and not adopted. These states can be recorded in replies; they do not imply that
+automatic labels or a guaranteed response schedule are in place. A planned item is not yet a
+released feature. When practical, decisions include a reason and completed fixes link the affected
+version, cause, regression check, and release. Corrections are added without rewriting past results.
+
+Constructive criticism is welcome. Negative feedback alone is not a reason for removal; spam,
+harassment, exposed personal information, or exploitable details may require moderation.
+Public thanks use only a name the contributor agrees to share. PCSSAK uses AI assistance, but the
+developer remains responsible for checking statements and making maintenance and release decisions.
 
 ## Support boundary
 
@@ -78,8 +93,11 @@ PCssak Biuja는 1인 개발자가 운영합니다. 문의는 접수 순서만이
    내용, 토큰과 관계없는 폴더 목록을 제거합니다.
 
 재현 가능한 오류는 GitHub [버그 제보 양식](../../issues/new?template=bug-report.yml), 반복되는
-사용자 문제는 [기능 제안 양식](../../issues/new?template=feature-request.yml)을 사용하세요. 일반
-문의는 `support@pcssak.com`으로 보낼 수 있습니다.
+사용자 문제는 [기능 제안 양식](../../issues/new?template=feature-request.yml)을 사용하세요.
+일반 질문·사용 후기·아이디어는
+[토론](https://github.com/pcssakinc/pcssak-biuja-releases/discussions)에 남겨주세요. GitHub나
+토론을 이용하기 어려우면 `support@pcssak.com`으로 보낼 수 있습니다. 작업물을 공유하기 전에
+[기여 안내](CONTRIBUTING.md)를 확인하세요.
 
 오류 제보에는 기대 결과와 실제 결과, 번호를 붙인 최소 재현 절차, 미리보기와 실제 결과가
 달랐는지 여부, 기존 대상·잠긴 파일·클라우드 동기화 폴더·네트워크 위치·이동식 드라이브·권한
@@ -88,6 +106,19 @@ PCssak Biuja는 1인 개발자가 운영합니다. 문의는 접수 순서만이
 
 실제 문제 폴더 전체를 첨부하지 마세요. 합성 재현 자료가 더 안전하고 대체로 더 유용합니다.
 악용 가능한 보안 문제는 공개하지 말고 [보안 정책](SECURITY.md)을 따라주세요.
+
+### 의견을 처리하는 방식
+
+접수·추가 정보 필요·검토 중·계획됨·반영됨·보류·채택하지 않음을 구분합니다. 댓글로 상태를
+설명할 수 있으며 자동 라벨이나 일정한 응답 기한을 보장한다는 뜻은 아닙니다. 계획된 기능은
+아직 배포된 기능이 아닙니다. 가능한 범위에서 판단 이유를 남기고, 수정 완료 시 영향 버전·원인·
+회귀 확인·릴리스를 연결합니다. 잘못된 설명은 과거 결과를 지우지 않고 새 정정으로 남깁니다.
+
+건설적인 비판을 환영합니다. 부정적인 의견이라는 이유만으로 삭제하지 않습니다. 광고·도배·
+괴롭힘·개인정보 노출·악용 가능한 세부사항은 운영상 조치할 수 있습니다. 공개 감사에는 기여자가
+동의한 이름만 사용합니다. AI의 도움을 받더라도 사실 확인과 유지보수·배포 판단은 개발자 책임입니다.
+
+### 지원 범위
 
 현재 지원 중인 Windows 11 Home/Pro x64가 권장 환경이자 검증 절차 완료 후 공식 검증 대상입니다.
 Windows 10 22H2 x64·x86은 제한적·최선 노력 베타 지원만 제공합니다. x86 설치기는 32비트
