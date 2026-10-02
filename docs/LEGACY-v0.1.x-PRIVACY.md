@@ -1,0 +1,381 @@
+# PCssak Biuja Privacy Policy / 개인정보 처리방침
+
+- Last updated / 최종 수정: 2026-08-31
+- Applies to / 적용 대상: PCssak Biuja Free Early Access for Windows
+- Operator / 운영자: PCSSAK
+- Contact / 문의: `pcssak@pcssak.com`
+
+> The Korean text is authoritative to the extent permitted by applicable law; the English text
+> is a reference translation.
+>
+> 적용 법률이 허용하는 범위에서 국문을 기준으로 하며 영문은 참고 번역입니다.
+
+## 국문
+
+> **버전별 적용:** 이 문서는 v0.1.7 공개를 위해 준비했으며, 아래 3절의 업데이트 주기는
+> v0.1.6 이후 설치본에 공통으로 적용됩니다. 현재 공개 버전은 GitHub 일반 Latest에서 확인하세요.
+> 이전 v0.1.5 설치본은 v0.1.6 이상으로 업데이트하기 전까지 자체의 역사적 v0.1.5 주기를
+> 계속 사용합니다.
+
+### 1. 핵심 요약
+
+PCssak Biuja의 파일 정리 자체는 **100% 로컬 처리**합니다. 파일, 파일 내용, 파일 이름, 폴더
+경로, 정리 판단과 작업저널을 PCSSAK 서버로 올리지 않습니다. 공개 무료 Early Access에는
+PCSSAK 계정, 광고, 사용 분석, 추적 SDK, 클라우드 파일 색인이나 자동 오류 업로드가 없습니다.
+
+다만 “로컬 처리”가 네트워크를 전혀 사용하지 않는다는 뜻은 아닙니다. 다음의 제한된 전달·연락
+예외가 있습니다.
+
+1. 유효한 로컬 예약이 없거나 만료된 경우 앱 시작 약 3.5초 뒤와 이후 제한된 주기로 공식 GitHub의 업데이트 `latest.json` 자동 확인
+2. 사용자가 승인한 경우에만 공식 GitHub 업데이트 설치 파일 다운로드
+3. 필요한 Microsoft Edge WebView2 Runtime 설치·복구와 독립적인 업데이트
+4. 사용자가 직접 여는 홈페이지·GitHub Issue·이메일 등 외부 서비스
+
+이 예외에서도 PCssak Biuja는 정리를 위해 파일 내용·파일 이름·폴더 경로·작업저널을
+전송하지 않습니다.
+
+### 2. 운영자가 앱에서 수집하지 않는 정보
+
+공개 무료 Early Access 앱은 다음 정보를 PCSSAK에 자동 전송하거나 중앙 데이터베이스에
+수집하지 않습니다.
+
+- 정리 대상 파일과 파일 내용
+- 파일 이름, 전체 폴더 경로와 폴더 목록
+- 정리 규칙, 미리보기, 작업저널과 되돌리기 기록
+- 사용 횟수, 버튼 사용, 화면 체류 시간 등의 분석 정보
+- 자동 오류 보고서나 로그 업로드
+- 계정, 로그인 또는 결제 정보
+
+현재 무료 배포본은 앱 안에서 결제를 처리하거나 구매 이메일을 PCSSAK 서버로 전송하지
+않습니다. 다만 사용자가 PCSSAK이 별도로 발급한 PB1 라이선스 키를 직접 활성화하면, 키에
+서명되어 들어 있는 이메일과 평생 이용권 정보가 키 원문과 함께 사용자 PC의
+`license.json`에 저장됩니다. 이 파일은 자동 전송되지 않으며 아래 5절의 로컬 보관·삭제
+설명이 적용됩니다. 향후 별도 유료 기능이 출시되면 실제 결제·발급 방식이 확정된 뒤 이
+방침과 관련 약관을 먼저 갱신해야 합니다.
+
+v0.1.7부터 유효한 PB1 키를 활성화하거나 앱에서 해제한 적이 있는 경우
+`license.json.surface`에 고정 제품 표식만 남을 수 있습니다. 이 표식에는 키·이메일·계정
+식별자·해시가 없고 Pro 권한을 부여하지 않으며, 해제 뒤 기존 키를 다시 입력할 화면만
+유지합니다. PCSSAK 서버로 자동 전송되지 않습니다.
+
+### 3. GitHub 자동 업데이트 확인과 다운로드
+
+공개 v0.1.5는 앱 시작 약 **3.5초 후** 확인하고, 최신 버전이면 6시간 뒤 다시 확인합니다.
+창 포커스는 마지막 확인부터 최소 5분이 지난 뒤 확인할 수 있고 온라인 복귀에는 별도 최소
+간격이 없습니다. 실패 재시도는 1분, 5분, 15분, 1시간, 6시간 순서이며 다음 확인 시각과 실패
+단계를 재시작 사이에 저장하지 않습니다. 따라서 온라인 상태 변화나 정상 재시작으로 확인이
+추가될 수 있습니다. 이 동작은 v0.1.6으로 업데이트되기 전 v0.1.5 설치본에도 계속 적용됩니다.
+
+v0.1.6 이후 버전은 유효한 로컬 예약이 없거나 예약 시각이 이미 지났으면 앱 시작 약
+**3.5초 후** 다음
+공식 릴리스의 `latest.json`을 자동으로 확인합니다. 미래 예약이 남아 있으면 그 남은 시간을
+먼저 지킵니다. 최신 버전이면 다음 자동 확인은 24시간 뒤로 예약합니다.
+업데이트를 찾은 현재 앱 세션에서는 자동 확인을 멈추며, 설치하지 않고 앱을 다시 시작한 경우
+알림을 복구하기 위한 자동 확인은 발견 시각부터 6시간을 지킨 뒤 실행합니다. 실패하면 15분,
+1시간, 6시간, 12시간, 24시간 순으로 간격을 늘리고 이후에는 24시간 간격을 유지합니다. 창 포커스나
+네트워크 온라인 복귀는 예약 시각을 앞당기지 않으며, 백그라운드 절전 등으로 이미 예약 시각이
+지난 검사만 재개할 수 있습니다. 자동 확인은 동시에 하나만 실행하고 반복 이벤트를 후속
+요청으로 쌓지 않습니다. 사용자가 누른 수동 확인은 이 자동 예약과 별도로 즉시 실행할 수
+있습니다.
+
+- `https://github.com/pcssakinc/pcssak-biuja-releases/releases/latest/download/latest.json`
+
+이 확인 요청은 업데이트 버전·서명·설치 파일 위치를 담은 공개 명세를 읽기 위한 것입니다.
+PCssak Biuja는 이 요청에 사용자의 파일 내용, 파일 이름, 폴더 경로, 정리 규칙, 미리보기나
+작업저널을 넣지 않습니다.
+
+일반적인 인터넷 요청과 마찬가지로 GitHub는 사용자의 IP 주소와 요청 시각, 요청 URL,
+User-Agent와 같은 통상적인 요청·보안 메타데이터를 처리할 수 있습니다. 이 처리는 GitHub가
+독립적으로 수행하며 [GitHub 개인정보 보호정책](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)이
+적용됩니다. PCSSAK은 이 자동 확인을 위한 별도 추적 서버나 분석 식별자를 운영하지 않습니다.
+
+새 버전이 있어도 설치 파일은 자동으로 내려받지 않습니다. 사용자가 앱에서 다운로드·설치를
+명시적으로 승인한 경우에만 공식 GitHub 릴리스 자산을 내려받습니다. 이때도 GitHub는 IP와
+일반 요청 메타데이터를 처리할 수 있으며, 앱은 설치 전 PCSSAK Tauri 업데이트 서명을
+검증합니다.
+
+네트워크 차단이나 GitHub 장애로 확인에 실패하면 시작 시 오류를 조용히 처리하고 핵심 로컬
+정리 기능은 계속 사용할 수 있어야 합니다. 네트워크를 차단하면 자동 확인과 다운로드는 사용할
+수 없습니다.
+
+### 4. Microsoft WebView2 연결
+
+PCssak Biuja 화면에는 Microsoft Edge WebView2 Runtime이 필요합니다. Runtime이 없거나
+설치·복구가 필요하면 Windows 또는 설치 프로그램에 포함된 Microsoft 공식 부트스트래퍼가
+Microsoft 배포 서비스에 연결해 Runtime을 내려받을 수 있습니다. 설치된 WebView2 Runtime은
+Microsoft의 독립적인 업데이트 절차를 사용할 수 있습니다.
+
+PCssak Biuja는 WebView2 설치 요청에 정리 대상 파일, 파일 이름, 폴더 경로나 작업저널을 넣지
+않습니다. Microsoft는 IP와 일반 설치·요청 메타데이터를 자체 정책에 따라 처리할 수 있으며
+[Microsoft 개인정보처리방침](https://privacy.microsoft.com/privacystatement)이 적용됩니다.
+인터넷이 차단된 환경에서는 필요한 Runtime이 이미 없으면 설치나 실행을 완료하지 못할 수
+있습니다.
+
+### 5. 기기에 저장되는 로컬 데이터
+
+다음 정보는 사용자의 Windows 기기에 저장되며 PCSSAK으로 자동 업로드되지 않습니다. Windows
+버전과 설치 환경에 따라 실제 표시 경로가 조금 다를 수 있습니다.
+
+| 데이터 | 일반적인 위치 | 내용과 보관 |
+|---|---|---|
+| 설정 및 가져오기 복구 | `%APPDATA%\com.pcssak.biuja\config.json`, `config.before-import.json`, `config.before-import.pending.json` | 사용자가 선택한 폴더 경로, 정리 규칙, 일정, 언어·테마 등. 가져오기 직전·직후 설정은 가장 최근 가져오기 한 번을 안전하게 되돌리기 위한 로컬 복구 파일에 보관될 수 있습니다. 시간 기준 자동 만료는 없으며, 가져오기 되돌리기 성공·오래되어 거부된 되돌리기 시도·다음 가져오기의 복구점 정리 때 삭제됩니다. 그 전에는 앱 데이터와 함께 사용자가 삭제할 때까지 남을 수 있습니다. 손상된 설정은 같은 위치에 별도 백업 파일이 생길 수 있습니다. |
+| 작업저널 | `%APPDATA%\com.pcssak.biuja\journal.db`와 SQLite 보조 파일 | 원본·대상 경로, 작업 종류·시각·상태, 안전한 되돌리기를 위한 크기·수정 시각·파일 식별·지문 정보 등. 현재 최대 20,000개 작업 행을 유지하고 오래된 행을 정리합니다. 파일 내용 사본은 아닙니다. |
+| 라이선스 | `%APPDATA%\com.pcssak.biuja\license.json` | 사용자가 활성화한 서명 PB1 키 원문. 키 안에는 발급 이메일과 `lifetime` 이용권 정보가 들어 있습니다. 별도 암호화 없이 현재 Windows 사용자 프로필의 파일 접근 권한에 의존하며 PCSSAK 서버로 자동 전송되지 않습니다. 라이선스 해제 또는 앱을 완전히 종료한 뒤 이 파일이나 AppData 폴더를 직접 삭제할 때까지 남습니다. |
+| 라이선스 재활성화 표식(v0.1.7부터) | `%APPDATA%\com.pcssak.biuja\license.json.surface` | 고정 문자열 `PCSSAK_BIUJA_LICENSE_SURFACE_V1`만 저장합니다. 키·이메일·계정 식별자·해시는 포함하지 않고 Pro 권한을 열지 않으며, 유효 PB1 사용자가 해제 뒤 키 입력 화면으로 돌아갈 수 있게만 합니다. 앱별 AppData 폴더 또는 이 파일을 직접 삭제할 때까지 남을 수 있습니다. |
+| 로컬 로그 | `%LOCALAPPDATA%\com.pcssak.biuja\logs` | 시작·오류 진단용 기술 로그. 문제 상황에 따라 로컬 경로나 작업 관련 기술 정보가 포함될 수 있지만 자동 전송되지 않습니다. |
+| 업데이트 확인 예약(v0.1.6부터) | 앱별 WebView2 로컬 저장소 | v0.1.6은 앱 데이터가 정상 유지되는 재시작으로 자동 확인 제한을 우회하지 않도록 다음 자동 확인 시각과 연속 실패 단계만 저장합니다. v0.1.5는 이 예약 값을 저장하지 않습니다. 파일·폴더·사용자 식별 정보는 포함하지 않으며 앱 데이터와 함께 사용자가 삭제할 때까지 남을 수 있습니다. 이 로컬 데이터가 삭제되거나 저장소를 사용할 수 없으면 v0.1.6의 새 앱 세션은 시작 확인부터 다시 예약합니다. |
+| WebView2 데이터 | `%LOCALAPPDATA%\com.pcssak.biuja\EBWebView` 등 앱별 WebView2 위치 | 화면 렌더링에 필요한 Microsoft WebView2 캐시와 환경설정 |
+| 창·자동 시작 상태 | 앱별 로컬 설정과 사용자가 켠 경우 Windows 자동 시작 등록 | 창 크기·위치와 Windows 로그인 시 실행 여부 |
+
+작업저널의 파일 지문은 안전한 작업 확인과 되돌리기 판단을 위한 로컬 증거이며 PCSSAK으로
+전송되지 않습니다. 작업저널은 파일 사본이나 백업이 아닙니다.
+
+### 6. 사용자가 직접 연락하거나 공개하는 정보
+
+사용자가 GitHub Issue를 작성하거나 제품·지원·보안 문의 또는 개인정보 관련 문의·삭제 요청을
+`pcssak@pcssak.com`으로 이메일로 보내면 사용자가 입력한 내용은 각각 GitHub 또는 이메일
+서비스가 처리하고 PCSSAK이 문의 대응을 위해 보게 됩니다.
+이 동작은 자동 수집이 아니며 사용자가 직접 시작합니다.
+
+두 도메인 이메일 주소는 현재 Cloudflare Email Routing을 통해 검증된 Gmail 수신 주소로
+전달됩니다. 따라서 사용자가 보낸 이메일의 내용과 전달에 필요한 정보는 Cloudflare와 Gmail이
+각자의 서비스 제공·보안·악용 방지 목적에 따라 처리할 수 있습니다. 이 구성은 수신 전달용이며,
+도메인 발신 사서함 또는 도메인 표시 회신을 보장하지 않습니다.
+
+실제 전체 경로, 파일 이름, 폴더 목록, 파일 내용, 고객 자료, 비밀번호·토큰·개인키나 회사
+비밀을 보내지 마세요. 합성 예제와 가린 화면을 사용하세요. 보안 문제는 `SECURITY.md`의 비공개
+절차를 따르세요.
+
+운영자는 문의에서 받은 연락처와 내용을 답변, 오류 재현, 보안 대응과 필요한 기록 보존 범위에서
+사용합니다. 삭제 요청은 `pcssak@pcssak.com`으로 보낼 수 있으나 법적 의무, 보안 조사 또는
+분쟁 대응에 필요한 최소 정보는 허용되는 기간 동안 보존될 수 있습니다.
+
+### 7. 로컬 데이터 삭제
+
+작업저널은 현재 최대 20,000개 작업 행을 유지하며 한도를 넘은 오래된 행을 정리합니다. 설정,
+라이선스, 재활성화 표식, 로그와 WebView2 데이터는 사용자가 직접 삭제할 때까지 남을 수
+있습니다. 앱의 라이선스 해제 기능은 키·이메일이 든 `license.json`을 삭제하지만,
+v0.1.7부터 기존 사용자의 재활성화 화면을 보존하기 위한 비민감 `license.json.surface`는
+남을 수 있습니다. 이 화면도 필요 없으면 앱을 완전히 종료한 뒤 표식 파일을 직접 삭제합니다.
+
+NSIS 제거 프로그램은 파일시스템 안전을 위해 앱 데이터를 항상 보존하고 이 사실을 제거 화면에
+안내합니다. 앱을 완전히 종료하고 제거한 뒤 다음 앱별 폴더를 직접 삭제할 수 있습니다.
+
+- `%APPDATA%\com.pcssak.biuja`
+- `%LOCALAPPDATA%\com.pcssak.biuja`
+
+폴더를 삭제하면 설정·로컬 라이선스와 작업저널을 되돌릴 수 없으므로 필요한 기록을 먼저
+확인하세요. Windows 휴지통에 있는 파일과 PCssak Biuja가 정리한 실제 사용자 폴더는 위 앱
+데이터 폴더와 별개이며, 앱 제거 또는 위 앱 데이터 폴더의 수동 삭제로 함께 삭제되지 않습니다.
+
+### 8. 제3자 처리와 국외 처리 가능성
+
+PCSSAK은 앱 사용 데이터를 광고업체나 데이터 중개업체에 판매하지 않습니다. 자동 업데이트를
+위한 GitHub, WebView2를 위한 Microsoft, 도메인 이메일 수신 전달을 위한 Cloudflare Email
+Routing과 Gmail, 사용자가 선택한 GitHub Issue는 각 사업자가 독립적으로 제공합니다. 해당
+사업자는 자신의 인프라 위치와 정책에 따라 통상적인 네트워크·문의 데이터를 여러 국가 또는
+지역에서 처리할 수 있습니다. 구체적인 범위와 권리는 각 사업자의 공식 개인정보 정책을
+확인하세요.
+
+### 9. 아동의 개인정보
+
+PCssak Biuja는 아동을 대상으로 계정·광고·분석 서비스를 제공하지 않으며 앱에서 아동의 개인
+정보를 의도적으로 수집하지 않습니다. 다만 업데이트·WebView2·사용자가 직접 이용하는 외부
+서비스에는 해당 사업자의 정책이 적용됩니다.
+
+### 10. 방침 변경과 문의
+
+네트워크 동작, 로컬 저장 항목, 배포 방식 또는 법적 요구가 바뀌면 이 문서와 공식 제품 페이지를
+갱신하고 최종 수정일을 변경합니다.
+
+- 제품 페이지: [https://pcssak.com/biuja](https://pcssak.com/biuja)
+- 개인정보 문의: `pcssak@pcssak.com`
+
+---
+
+## English reference translation
+
+> **Version applicability:** This document is prepared for v0.1.7, and the update schedule in
+> section 3 applies to v0.1.6-and-later installations. Check GitHub General Latest for the
+> currently public version. An older v0.1.5 installation keeps its historical v0.1.5 schedule
+> until it updates to v0.1.6 or later.
+
+### 1. Summary
+
+PCssak Biuja processes file organization **100% locally**. It does not upload files, file
+contents, filenames, folder paths, sorting decisions, or work journals to a PCSSAK server. Free
+Early Access has no PCSSAK account, advertising, analytics, tracking SDK, cloud file index, or
+automatic crash upload.
+
+“Local processing” does not mean that the application never uses a network. The limited
+delivery and contact exceptions are:
+
+1. an automatic request for the official GitHub update `latest.json` approximately 3.5 seconds
+   after startup when no valid local schedule remains, and thereafter on a limited schedule;
+2. download of an official GitHub update asset only after the user approves it;
+3. installation, repair, or independent updating of Microsoft Edge WebView2 Runtime when
+   required; and
+4. an external website, GitHub Issue, or email that the user chooses to open.
+
+PCssak Biuja does not include file contents, filenames, folder paths, or work-journal data in
+these requests.
+
+### 2. Information the application does not collect for PCSSAK
+
+The public Free Early Access application does not automatically send to PCSSAK or collect in a
+central PCSSAK database the files being organized; file contents; filenames; full folder paths;
+directory listings; rules; previews; journal or rollback records; product-usage analytics;
+automatically uploaded error logs; account information; login information; or payment details.
+
+The current free build does not process payment in the application or send a purchase email to a
+PCSSAK server. If the user manually activates a PB1 license key separately issued by PCSSAK, the
+signed email and lifetime entitlement embedded in that key are stored with the full key in the
+user's local `license.json`. The file is not uploaded automatically and is subject to the local
+retention and deletion details in section 5 below. If a separate paid feature is released later,
+this policy and the relevant terms must be updated after the actual payment and issuance model is
+decided.
+
+Starting with v0.1.7, activating a valid PB1 key or deactivating it in the app may leave
+`license.json.surface`, which contains only a fixed product marker. It contains no key, email,
+account identifier, or hash, grants no Pro entitlement, and only preserves the key-entry screen
+for an existing user after deactivation. It is not uploaded automatically to a PCSSAK server.
+
+### 3. GitHub automatic update check and download
+
+Public v0.1.5 checks approximately **3.5 seconds after startup** and, when current, checks again
+after 6 hours. A window-focus event can check only when at least 5 minutes have passed since the
+last check; a return-to-online event has no separate minimum interval. Failure retries progress
+through 1 minute, 5 minutes, 15 minutes, 1 hour, and 6 hours. v0.1.5 does not persist the next-check
+time or failure stage across restarts, so online-state changes or a normal restart can add a check.
+This remains true for an installed v0.1.5 until it updates to v0.1.6.
+
+In v0.1.6 and later, when no valid local schedule remains or its time has passed, approximately **3.5 seconds
+after startup** the standalone GitHub build automatically requests the official release manifest.
+If a future schedule remains, the application first honors that remaining delay. If the application
+is current, it schedules the next automatic check 24 hours later. After an update is found,
+automatic checks stop for the current app session. If the app restarts without installing it,
+the automatic check that restores the notification waits until 6 hours after discovery. After a
+failure, retry delays increase through 15 minutes, 1 hour, 6 hours,
+12 hours, and 24 hours, then remain at 24 hours. Window focus and return to online status do not
+bring the scheduled time forward; they can only resume a check that is already due after, for
+example, background timer suspension. Only one automatic check runs at a time and repeated
+automatic events are not queued as follow-up requests. A user-requested manual check can still
+run immediately outside that automatic schedule:
+
+- `https://github.com/pcssakinc/pcssak-biuja-releases/releases/latest/download/latest.json`
+
+The public manifest supplies update version, signature, and asset-location information. PCssak
+Biuja does not put file contents, filenames, folder paths, sorting rules, previews, or work
+journals in this request.
+
+As with an ordinary internet request, GitHub may process the user's IP address and customary
+request and security metadata such as request time, requested URL, and User-Agent. GitHub
+performs that processing independently under the
+[GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+PCSSAK operates no separate tracking server or analytics identifier for this update check.
+
+Finding a new version does not automatically download the installer asset. PCssak Biuja
+downloads the official GitHub release asset only after the user explicitly approves download
+and installation. GitHub may again process the IP address and ordinary request metadata. The
+application verifies the PCSSAK Tauri updater signature before installation.
+
+If GitHub is unavailable or the network is blocked, startup handles the automatic-check failure
+silently and the core local sorting workflow should remain available. Blocking the connection
+prevents update checking and downloading.
+
+### 4. Microsoft WebView2 connection
+
+PCssak Biuja requires Microsoft Edge WebView2 Runtime to display its interface. If the Runtime
+is absent or requires installation or repair, Windows or the official Microsoft bootstrapper
+bundled with the installer can connect to Microsoft's distribution service. The installed
+Runtime can use Microsoft's independent updating process.
+
+PCssak Biuja does not include organized files, filenames, folder paths, or the work journal in a
+WebView2 installation request. Microsoft may process IP address and ordinary installation or
+request metadata under the
+[Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). Installation or
+startup may not complete offline when a required Runtime is not already available.
+
+### 5. Local data stored on the device
+
+The following data remains on the user's Windows device and is not automatically uploaded to
+PCSSAK. Displayed paths can vary slightly by Windows version and installation environment.
+
+| Data | Typical location | Contents and retention |
+|---|---|---|
+| Settings and import recovery | `%APPDATA%\com.pcssak.biuja\config.json`, `config.before-import.json`, and `config.before-import.pending.json` | User-selected folder paths, organization rules, schedules, language, theme, and related settings. The settings immediately before and after the most recent import can be retained in local recovery files for safe one-level Import Undo. There is no time-based automatic expiry. The files are removed after a successful Import Undo, a stale Undo attempt is rejected, or the next import cleans up the recovery point; until then, they can remain with app data until the user deletes it. A damaged configuration can produce another backup beside it. |
+| Work journal | `%APPDATA%\com.pcssak.biuja\journal.db` and SQLite companion files | Source and destination paths, operation type, time, status, and size, modification time, file identity, and fingerprint evidence needed for safe rollback. The current implementation keeps up to 20,000 action rows and prunes older rows. It is not a copy of file contents. |
+| License | `%APPDATA%\com.pcssak.biuja\license.json` | The full signed PB1 key activated by the user. The key contains the issued email and `lifetime` entitlement. It is not separately encrypted, relies on the current Windows user-profile file permissions, and is not uploaded automatically to a PCSSAK server. It remains until the user deactivates the license or deletes this file or the AppData folder after fully closing the app. |
+| License reactivation marker (v0.1.7 and later) | `%APPDATA%\com.pcssak.biuja\license.json.surface` | Stores only the fixed string `PCSSAK_BIUJA_LICENSE_SURFACE_V1`. It contains no key, email, account identifier, or hash, does not grant Pro entitlement, and only lets an existing PB1 user return to the key-entry screen after deactivation. It may remain until this file or the app-specific AppData folder is deleted. |
+| Local logs | `%LOCALAPPDATA%\com.pcssak.biuja\logs` | Technical startup and error diagnostics. A local path or operation-related technical context can appear in an error case, but logs are not automatically uploaded. |
+| Update-check schedule (v0.1.6 and later) | App-specific WebView2 local storage | v0.1.6 stores only the next automatic-check timestamp and consecutive-failure stage so a normal restart with app data intact does not bypass the automatic request limit or reset its backoff. v0.1.5 does not store this schedule. It contains no file, folder, or user identifier and can remain until the user deletes app data. If this local data is deleted or storage is unavailable, a new v0.1.6 app session schedules the startup check again. |
+| WebView2 data | `%LOCALAPPDATA%\com.pcssak.biuja\EBWebView` and related app-specific WebView2 locations | Microsoft WebView2 cache and settings needed to render the interface. |
+| Window and startup state | App-specific local settings and, when enabled by the user, Windows startup registration | Window size and position and whether to launch at Windows sign-in. |
+
+Journal fingerprints are local evidence used for safe operation and rollback decisions. They are
+not sent to PCSSAK, and the journal is not a file copy or backup.
+
+### 6. Information the user chooses to send or publish
+
+When a user opens a GitHub Issue or emails `pcssak@pcssak.com` about the product, support,
+security, privacy, or deletion, GitHub or the email service
+processes what the user enters, and PCSSAK receives it to handle the request. This is a
+user-initiated action, not automatic application collection.
+
+The two domain email addresses currently forward to a verified Gmail recipient through
+Cloudflare Email Routing. Cloudflare and Gmail may process the message contents and information
+needed to deliver them for their respective service, security, and abuse-prevention purposes.
+This configuration is for inbound forwarding; it does not promise a domain-branded outbound
+mailbox or reply address.
+
+Do not send real full paths, filenames, directory listings, file contents, customer data,
+passwords, tokens, private keys, or confidential business material. Use a synthetic example and
+redacted screenshot. Follow `SECURITY.md` for a private vulnerability report.
+
+PCSSAK uses contact information and report contents for support, reproduction, security
+response, and necessary recordkeeping. A deletion request can be sent to
+`pcssak@pcssak.com`; minimal information needed for a legal obligation, security
+investigation, or dispute may be retained for the permitted period.
+
+### 7. Deleting local data
+
+The current journal keeps up to 20,000 action rows and prunes older rows beyond the limit.
+Settings, the local license, the reactivation marker, logs, and WebView2 data can remain until the
+user removes them. The in-app license deactivation function deletes `license.json`, which contains
+the key and email. Starting with v0.1.7, the non-sensitive `license.json.surface` marker may remain
+to preserve the existing user's reactivation screen. Fully close the app and delete the marker if
+that screen is no longer wanted.
+
+For filesystem safety, the NSIS uninstaller always preserves application data and explains this
+on the uninstall screen. After fully closing and uninstalling the application, the user can
+remove:
+
+- `%APPDATA%\com.pcssak.biuja`
+- `%LOCALAPPDATA%\com.pcssak.biuja`
+
+Deleting these folders permanently removes settings, the locally stored license, and the journal,
+so review any needed records first. Files in the Windows Recycle Bin and actual user folders
+organized by PCssak Biuja are separate from these app-data folders and are not removed when the
+application or the app-data folders above are removed.
+
+### 8. Independent third parties and possible international processing
+
+PCSSAK does not sell application-usage data to advertisers or data brokers. GitHub provides the
+update-delivery service, Microsoft provides WebView2, Cloudflare Email Routing and Gmail provide
+domain-email receipt, and the user chooses any GitHub Issue interaction. Each provider can
+process ordinary network or contact data in countries or regions used by its infrastructure and
+policies. Consult each provider's official privacy statement for the applicable scope and rights.
+
+### 9. Children's privacy
+
+PCssak Biuja does not provide a child-directed account, advertising, or analytics service and
+does not intentionally collect children's personal information in the application. External
+update, WebView2, and user-initiated services remain subject to their providers' policies.
+
+### 10. Changes and contact
+
+If network behavior, local storage, distribution, or legal requirements change, this document
+and the official product page will be updated with a new last-updated date.
+
+- Product page: [https://pcssak.com/biuja](https://pcssak.com/biuja)
+- Privacy inquiry: `pcssak@pcssak.com`
