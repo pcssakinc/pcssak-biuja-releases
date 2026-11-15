@@ -1,6 +1,6 @@
 # PCssak Biuja Privacy Policy / 개인정보 처리방침
 
-- Last updated / 최종 수정: 2026-10-17
+- Last updated / 최종 수정: 2026-11-15
 - Operator / 운영자: PCSSAK
 - Contact / 문의: `pcssak@pcssak.com`
 - Applies to / 적용 대상: PCssak Biuja v0.5.0 for Windows — Microsoft Store Early Access
@@ -18,13 +18,15 @@
 
 파일 검사·분류·이동·복사·휴지통 보내기·되돌리기는 사용자 기기에서 로컬로 처리합니다.
 앱은 파일 내용·이름·폴더 경로·규칙·미리보기·작업저널을 PCSSAK 서버로 **자동 전송하지 않습니다**.
-PCSSAK 앱 계정, 광고, 사용 분석·추적 SDK, 클라우드 파일 색인이나 자동 오류 업로드가 없습니다.
+PCSSAK 앱 계정, 광고, 사용 분석·추적 SDK나 클라우드 파일 색인은 없으며, PCSSAK 자체 자동 오류
+업로드 기능도 없습니다. Microsoft WebView2 Runtime의 별도 진단·충돌 보고는 5절을 확인하세요.
 파일을 안전하게 식별하고 되돌리기를 판단하기 위해 일부 파일의 내용에서 로컬 해시를 계산할 수
 있으며 이 해시도 자동 전송하지 않습니다.
 
 로컬 처리가 모든 네트워크 연결이 없다는 뜻은 아닙니다. Store판에서는 Microsoft Store가
 계정·결제·사용권·설치·업데이트를 처리합니다. Microsoft WebView2와 사용자가 직접 여는 외부
-링크·문의 서비스도 각각 연결될 수 있습니다. 이 연결에 앱이 정리한 파일 데이터를 첨부하지 않습니다.
+링크·문의 서비스도 각각 연결될 수 있습니다. PCSSAK 자체 기능은 이 연결에 정리 대상 파일
+데이터를 자동 첨부하지 않습니다. Runtime의 독립적인 진단 처리는 5절과 Microsoft 정책을 따릅니다.
 
 ### 2. Microsoft Store 계정·결제·사용권
 
@@ -96,6 +98,14 @@ Store판은 Microsoft Store를 통해 업데이트하며 앱의 GitHub `latest.j
 처리할 수 있습니다. 앱은 WebView2 설치 요청에 정리 대상 파일·이름·경로·저널을 넣지 않습니다.
 필요한 Runtime이 없고 인터넷도 차단돼 있으면 설치 또는 실행을 완료하지 못할 수 있습니다.
 
+WebView2 Runtime은 보안·성능·안정성 유지를 위한 필수 진단 데이터를 처리할 수 있으며, 선택
+진단 데이터는 Windows의 진단 데이터 설정을 따릅니다. WebView2 프로세스가 중단되면 Windows
+동의와 Runtime 설정에 따라 충돌 진단 자료가 Microsoft로 전송될 수 있습니다. 이는 PCSSAK의
+자체 자동 오류 업로드 기능과 별개이며 PCSSAK이 Microsoft의 진단 자료를 수신한다는 뜻은 아닙니다.
+진단 자료에 개인 정보가 전혀 포함되지 않는다고 보장하지 않습니다. 처리 범위와 사용자 제어는
+[Microsoft WebView2 개인정보 안내](https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/data-privacy)와
+[Microsoft 개인정보처리방침](https://privacy.microsoft.com/privacystatement)을 확인하세요.
+
 ### 6. 직접 보내는 문의와 외부 서비스
 
 홈페이지·GitHub Issue·이메일을 열고 내용을 보내면 사용자가 선택한 외부 서비스가 그 내용과
@@ -150,12 +160,14 @@ GitHub, Cloudflare와 Gmail 등 외부 서비스는 각 정책과 인프라에 �
 Inspection, classification, moves, copies, recycling, and rollback run locally on the user's
 device. The app does not automatically send file contents, filenames, paths, rules, previews,
 or the journal to a PCSSAK server. There is no PCSSAK app account, advertising, usage-analytics
-or tracking SDK, cloud file index, or automatic error upload. Local content hashes used to
-identify files and evaluate safe rollback are not uploaded automatically.
+or tracking SDK, or cloud file index. PCSSAK has no automatic error-upload feature of its own.
+See section 5 for the separate diagnostics and crash reporting of Microsoft WebView2 Runtime.
+Local content hashes used to identify files and evaluate safe rollback are not uploaded automatically.
 
 Local processing does not mean no network use. **Microsoft Store handles account, payment,
 licensing, installation, and updates**. Microsoft WebView2 and user-opened external links or
-support services may also connect. The app does not attach organized file data to these requests.
+support services may also connect. PCSSAK features do not automatically attach files being organized
+to these requests. Independent Runtime diagnostics follow section 5 and Microsoft policies.
 
 ### 2. Microsoft Store account, payment, and entitlement
 
@@ -230,6 +242,15 @@ can connect to Microsoft services. Microsoft can process IP addresses and ordina
 installation metadata under its policies. The app does not include organized files, names,
 paths, or the journal in Runtime installation requests. Installation or launch may not complete
 offline if a required Runtime is absent.
+
+WebView2 Runtime can process required diagnostic data for security, performance, and reliability.
+Optional diagnostic data follows the Windows Diagnostic data setting. If a WebView2 process crashes,
+crash diagnostic data may be sent to Microsoft according to Windows consent and Runtime settings.
+This is separate from PCSSAK having an automatic error-upload feature, and does not mean PCSSAK
+receives Microsoft diagnostic data. We do not guarantee that diagnostic data never contains personal
+information. For the scope of processing and user controls, see
+[Microsoft WebView2 data and privacy](https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/data-privacy) and the
+[Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ### 6. User-initiated support and external services
 
