@@ -6,6 +6,14 @@ Mac App Store판 0.5.0 · [English](#english)
 
 외장 드라이브의 폴더라면 먼저 드라이브를 다시 연결하세요. 안내가 계속되면 비우자 **홈 → 해당 폴더의 규칙 → 설정 더 보기 → 폴더 다시 선택**을 열고 macOS 선택창에서 원래 폴더를 선택하세요. 규칙의 목적지가 그 폴더 밖에 있다면 규칙 편집 화면에서 목적지 폴더도 다시 선택하세요. 폴더를 다시 선택하는 동안에는 파일이 이동하지 않습니다. 다음 실행 전에 미리보기에서 출발 위치와 목적지를 확인할 수 있습니다.
 
+## 업데이트 후 예전 규칙 하나가 보이지 않아요
+
+비우자가 시작할 때 안전 검사로 규칙을 제외하면 변경 전 설정의 사본을 남깁니다. Finder에서 **이동 → 폴더로 이동**(⇧⌘G)을 열고 아래 경로를 붙여 넣으세요.
+
+`~/Library/Containers/com.pcssak.biuja.macstore/Data/Library/Application Support/com.pcssak.biuja.macstore/`
+
+`config.json` 옆에서 이름이 `config.before-safety-`로 시작하고 `.json`으로 끝나는 파일을 찾으세요. 사본을 텍스트 편집기로 열어 예전 규칙 이름과 조건을 확인하세요. 사본 전체를 가져오거나 `config.json`을 덮어쓰지 마세요. 필요한 규칙은 비우자의 해당 폴더 **규칙**에서 현재 목적지를 다시 선택해 만들고, 실행 전에 **미리보기**에서 결과를 확인하세요.
+
 ## 되돌리기가 일부 파일에서 멈췄어요
 
 **기록**에서 해당 실행을 열고 파일별 결과와 실패 이유를 확인하세요. 예를 들어 파일 3개를 옮긴 뒤 한 개를 직접 삭제했다면, 다른 파일의 되돌리기가 성공해도 삭제한 파일은 복원하지 못할 수 있습니다. 실패한 항목의 원래 폴더와 드라이브를 확인하세요. 드라이브를 다시 연결한 뒤 재시도 동작이 표시되면 그 항목을 다시 시도하세요. 파일 내용이 바뀌었다면 현재 파일과 백업을 먼저 확인하세요.
@@ -43,6 +51,14 @@ Mac App Store edition · Version 0.5.0
 ## Biuja can’t access my folder
 
 If the folder is on an external drive, reconnect the drive first. If the message persists, open **Home → Rules** for that folder, then choose **More settings → Select folder again**. Select the original folder in the macOS picker. If the rule sends files outside that folder, select its destination again under **Where to** in the rule editor. Selecting a folder again does not move files. Before your next run, use the preview to check the source and destination.
+
+## An older rule is missing after an update
+
+When Biuja leaves out a rule during its startup safety check, it keeps a copy of the original settings. In Finder, choose **Go → Go to Folder** (⇧⌘G) and paste this path.
+
+`~/Library/Containers/com.pcssak.biuja.macstore/Data/Library/Application Support/com.pcssak.biuja.macstore/`
+
+Beside `config.json`, look for a file whose name starts with `config.before-safety-` and ends in `.json`. Open the copy in a text editor and find the old rule by name to review its conditions. Leave `config.json` in place and avoid importing the entire copy. Recreate the rule under **Rules** for that folder, select its current destination, and check the **Preview** before running it.
 
 ## Undo stopped for some files
 
