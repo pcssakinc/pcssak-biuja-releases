@@ -2,6 +2,10 @@
 
 Mac App Store판 0.5.0 · [English](#english)
 
+## 설치하고 처음 열 때
+
+Mac App Store에서 비우자를 설치한 뒤 앱을 여세요. 첫 화면의 **언어**에서 사용할 언어를 고르고 **다음**을 누르세요. 정리할 폴더를 선택한 뒤 **시작하기**를 누르거나, **나중에 할게요**를 선택해 폴더 설정을 미룰 수 있습니다. 선택한 언어는 다음에 열 때도 유지되며 **설정 → 언어**에서 바꿀 수 있습니다. macOS가 표시하는 구입 창과 폴더 선택 창의 언어는 시스템 설정을 따를 수 있습니다.
+
 ## 폴더에 접근할 수 없다고 나와요
 
 외장 드라이브의 폴더라면 먼저 드라이브를 다시 연결하세요. 안내가 계속되면 비우자 **홈 → 해당 폴더의 규칙 → 설정 더 보기 → 폴더 다시 선택**을 열고 macOS 선택창에서 원래 폴더를 선택하세요. 규칙의 목적지가 그 폴더 밖에 있다면 규칙 편집 화면에서 목적지 폴더도 다시 선택하세요. 폴더를 다시 선택하는 동안에는 파일이 이동하지 않습니다. 다음 실행 전에 미리보기에서 출발 위치와 목적지를 확인할 수 있습니다.
@@ -40,13 +44,17 @@ Mac App Store판 0.5.0 · [English](#english)
 
 문의할 때 앱 버전과 macOS 버전, 선택한 동작, 예상한 결과와 실제 결과, 표시된 오류 문구를 알려주세요. 파일 이름이나 경로는 `테스트/예시.pdf`처럼 바꿔 주세요. 스크린샷은 이름·경로·이메일 등 개인 정보를 가릴 수 있을 때만 첨부하세요. 실제 문서, 암호, 인증 코드, 결제 정보는 보내지 마세요. [PCSSAK 고객지원에 이메일 보내기](mailto:pcssak@pcssak.com)
 
-문의는 Cloudflare Email Routing을 통해 개인용 Gmail로 전달됩니다. PCSSAK은 답변 후 문의 메일과 첨부를 메일함에서 삭제하며 별도 문의 기록을 보관하지 않습니다. 일반 삭제한 메일과 첨부는 Gmail 휴지통에 최대 30일간 남을 수 있습니다.
+Cloudflare Email Routing은 문의를 PCSSAK이 고객지원에 사용하는 개인용 Gmail로 전달합니다. PCSSAK은 일반 문의가 마지막 답변으로 끝나면 받은 메일, 보낸 답변, 첨부와 내려받은 사본을 삭제하고 해당 메일을 Gmail 휴지통에서도 영구 삭제합니다. 법령에 따라 보존해야 하는 기록은 필요한 범위와 기간에 한해 따로 보관합니다. 메일 제공업체의 로그와 백업에는 별도의 보관 기준이 적용됩니다.
 
 <a name="english"></a>
 
 # PCssak Biuja Support for Mac
 
 Mac App Store edition · Version 0.5.0
+
+## Installing and opening Biuja for the first time
+
+Install Biuja from the Mac App Store and open it. On the welcome screen, choose your **Language** and select **Next**. Choose a folder to organize and select **Start**, or choose **Skip for now** to set up folders later. Biuja remembers your language the next time you open it. You can change it under **Settings → Language**. Purchase and folder selection windows provided by macOS may use your system language.
 
 ## Biuja can’t access my folder
 
@@ -86,4 +94,4 @@ In Biuja, open **Settings → Privacy and terms**, then choose **Privacy notice*
 
 Include the app version, macOS version, the action you took, what you expected, what happened and any error message. Replace personal filenames or paths with examples such as `Test/Example.pdf`. Only attach screenshots if you can obscure personal information such as names, paths and email addresses. Please leave out original documents, passwords, verification codes and payment details. [Email PCSSAK support](mailto:pcssak@pcssak.com)
 
-Cloudflare Email Routing forwards support messages to a personal Gmail account. After replying, PCSSAK deletes the message and its attachments from the support mailbox and keeps no separate inquiry archive. Messages and attachments deleted normally may remain in Gmail Trash for up to 30 days.
+Cloudflare Email Routing forwards inquiries to the personal Gmail account PCSSAK uses for support. When the final reply resolves a routine inquiry, PCSSAK deletes the incoming messages, sent replies, attachments and downloaded copies, and permanently deletes those messages from Gmail Trash. We keep legally required records separately, limited to what the law requires and for as long as required. Mail providers apply their own retention policies to logs and backups.
