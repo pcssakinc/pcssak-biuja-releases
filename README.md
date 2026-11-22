@@ -1,6 +1,8 @@
 # PCssak Biuja - Official Windows Downloads
 
-[한국어](README.ko.md) · [Product website](https://pcssak.com/biuja) ·
+**Languages:** English · [한국어](README.ko.md)
+
+[Product website](https://pcssak.com/biuja) ·
 [Latest release](https://github.com/pcssakinc/pcssak-biuja-releases/releases/latest)
 
 > **Current release: Free Early Access (pre-1.0)** — Features, translations, and file-handling
