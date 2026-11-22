@@ -22,6 +22,10 @@ Keep a separate tested backup. File organization is local; Undo is a safety conv
 backup. Protected, locked, unavailable, changed, or ambiguous files can be left for review.
 Originally empty folders stay in place rather than being silently deleted.
 
+**Why is my Recycle Bin restore still pending?** If Windows or another app locks the file after it leaves the Recycle Bin, Biuja may keep it in a temporary folder. Close the app using the file. If Biuja shows the recovery screen, select **Check again**. In **History → All**, look for **Waiting to restore to original folder**, review the **Recorded holding location** and the original path, then select **Retry** on that item. This also applies to older records that reported a temporary-folder restore and to items with this status after you set them aside.
+
+If you already moved the file back yourself, leave it there and retry. Biuja checks that the file at the recorded location matches the original before it marks the restore complete. If it cannot verify the file or its location, the restore stays pending. Keep the file and its record. A different file with the same name will not be overwritten.
+
 ### Trial and purchase FAQ
 
 **How much does it cost?** The Store edition offers **30 days of trial access**, then a
@@ -95,6 +99,10 @@ SmartScreen, Microsoft Defender, or another security product to install an app.
 
 중요한 파일은 별도 백업을 유지하세요. 정리는 로컬 처리하고 되돌리기는 백업이 아닙니다. 보호·잠금·접속 실패·객체 변경·
 여러 복구 후보 때문에 파일을 그대로 둘 수 있습니다. 원래 빈 폴더는 조용히 지우지 않고 원래 위치에 남깁니다.
+
+**휴지통에서 꺼낸 파일이 왜 복원 대기로 남나요?** 파일이 휴지통에서 나온 뒤 Windows나 다른 앱이 파일을 잠그면 임시 폴더에 남을 수 있습니다. 파일을 사용 중인 앱을 닫고, 비우자에 복구 화면이 열려 있다면 **다시 확인**을 누르세요. **기록 → 전체**에서 **원위치 복원 대기** 항목의 **기록된 보관 위치**와 원래 경로를 확인한 뒤 해당 항목의 **다시 시도**를 누르세요. 이전 버전에서 임시 폴더에 복원됐다고 안내한 기록이나, ‘따로 두기’ 후 이 상태로 표시된 항목도 같은 방법으로 확인할 수 있습니다.
+
+이미 직접 파일을 원래 위치에 옮겼다면 그대로 두고 다시 시도하세요. 비우자는 기록된 위치의 파일이 원본과 일치한 것을 확인해야 복원을 완료로 표시합니다. 파일이나 위치를 확인할 수 없으면 대기가 유지됩니다. 이때는 파일과 기록을 보관하세요. 이름이 같은 다른 파일은 덮어쓰지 않습니다.
 
 ### 체험·구매 자주 묻는 질문
 
