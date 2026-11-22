@@ -4,6 +4,8 @@ For the Mac App Store edition, see [Support for Mac](MAC-STORE-SUPPORT.md#englis
 
 Mac App Store판은 [비우자 Mac 고객지원](MAC-STORE-SUPPORT.md)을 이용해 주세요. 아래에서는 Windows판을 안내합니다.
 
+[Mac 사용권·소비자 이용안내](MAC-STORE-TERMS-v0.5.0.md) · [Mac terms and consumer guide](MAC-STORE-TERMS-v0.5.0.md#english)
+
 PCssak Biuja is maintained by a solo developer. Reports are prioritized by security impact,
 file-loss risk, number of affected users, and reproducibility rather than arrival order. Free
 Early Access support has no guaranteed response or fix deadline.
