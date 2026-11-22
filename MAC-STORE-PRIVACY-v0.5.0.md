@@ -43,7 +43,7 @@ Mac App Store 판은 사용권 키나 체험 기록을 만들지 않습니다. �
 
 이메일 문의는 선택 사항입니다. <mailto:pcssak@pcssak.com>으로 보내면 Cloudflare Email Routing이 발신 주소, 메일 본문과 첨부 자료를 PCSSAK이 고객지원에 사용하는 Google의 개인용 Gmail 계정으로 전달합니다. PCSSAK은 그 계정에서 메일을 열고 답변합니다. 앱은 사용자의 파일이나 작업 기록을 자동으로 첨부하지 않으며, 문의하지 않아도 정리 기능을 사용할 수 있습니다.
 
-문의 메일과 첨부 자료는 메일 서비스 제공업체를 통해 국외에서 처리될 수 있습니다. 제공업체의 데이터센터 운영과 서비스 로그 처리에 관한 정보는 [Cloudflare 개인정보처리방침](https://www.cloudflare.com/privacypolicy/)과 [Google 개인정보처리방침](https://policies.google.com/privacy?hl=ko)에서 확인할 수 있습니다. PCSSAK은 개인정보를 판매하지 않습니다.
+Cloudflare는 이메일 전달 서비스가 메일 본문을 저장하지 않는다고 설명하며, 별도의 활동 로그에는 전달 상태와 메일 관련 정보가 표시됩니다. Google은 전 세계 서버에서 데이터를 처리하므로 Gmail에 도착한 문의가 대한민국 밖에서 처리될 수 있습니다. [Cloudflare 이메일 전달](https://www.cloudflare.com/products/email-routing/) · [활동 로그](https://developers.cloudflare.com/email-service/observability/logs/) · [Google 개인정보처리방침](https://policies.google.com/privacy?hl=ko). PCSSAK은 개인정보를 판매하지 않습니다.
 
 ## 5. Apple과 사용자가 직접 고른 외부 서비스
 
@@ -133,7 +133,7 @@ Do not send real files, full paths, file lists, customer data, passwords, tokens
 
 Email support is optional. When you write to <mailto:pcssak@pcssak.com>, Cloudflare Email Routing forwards your sender address, message and attachments to the personal Gmail account that PCSSAK uses for support. PCSSAK reads and replies to your message in that Google account. The app does not attach your files or operation records automatically. You can use its organizing features without contacting us.
 
-Email providers may process messages and attachments outside Korea. For information on how they operate their data centers and handle service logs, see [Cloudflare’s Privacy Policy](https://www.cloudflare.com/privacypolicy/) and [Google’s Privacy Policy](https://policies.google.com/privacy?hl=en). PCSSAK does not sell personal information.
+Cloudflare states that its email routing service does not store email content. Its separate activity log shows delivery status and message metadata. Google processes data on servers around the world, so an inquiry delivered to Gmail may be processed outside Korea. [Cloudflare Email Routing](https://www.cloudflare.com/products/email-routing/) · [Activity log](https://developers.cloudflare.com/email-service/observability/logs/) · [Google Privacy Policy](https://policies.google.com/privacy?hl=en). PCSSAK does not sell personal information.
 
 ## 5. Apple and external services you choose
 
