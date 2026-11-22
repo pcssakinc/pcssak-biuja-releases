@@ -28,6 +28,8 @@ If you already moved the file back yourself, leave it there and retry. Biuja che
 
 **Where did my copy go after I chose Restore in the Windows Recycle Bin?** Undoing a copy leaves the source file in place. Explorer may return the copy to a temporary location inside the folder where Biuja had placed it. If it is still in the Recycle Bin, you can drag it into an empty folder of your choice. [How to find the restored copy](../SUPPORT.md)
 
+**A copy or move stopped before it finished. Where can I check the file?** When Biuja identifies a working file at startup, select **View details in History** in the notice. **Work retained at startup** shows the affected entries. Compare the original path with the recorded location. Keep the original and the working file until you have verified the contents. A working file can have the expected size even when its contents have not been verified. If you already closed the app again, look in **History → All** for the interrupted operation.
+
 ### Trial and purchase FAQ
 
 **How much does it cost?** The Store edition offers **30 days of trial access**, then a
@@ -81,8 +83,7 @@ do not assume the Store and standalone data locations are identical.
 Biuja does not upload user files for organization. Read the [Privacy Policy](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/STORE-PRIVACY-v0.5.0.md).
 The app creates compatibility device-code and trial records locally; these are not Store purchase inputs.
 
-Windows 11 x64 is recommended. Windows 10 and x86 are limited compatibility targets; only recorded
-tests establish verification for a specific configuration. WebView2 is required. Do not disable
+Windows 11 x64 is recommended. On Windows 10, the 32-bit and 64-bit Store packages require version 22H2 (build 19045). To check the version and build, press **Windows + R**, enter **winver**, and press **Enter**. Older Windows 10 builds cannot install this Store update. Windows 10 and x86 are limited compatibility targets. Biuja requires Microsoft Edge WebView2 Runtime version 111 or later. Do not disable
 SmartScreen, Microsoft Defender, or another security product to install an app.
 
 ## 한국어
@@ -107,6 +108,8 @@ SmartScreen, Microsoft Defender, or another security product to install an app.
 이미 직접 파일을 원래 위치에 옮겼다면 그대로 두고 다시 시도하세요. 비우자는 기록된 위치의 파일이 원본과 일치한 것을 확인해야 복원을 완료로 표시합니다. 파일이나 위치를 확인할 수 없으면 대기가 유지됩니다. 이때는 파일과 기록을 보관하세요. 이름이 같은 다른 파일은 덮어쓰지 않습니다.
 
 **복사 되돌리기 후 Windows 휴지통에서 ‘복원’을 눌렀는데 복사본은 어디 있나요?** 원본 파일은 그대로 있습니다. 탐색기는 복사본을 비우자가 복사했던 폴더 안의 임시 위치로 돌려놓을 수 있습니다. 아직 휴지통에 있다면 원하는 빈 폴더로 끌어 놓을 수 있습니다. [복원된 복사본을 찾는 방법](../SUPPORT.md)
+
+**복사나 이동이 도중에 끊겼습니다. 파일을 어디서 확인하나요?** 비우자가 시작하면서 작업 파일을 확인하면 안내에서 **기록에서 자세히 보기**를 누르세요. **이번 시작에서 보존된 작업**에 해당 항목이 표시됩니다. 원래 경로와 **중단 파일 보존 위치**를 대조하고, 내용을 확인할 때까지 원본과 작업 파일을 함께 보관하세요. 크기가 원본과 같아도 복사가 끝났는지는 별도로 확인해야 합니다. 앱을 다시 닫았다면 **기록 → 전체**에서 중단된 작업을 찾으세요.
 
 ### 체험·구매 자주 묻는 질문
 
@@ -157,8 +160,7 @@ v0.5.0 안에는 기존 무료 범위가 없습니다. 두 판이 같은 폴더�
 사용자 파일을 업로드하지 않습니다. [개인정보 처리방침](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/STORE-PRIVACY-v0.5.0.md)을 확인하세요. 호환성 기기 코드·체험 기록은
 로컬에 만들며 Store 구매 입력값으로 요구하지 않습니다.
 
-Windows 11 x64를 권장합니다. Windows 10·x86은 제한적 호환성 대상이며 실제 기록한 시험 범위를 확인하세요.
-WebView2가 필요합니다. 설치를 위해 Windows 보안 기능을 끄지 마세요.
+Windows 11 x64를 권장합니다. Windows 10에서 32비트·64비트 Store 패키지를 설치하려면 버전 22H2(빌드 19045)가 필요합니다. **Windows 키 + R**을 누르고 **winver**를 입력한 뒤 **Enter**를 누르면 버전과 빌드가 표시됩니다. 더 오래된 Windows 10 빌드에서는 이 Store 업데이트를 설치할 수 없습니다. Windows 10과 x86은 제한적 호환성 대상입니다. 비우자 화면을 사용하려면 Microsoft Edge WebView2 Runtime 111 이상이 필요합니다. 설치를 위해 Windows 보안 기능을 끄지 마세요.
 
 Previously valid PCSSAK license keys may retain their compatibility rights under their own terms;
 they do not replace a Store transaction or change Microsoft account rules. See the EULA. / 기존 유효 PCSSAK 키의
