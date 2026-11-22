@@ -62,6 +62,10 @@ back to the local trial state until the Store can confirm the purchase.
 included within the scope of the [Store EULA](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/STORE-EULA-v0.5.0.md). This is not a promise that every future
 separate product or paid major version is included. Microsoft Store delivers this edition's updates. To check manually, open Downloads or Library in Microsoft Store and check for updates.
 
+**A folder or rule disappeared after an update. How do I review it?** If the safety check excluded it, look for `config.before-safety-<fingerprint>.json` beside `config.json` in the Store edition’s settings folder. Section 4 of the [Store privacy policy](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/STORE-PRIVACY-v0.5.0.md#4-local-data-and-retention) lists the usual folder and explains when Windows redirects it. Open the copy in a text editor and leave the active `config.json` in place. In Biuja, add back only folders and rules that meet the current safety checks, then check the preview before enabling automation. Once you save the reviewed settings, you can delete the copy. If the saved settings still contain an excluded item, the next launch can create the copy again.
+
+If Biuja was forced to close, a temporary file named `config.before-safety-<fingerprint>.<random-id>.tmp` may remain. Fully close Biuja and check both `config.json` and the finished safety copy before deleting only the temporary file. Biuja does not use it for automatic recovery. These files can contain personal paths and rules, so leave them out of support requests.
+
 **Will my free version become paid?** Existing v0.1.x versions remain free in those versions and
 are not updated automatically into the Store edition. v0.5.0 has no old free tier. Avoid having
 both editions automatically organize the same folder. Back up/export settings before switching;
@@ -128,6 +132,10 @@ Store 화면을 확인하세요. 얼리 액세스와 체험 한계는 구매 전
 **업데이트도 포함되나요?** 안정성 업데이트 계속 제공·기능 업데이트 1회 이상 포함의 범위는
 [Store EULA](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/STORE-EULA-v0.5.0.md)에 따릅니다. 모든 미래 별도 제품·유료 주요 버전이 포함된다는 뜻은 아닙니다.
 이 판의 업데이트는 Microsoft Store가 제공합니다. 수동으로 확인하려면 Store의 다운로드 또는 라이브러리에서 업데이트를 확인하세요.
+
+**업데이트 후 폴더나 규칙이 보이지 않으면 어떻게 확인하나요?** 안전 검사로 제외됐다면 Store판 설정 폴더에서 `config.json` 옆의 `config.before-safety-<지문>.json`을 텍스트 편집기로 열어 보세요. [개인정보 처리방침](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/STORE-PRIVACY-v0.5.0.md#4-로컬-데이터와-보관) 제4절에서 일반적인 폴더와 Windows가 저장 위치를 바꾸는 경우를 확인할 수 있습니다. 사용 중인 `config.json`은 그대로 두세요. 앱에서 현재 안전 기준에 맞는 폴더와 규칙만 다시 설정하고, 자동 정리를 켜기 전에 미리보기로 확인하세요. 검토한 설정을 저장하면 사본을 삭제할 수 있습니다. 저장된 설정에 제외 대상이 남아 있으면 다음 실행 때 사본이 다시 생길 수 있습니다.
+
+앱이 강제 종료됐다면 `config.before-safety-<지문>.<임의값>.tmp`가 남을 수 있습니다. 앱을 완전히 닫은 뒤 `config.json`과 완성된 사본을 확인하고 임시 파일만 삭제하세요. 임시 파일은 자동 복원에 쓰이지 않습니다. 두 파일 모두 개인 경로와 규칙을 담을 수 있으니 지원 문의에 첨부하지 마세요.
 
 **기존 무료판이 유료로 바뀌나요?** 쓰던 v0.1.x 버전은 계속 무료이며 Store판으로 자동 업데이트하지 않습니다.
 v0.5.0 안에는 기존 무료 범위가 없습니다. 두 판이 같은 폴더를 자동 정리하지 않게 하세요. 전환 전 설정을 백업·
