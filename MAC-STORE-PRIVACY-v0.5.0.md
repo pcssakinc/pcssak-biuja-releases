@@ -33,7 +33,9 @@ Mac App Store 판은 사용권 키나 체험 기록을 만들지 않습니다. �
 
 - 처리 항목: 사용자가 보낸 이메일 주소, 적어 보낸 이름, 문의 내용과 첨부 자료
 - 처리 목적: 문의에 답하고, 사용자가 알려 준 문제나 보안 신고에 대응하는 데 사용합니다.
-- 보관과 삭제: PCSSAK은 답변 후 지원 메일함에서 문의 메일과 첨부 자료를 삭제합니다. 별도 문의 기록은 보관하지 않습니다.
+- 보관과 삭제: 일반 문의는 마지막 답변으로 처리를 마치면 받은 메일, 보낸 답변, 첨부 자료와 내려받은 업무용 사본을 삭제합니다. 해당 메일은 Gmail 휴지통에서도 개별 영구 삭제합니다. 일반 문의 내역은 따로 보관하지 않습니다.
+
+법령에 따라 보존해야 하는 기록은 필요한 범위만 분리해 접근을 제한하고, 의무 기간이 끝나면 파기합니다. 예를 들어 한국 전자상거래법상 PCSSAK에 보존 의무가 적용되는 소비자의 불만 또는 분쟁처리 기록은 3년간 보관합니다. [전자상거래법 시행령 제6조](https://www.law.go.kr/법령/전자상거래등에서의소비자보호에관한법률시행령/제6조)
 
 실제 파일, 전체 경로, 파일 목록, 고객 자료, 암호, 토큰, 개인키, 결제 정보는 보내지 마세요. 가상의 예시와 가린 화면을 사용해 주세요.
 
@@ -55,7 +57,7 @@ Mac App Store 판은 사용권 키나 체험 기록을 만들지 않습니다. �
 
 ## 7. 문의 자료 삭제
 
-Gmail에서 일반 삭제한 메일과 그 첨부 자료는 휴지통에 최대 30일간 남을 수 있습니다. 휴지통에서 먼저 영구 삭제하면 그 기간은 짧아집니다. 이 기간은 Gmail 메일함에 적용됩니다. 자세한 내용은 [Gmail의 메일 삭제 안내](https://support.google.com/mail/answer/7401?hl=ko)에서 확인하세요.
+Gmail에서 일반 삭제한 메일은 휴지통에 최대 30일간 남을 수 있습니다. PCSSAK은 3항에 따라 일반 문의를 마칠 때 해당 메일을 휴지통에서도 지웁니다. 메일함에서의 영구 삭제와 제공업체의 로그·백업 삭제 시점은 다를 수 있습니다. [Gmail 삭제 안내](https://support.google.com/mail/answer/7401?hl=ko) · [Google의 보관 및 삭제 안내](https://policies.google.com/technologies/retention?hl=ko)
 
 답변을 받기 전에 문의로 보낸 개인정보를 지우려면 6항의 연락처로 요청할 수 있습니다. Mac에 저장된 설정과 작업 기록은 기기에 남으며, 이를 지우는 방법은 10항에 있습니다.
 
@@ -121,7 +123,9 @@ The Mac App Store edition does not create licence keys or trial records. Section
 
 - Items: the email address you write from, any name you include, and the content and attachments of your message.
 - Purpose: to answer your inquiry and address problems or security reports you send us.
-- Retention: after we reply, we delete your message and its attachments from our support mailbox. We keep no separate inquiry archive.
+- Retention and deletion: once our final reply resolves a routine inquiry, we delete the incoming messages, sent replies, attachments and any copies downloaded for support. We also permanently delete those messages from Gmail Trash. We keep no separate archive of routine inquiries.
+
+When the law requires us to keep a record, we retain only the information required, keep it separate with restricted access and delete it when the required period ends. For example, where Korean e-commerce law requires PCSSAK to retain records of consumer complaints or disputes, the retention period is three years. [Article 6 of the Korean Enforcement Decree (in Korean)](https://www.law.go.kr/법령/전자상거래등에서의소비자보호에관한법률시행령/제6조)
 
 Do not send real files, full paths, file lists, customer data, passwords, tokens, private keys or payment details. Please use made-up examples and masked screenshots.
 
@@ -143,7 +147,7 @@ You can ask to access, correct, delete or stop the processing of the personal in
 
 ## 7. Deleting information you send us
 
-When a message is deleted in Gmail, the message and its attachments can remain in Trash for up to 30 days. Permanently deleting it from Trash earlier shortens that period. This period applies to the Gmail mailbox. See [Google’s guide to deleting Gmail messages](https://support.google.com/mail/answer/7401?hl=en).
+Messages deleted normally in Gmail can remain in Trash for up to 30 days. When we close a routine inquiry, we also remove its messages from Trash as described in section 3. Providers may delete their logs and backups on a different schedule. [Gmail deletion guide](https://support.google.com/mail/answer/7401?hl=en) · [How Google retains and deletes data](https://policies.google.com/technologies/retention?hl=en)
 
 If you want us to delete the personal information you sent before we reply, use the contact in section 6. Settings and operation records stored on your Mac stay on your device. Section 10 explains how to remove them.
 
