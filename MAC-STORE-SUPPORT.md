@@ -42,9 +42,10 @@ Mac App Store에서 비우자를 설치한 뒤 앱을 여세요. 첫 화면의 *
 
 ## 문의하기
 
+메일을 보내면 Cloudflare가 개인용 Gmail로 전달하며 대한민국 밖에서 처리될 수 있습니다. 보내기 전에 [문의 메일의 처리 및 삭제 안내](MAC-STORE-PRIVACY-v0.5.0.md#4-이메일로-문의할-때의-국외-처리)를 확인할 수 있습니다.
+
 문의할 때 앱 버전과 macOS 버전, 선택한 동작, 예상한 결과와 실제 결과, 표시된 오류 문구를 알려주세요. 파일 이름이나 경로는 `테스트/예시.pdf`처럼 바꿔 주세요. 스크린샷은 이름·경로·이메일 등 개인 정보를 가릴 수 있을 때만 첨부하세요. 실제 문서, 암호, 인증 코드, 결제 정보는 보내지 마세요. [PCSSAK 고객지원에 이메일 보내기](mailto:pcssak@pcssak.com)
 
-Cloudflare Email Routing은 문의를 PCSSAK이 고객지원에 사용하는 개인용 Gmail로 전달합니다. PCSSAK은 일반 문의가 마지막 답변으로 끝나면 받은 메일, 보낸 답변, 첨부와 내려받은 사본을 삭제하고 해당 메일을 Gmail 휴지통에서도 영구 삭제합니다. 법령에 따라 보존해야 하는 기록은 필요한 범위와 기간에 한해 따로 보관합니다. 메일 제공업체의 로그와 백업에는 별도의 보관 기준이 적용됩니다.
 
 <a name="english"></a>
 
@@ -92,6 +93,6 @@ In Biuja, open **Settings → Privacy and terms**, then choose **Privacy notice*
 
 ## Contact support
 
-Include the app version, macOS version, the action you took, what you expected, what happened and any error message. Replace personal filenames or paths with examples such as `Test/Example.pdf`. Only attach screenshots if you can obscure personal information such as names, paths and email addresses. Please leave out original documents, passwords, verification codes and payment details. [Email PCSSAK support](mailto:pcssak@pcssak.com)
+Cloudflare forwards support messages to a personal Gmail inbox. Your email may be processed outside Korea. Before sending, you can read [how we handle and delete support email](MAC-STORE-PRIVACY-v0.5.0.md#4-cross-border-processing-when-you-email-support).
 
-Cloudflare Email Routing forwards inquiries to the personal Gmail account PCSSAK uses for support. When the final reply resolves a routine inquiry, PCSSAK deletes the incoming messages, sent replies, attachments and downloaded copies, and permanently deletes those messages from Gmail Trash. We keep legally required records separately, limited to what the law requires and for as long as required. Mail providers apply their own retention policies to logs and backups.
+Include the app version, macOS version, the action you took, what you expected, what happened and any error message. Replace personal filenames or paths with examples such as `Test/Example.pdf`. Only attach screenshots if you can obscure personal information such as names, paths and email addresses. Please leave out original documents, passwords, verification codes and payment details. [Email PCSSAK support](mailto:pcssak@pcssak.com)

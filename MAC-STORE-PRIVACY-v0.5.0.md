@@ -4,7 +4,7 @@
 
 # PCssak Biuja Mac App Store 개인정보 처리방침
 
-- 최종 수정일: 2026-11-22 · 적용: PCssak Biuja 0.5.0 Mac App Store 판부터
+- 최종 수정일: 2026-11-25 · 적용: PCssak Biuja 0.5.0 Mac App Store 판부터
 - 운영자: PCSSAK · 개인정보 보호 담당(고객지원): <mailto:pcssak@pcssak.com>
 - 사업장 주소: 대한민국 서울시 도봉구 노해로65길 7-12, 7층 75-B호
 
@@ -39,11 +39,16 @@ Mac App Store 판은 사용권 키나 체험 기록을 만들지 않습니다. �
 
 실제 파일, 전체 경로, 파일 목록, 고객 자료, 암호, 토큰, 개인키, 결제 정보는 보내지 마세요. 가상의 예시와 가린 화면을 사용해 주세요.
 
-## 4. 문의 메일의 처리
+## 4. 이메일로 문의할 때의 국외 처리
 
-이메일 문의는 선택 사항입니다. <mailto:pcssak@pcssak.com>으로 보내면 Cloudflare Email Routing이 발신 주소, 메일 본문과 첨부 자료를 PCSSAK이 고객지원에 사용하는 Google의 개인용 Gmail 계정으로 전달합니다. PCSSAK은 그 계정에서 메일을 열고 답변합니다. 앱은 사용자의 파일이나 작업 기록을 자동으로 첨부하지 않으며, 문의하지 않아도 정리 기능을 사용할 수 있습니다.
+문의 메일을 보내면 발신 주소, 표시 이름(있는 경우), 수신 주소, 제목, 본문과 직접 첨부한 자료가 아래 경로를 거칩니다. 앱이 파일·경로·작업 기록을 자동으로 첨부하는 기능은 없습니다.
 
-Cloudflare는 이메일 전달 서비스가 메일 본문을 저장하지 않는다고 설명하며, 별도의 활동 로그에는 전달 상태와 메일 관련 정보가 표시됩니다. Google은 전 세계 서버에서 데이터를 처리하므로 Gmail에 도착한 문의가 대한민국 밖에서 처리될 수 있습니다. [Cloudflare 이메일 전달](https://www.cloudflare.com/products/email-routing/) · [활동 로그](https://developers.cloudflare.com/email-service/observability/logs/) · [Google 개인정보처리방침](https://policies.google.com/privacy?hl=ko). PCSSAK은 개인정보를 판매하지 않습니다.
+- **받은 메일 전달 — Cloudflare, Inc.** 사용자가 지원 주소로 보낸 메일이 도착하면 Cloudflare Email Routing이 인터넷 메일로 PCSSAK의 지원 메일함에 전달합니다. Cloudflare는 전달 서비스가 메일 본문을 저장하지 않는다고 설명합니다. 전달 결과와 메일 인증 결과는 별도 활동 로그에 기록될 수 있습니다. PCSSAK이 메일함을 지워도 이 로그가 함께 삭제되지는 않습니다. [이메일 전달](https://www.cloudflare.com/products/email-routing/) · [활동 로그](https://developers.cloudflare.com/email-service/observability/logs/) · Cloudflare 개인정보 문의 (privacyquestions@cloudflare.com)
+- **받은 메일과 답변 — Google LLC.** PCSSAK은 전달받은 문의를 개인용 Gmail 계정에서 읽고, 그 계정에서 문의자에게 답변합니다. Google은 받은 메일과 보낸 답변 및 첨부를 처리합니다. PCSSAK은 일반 문의가 마지막 답변으로 마무리되면 3항에 따라 삭제합니다. Google은 자체 삭제 절차를 적용하며, 재해 복구용 암호화 백업에는 데이터가 최대 6개월 남을 수 있다고 설명합니다. [Google 개인정보처리방침](https://policies.google.com/privacy?hl=ko) · [Google의 삭제 및 보관 기준](https://policies.google.com/technologies/retention?hl=ko) · Google 개인정보 문의 (googlekrsupport@google.com)
+
+**처리 장소.** PCSSAK의 사업장은 대한민국에 있습니다. 메일 전달과 메일함 처리는 대한민국 밖에서 이루어질 수 있습니다. Google은 여러 나라의 서버를 사용합니다. 현재 두 서비스의 공개 자료만으로는 이 지원 주소의 메일과 처리 기록이 거치는 국가 전체 또는 Cloudflare 전달 로그의 최종 삭제 시점을 특정할 수 없습니다.
+
+**메일을 보내고 싶지 않을 때.** 메일을 보내기 전에는 창을 닫아도 됩니다. 그러면 해당 문의는 PCSSAK에 접수되지 않으며 이메일 답변도 제공되지 않습니다. 비우자의 파일 정리·되돌리기는 그대로 사용할 수 있습니다. 이미 보낸 자료의 열람·삭제 등은 6항에서 안내합니다. PCSSAK은 개인정보를 판매하지 않습니다.
 
 ## 5. Apple과 사용자가 직접 고른 외부 서비스
 
@@ -94,7 +99,7 @@ Gmail에서 일반 삭제한 메일은 휴지통에 최대 30일간 남을 수 �
 
 # PCssak Biuja Mac App Store Privacy Policy
 
-- Last updated: 2026-11-22 · Applies from: PCssak Biuja 0.5.0, Mac App Store edition
+- Last updated: 2026-11-25 · Applies from: PCssak Biuja 0.5.0, Mac App Store edition
 - Operator: PCSSAK · Privacy contact (customer support): <mailto:pcssak@pcssak.com>
 - Business address: 7F, Unit 75-B, 7-12 Nohae-ro 65-gil, Dobong-gu, Seoul, Republic of Korea
 
@@ -129,11 +134,16 @@ When the law requires us to keep a record, we retain only the information requir
 
 Do not send real files, full paths, file lists, customer data, passwords, tokens, private keys or payment details. Please use made-up examples and masked screenshots.
 
-## 4. How support email is handled
+## 4. Cross-border processing when you email support
 
-Email support is optional. When you write to <mailto:pcssak@pcssak.com>, Cloudflare Email Routing forwards your sender address, message and attachments to the personal Gmail account that PCSSAK uses for support. PCSSAK reads and replies to your message in that Google account. The app does not attach your files or operation records automatically. You can use its organizing features without contacting us.
+When you email support, the sender address, display name (if supplied), recipient address, subject, message and any attachments you choose to send follow the route below. The app does not automatically attach files, paths or operation records.
 
-Cloudflare states that its email routing service does not store email content. Its separate activity log shows delivery status and message metadata. Google processes data on servers around the world, so an inquiry delivered to Gmail may be processed outside Korea. [Cloudflare Email Routing](https://www.cloudflare.com/products/email-routing/) · [Activity log](https://developers.cloudflare.com/email-service/observability/logs/) · [Google Privacy Policy](https://policies.google.com/privacy?hl=en). PCSSAK does not sell personal information.
+- **Forwarding incoming mail — Cloudflare, Inc.** When your message arrives at our support address, Cloudflare Email Routing forwards it to our support inbox over the internet. Cloudflare says its routing service does not store message content. Its separate activity log may record delivery and email authentication results. Deleting the message from our inbox does not delete that log. [Email Routing](https://www.cloudflare.com/products/email-routing/) · [Activity log](https://developers.cloudflare.com/email-service/observability/logs/) · Contact Cloudflare about privacy (privacyquestions@cloudflare.com)
+- **Receiving and replying — Google LLC.** PCSSAK reads forwarded inquiries in a personal Gmail account and uses that account to reply to you. Google processes incoming messages, sent replies and attachments. We delete routine inquiries when our final reply resolves them, as described in section 3. Google follows its own deletion process and says data can remain in encrypted disaster-recovery backups for up to six months. [Google Privacy Policy](https://policies.google.com/privacy?hl=en) · [How Google retains and deletes data](https://policies.google.com/technologies/retention?hl=en) · Contact Google about privacy in Korea (googlekrsupport@google.com)
+
+**Where processing takes place.** PCSSAK is based in the Republic of Korea. Mail forwarding and mailbox processing can take place outside Korea. Google uses servers in multiple countries. Neither provider’s public documentation identifies every country involved for this support address, and Cloudflare’s routing documentation does not specify when its delivery logs are finally deleted.
+
+**If you prefer not to send email.** You can close the message before sending it. In that case PCSSAK will not receive the inquiry or reply to it by email. You can still organize files and use Undo. For access to or deletion of information you have already sent, see section 6. PCSSAK does not sell personal information.
 
 ## 5. Apple and external services you choose
 
