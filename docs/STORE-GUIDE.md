@@ -1,8 +1,8 @@
 # PCssak Biuja v0.5.0 — Microsoft Store guide / Store 안내
 
 **Preparation status:** v0.5.0 is a Store submission candidate. Store publication, installation,
-and purchase verification have not been claimed. No Store product URL is supplied until the
-reserved Store ID and actual listing are confirmed. Existing free v0.1.x downloads remain available.
+and purchase verification remain pending. The product ID is reserved. We will add a public
+Store link after the listing is available to customers. Existing free v0.1.x downloads remain available.
 
 ## English
 
@@ -32,9 +32,10 @@ If you already moved the file back yourself, leave it there and retry. Biuja che
 
 ### Trial and purchase FAQ
 
-**How much does it cost?** The Store edition offers **30 days of trial access**, then a
-**US$14.99 one-time purchase**, with no subscription. The final price is the one shown in your
-Store market. The early-access status and trial limit are shown before purchase.
+**How much does it cost?** Each user gets a 30-day trial. In the US, the planned one-time price
+is US$9.99 for the first 100 days after the app first becomes generally available worldwide (UTC),
+then US$14.99 starting at the same UTC time on day 101. Starting a trial does not reserve a price.
+Before buying, check the price and taxes shown in your Store market. There is no subscription.
 
 **What should I do before the trial ends?** Review History, undo any operations you want to reverse and export
 your settings before the expiry date. If the trial ends while Biuja is running, organization and preview stop.
@@ -44,6 +45,11 @@ expiry, Windows may take you to the Store to buy it. You can access your organiz
 **Do I need a key or a PCSSAK account?** No. Buy through **Settings → Plan and license → Buy in
 Microsoft Store**, then return to Biuja. The license follows your Microsoft account and Microsoft
 Store terms; it is not Biuja's one-PC PB2 device-code license.
+
+**I paid, but Biuja still shows a trial.** Check that Microsoft Store is signed in to the account
+that bought Biuja. Return to Biuja and open **Settings → Plan and license → Check purchase status**.
+This checks the existing entitlement without placing another order. If it is still missing, check
+your [Microsoft order history](https://account.microsoft.com/billing/orders) before contacting support.
 
 **What if I replace my PC?** Sign in to Microsoft Store with the account that purchased Biuja and install it from your library on a compatible PC. Microsoft's general app rules currently allow up to 10 compatible Windows devices, subject to the applicable Store terms. Biuja adds no single-PC activation. Installing the app on another PC does not copy your settings, history or files. [Digital goods usage rules](https://support.microsoft.com/en-us/windows/apps/usage-rules-for-digital-goods-rules)
 
@@ -89,7 +95,7 @@ SmartScreen, Microsoft Defender, or another security product to install an app.
 ## 한국어
 
 **준비 상태:** v0.5.0 Store 제출 후보의 안내입니다. Store 공개·설치·구매 검증 완료를 의미하지 않습니다.
-앱 예약과 실제 목록을 확인하기 전에는 Store 주소를 임의로 적지 않습니다. 기존 무료 v0.1.x 다운로드는 유지합니다.
+상품 ID를 예약했습니다. 고객에게 공개된 실제 목록을 확인하면 Store 주소를 안내합니다. 기존 무료 v0.1.x 다운로드는 유지합니다.
 
 ### 처음 사용하기
 
@@ -113,8 +119,9 @@ SmartScreen, Microsoft Defender, or another security product to install an app.
 
 ### 체험·구매 자주 묻는 질문
 
-**가격은 얼마인가요?** **30일 체험 뒤 US$14.99 한 번 구매**, 구독 없음입니다. 실제 결제 가격은 해당 시장의
-Store 화면을 확인하세요. 얼리 액세스와 체험 한계는 구매 전에 안내합니다.
+**가격은 얼마인가요?** 체험은 사용자마다 30일입니다. 미국 일회 구매 예정가는 전 세계 첫 일반 공개
+시각(UTC)부터 100일간 9.99달러, 101일째 같은 시각부터 14.99달러입니다. 체험을 시작해도 그날의
+가격이 예약되지는 않습니다. 구매를 확정할 때 해당 지역 Store에 표시된 가격과 세금을 확인하세요. 구독료는 없습니다.
 
 **체험이 끝나기 전에 무엇을 해야 하나요?** 기록에서 필요한 작업을 되돌리고 설정을 내보내 두세요.
 앱을 쓰는 도중 체험이 끝나면 정리와 미리보기가 멈춥니다. 열린 앱에서는 기록, 안전 조건을 충족한 되돌리기,
@@ -123,6 +130,10 @@ Store 화면을 확인하세요. 얼리 액세스와 체험 한계는 구매 전
 
 **기기 코드·사용권 키·PCSSAK 계정이 필요한가요?** 아닙니다. **설정 → 요금제·사용권 → Microsoft Store에서 구매**
 후 앱으로 돌아오면 확인합니다. 사용권은 Microsoft 계정과 Store 조건에 따르며 PC 1대 PB2 기기 코드 사용권이 아닙니다.
+
+**결제했는데 아직 체험 중으로 표시돼요.** 구매에 사용한 계정으로 Microsoft Store에 로그인했는지 확인한 뒤,
+비우자로 돌아와 **설정 → 요금제·사용권 → 구매 상태 다시 확인**을 누르세요. 이 버튼은 추가 결제 없이
+기존 사용권을 조회합니다. 계속 확인되지 않으면 [Microsoft 주문 기록](https://account.microsoft.com/billing/orders)을 확인한 뒤 문의하세요.
 
 **PC를 바꾸면 다시 사야 하나요?** 구매한 Microsoft 계정으로 새 PC의 Store에 로그인해 라이브러리에서 다시 설치하세요. Microsoft의 현재 일반 앱 규칙은 호환 Windows 기기 최대 10대를 안내합니다. 비우자 자체의 1대 활성화 제한은 없습니다. 새 PC에는 파일·설정·기록이 자동으로 옮겨지지 않습니다. [기기 사용 규칙](https://support.microsoft.com/en-us/windows/apps/usage-rules-for-digital-goods-rules)
 
