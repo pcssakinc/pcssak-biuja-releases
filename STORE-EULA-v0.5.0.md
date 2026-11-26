@@ -1,6 +1,6 @@
 # PCssak Biuja End User License Agreement / 최종 사용자 이용약관
 
-- Last updated / 최종 수정: 2026-11-22
+- Last updated / 최종 수정: 2026-11-26
 - Provider / 제공자: PCSSAK
 - Contact / 문의: `pcssak@pcssak.com`
 - Applies to / 적용 대상: PCssak Biuja v0.5.0 for Windows — Microsoft Store Early Access
@@ -35,9 +35,10 @@ Early Access라는 이유로 배제되지 않습니다.
 
 ### 제3조 (30일 체험과 구매 사용권)
 
-Store 상품은 **모든 기능을 30일간 체험**한 뒤 한 번 구매하는 방식이며 기본 가격은
-**US$14.99**입니다. 실제 현지 통화 가격·세금·체험 조건은 구매를 확정하기 전에 Microsoft Store에
-표시되는 내용을 따릅니다. 앱에 정기 구독료나 구매 사용권의 자체 만료일을 두지 않습니다.
+Store 상품은 개인별로 **모든 기능을 30일간 체험**할 수 있으며 구매는 한 번만 합니다.
+구매 가격은 구매를 확정할 때 해당 지역의 Microsoft Store에 표시된 가격입니다.
+결제 전에 해당 지역의 세금·체험 조건을 함께 확인하세요. 체험을 시작해도 구매 가격이 예약되지는 않습니다.
+앱에 정기 구독료나 구매 사용권의 자체 만료일을 두지 않습니다.
 
 사용권은 구매한 **Microsoft 계정의 Store 사용권 범위**에 적용되며, 허용되는 Windows 기기 수와
 계정·가족 공유·양도 조건은 Microsoft Store 조건을 따릅니다. Store판은 별도의 PC 1대용 PB2
@@ -137,7 +138,7 @@ Microsoft Edge WebView2 Runtime이 없거나 복구가 필요하면 Microsoft �
 
 Windows 0.5.0 패키지에는 제3자 저작권과 사용 조건을 담은 `THIRD-PARTY-NOTICES.txt`와
 MPL 구성요소 소스 안내 `THIRD-PARTY-SOURCE.md`가 들어 있습니다. 해당 버전의 원본 소스는
-`mpl-source/archives`에 동봉합니다. 각 구성요소에는 해당 라이선스가 적용됩니다.
+`mpl-source/archives`에 동봉합니다. 각 구성요소에는 해당 라이선스가 적용됩니다. 패키지 자료에 접근하기 어려우면 [Windows 0.5.0 제3자 고지](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/windows-v0.5.0/THIRD-PARTY-NOTICES.txt)와 [구성요소별 원본 소스 안내](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/windows-v0.5.0/THIRD-PARTY-SOURCE.md)를 확인하거나 지원 메일로 해당 버전의 사본을 요청하세요.
 파일 정리 자체는 기기에서 로컬 처리하며 PCSSAK 서버로
 파일 내용·이름·경로·규칙·작업저널을 자동 전송하지 않습니다.
 
@@ -195,10 +196,9 @@ Early Access does not exclude a paying customer's statutory rights.
 
 ### 3. Trial and purchase license
 
-The Store offer provides **30 days to try all features**, followed by a one-time purchase at a
-base price of **US$14.99**. The local-currency price, tax, and trial conditions shown by Microsoft
-Store before confirmation apply. The app adds no recurring subscription or expiry date to a
-purchased license.
+The Store offer provides **30 days to try all features** per user and a one-time purchase.
+The purchase price is the price displayed by Microsoft Store for your market at checkout.
+Check applicable taxes and trial terms before confirming payment. Starting a trial does not reserve a purchase price. The app adds no subscription or expiry date to a purchased license.
 
 The license follows the **Microsoft account's Store entitlement**. Permitted Windows devices,
 account or family sharing, and transfer conditions follow Microsoft Store terms. The Store
@@ -307,7 +307,7 @@ WebView2, external links, and support contacts.
 
 The Windows 0.5.0 package includes third-party copyrights and license terms in
 `THIRD-PARTY-NOTICES.txt`, the MPL source guide in `THIRD-PARTY-SOURCE.md`, and the corresponding
-source archives in `mpl-source/archives`. Each component is governed by its own license.
+source archives in `mpl-source/archives`. Each component is governed by its own license. If you cannot access the package materials, see the [Windows 0.5.0 third-party notices](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/windows-v0.5.0/THIRD-PARTY-NOTICES.txt) and [component source guide](https://github.com/pcssakinc/pcssak-biuja-releases/blob/main/windows-v0.5.0/THIRD-PARTY-SOURCE.md), or ask support for a copy for your version.
 File organization runs locally; the app does not automatically send file contents, filenames,
 paths, rules, or the journal to a PCSSAK server.
 

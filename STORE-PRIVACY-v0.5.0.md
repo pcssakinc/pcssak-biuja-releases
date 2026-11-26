@@ -1,6 +1,6 @@
 # PCssak Biuja Privacy Policy / 개인정보 처리방침
 
-- Last updated / 최종 수정: 2026-11-22
+- Last updated / 최종 수정: 2026-11-26
 - Operator / 운영자: PCSSAK
 - Contact / 문의: `pcssak@pcssak.com`
 - Applies to / 적용 대상: PCssak Biuja v0.5.0 for Windows — Microsoft Store Early Access
@@ -32,7 +32,7 @@ PCSSAK 앱 계정, 광고, 사용 분석·추적 SDK나 클라우드 파일 색�
 찾습니다. 정리할 위치는 사용자가 정합니다. OneDrive 같은 동기화 폴더에 파일을 복사하거나
 이동하면 그 서비스가 동기화 설정에 따라 파일을 업로드할 수 있습니다. 네트워크 공유 폴더를
 선택하면 파일과 경로가 해당 파일 서버를 거칠 수 있습니다. 파일을 기기 안에만 두려면
-동기화나 네트워크 공유에 연결되지 않은 로컬 폴더를 선택하세요.
+동기화나 네트워크 공유에 연결되지 않은 로컬 폴더를 선택하세요. Windows 또는 다른 백업 앱이 파일·설정을 별도로 복사할 수 있으므로 그 서비스의 백업 대상도 확인하세요.
 
 ### 2. Microsoft Store 계정·결제·사용권
 
@@ -141,10 +141,12 @@ WebView2 Runtime은 보안·성능·안정성 유지를 위한 필수 진단 데
 
 이메일 문의는 선택 사항입니다. <mailto:pcssak@pcssak.com>으로 보내면 Cloudflare Email Routing이
 발신 주소·표시 이름·메일 본문과 첨부 자료를 고객지원에 사용하는 Google의 개인용 Gmail
-수신함으로 전달합니다. PCSSAK은 문의 메일에 접근할 수 있는 사람을 고객지원 담당자로 제한하고 답변 후 문의 메일과
-첨부 자료를 삭제하며 별도 문의 기록을 보관하지 않습니다. Gmail에서 일반 삭제한 메일은
-휴지통에 최대 30일간 남을 수 있고 먼저 영구 삭제할 수 있습니다. 이 기간은 Gmail 휴지통에
-적용됩니다. 외부 서비스의 로그와 백업에는 각 제공자의 정책이 적용됩니다.
+수신함으로 전달합니다. PCSSAK은 메일 접근을 고객지원 담당자로 제한합니다. 일반 문의는 처리가
+끝나면 받은 메일과 답변, 첨부 자료 및 내려받은 사본을 삭제하고 Gmail 휴지통에서도 해당 메일을
+영구 삭제합니다. 법령상 보존할 의무가 있는 기록은 필요한 부분만 따로 보관하고 기간 만료 후
+파기합니다. 한국 전자상거래법상 PCSSAK에 의무가 있는 소비자 불만·분쟁처리 기록의 보존 기간은
+3년입니다. Gmail 휴지통의 일반 보관 한도 30일과 외부 업체의 로그·백업 보관 기간은 별개입니다.
+[전자상거래법 시행령 제6조](https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=900619372) ·
 [Gmail 메일 삭제 안내](https://support.google.com/mail/answer/7401?hl=ko)
 
 파일 정리 문제는 앱 버전, Windows 버전, 가상의 파일명으로 재현한 단계와 오류 문구로 문의할 수
@@ -175,10 +177,19 @@ Store 앱 제거·초기화는 Windows의 패키지 데이터 정책을 따르�
 
 ### 8. 제3자·국외 처리·아동
 
-PCSSAK은 앱 사용 데이터를 광고업자나 데이터 중개업자에게 판매하지 않습니다. Microsoft,
-GitHub, Cloudflare와 Gmail 등 외부 서비스는 각 정책과 인프라에 따라 여러 국가·지역에서 연결
-또는 문의 정보를 처리할 수 있습니다. 지원 메일의 국외 처리를 원하지 않으면 이메일을 보내지 않고
-앱을 이용할 수 있습니다. 지원 메일에 관여하는 업체의 운영 범위와 권리는
+PCSSAK은 앱 사용 데이터를 광고업자나 데이터 중개업자에게 판매하지 않습니다. 외부 서비스는
+각자의 인프라에 따라 연결 또는 문의 정보를 여러 국가·지역에서 처리할 수 있습니다.
+
+지원 주소에 메일을 보낼 때 Cloudflare, Inc.의 Email Routing이 발신·수신 주소, 표시 이름, 제목,
+본문 및 사용자가 직접 첨부한 자료를 Google LLC의 Gmail 수신함으로 전송합니다. Cloudflare는
+메일 본문을 저장하지 않는다고 안내하며 전달·인증 결과는 활동 로그에 남을 수 있습니다.
+Gmail은 문의와 답변을 메일함에 보관합니다. Google은 삭제 뒤에도 재해 복구용 암호화 백업에
+자료가 최대 6개월 남을 수 있다고 안내합니다. 각 업체의 공개 자료만으로 이 지원 주소에 적용되는
+처리국 전체와 전달 로그의 최종 삭제 시점을 확인할 수 없습니다. 개인정보 문의 창구는 아래
+각 업체의 방침에서 확인할 수 있습니다. 메일을 보내지 않아도 앱의 정리·되돌리기를 이용할 수
+있습니다. 이 경우 해당 문의가 접수되지 않아 이메일 답변은 제공되지 않습니다.
+[Cloudflare 전달 서비스](https://www.cloudflare.com/products/email-routing/) · [메일 활동 로그](https://developers.cloudflare.com/email-service/observability/logs/) · [Google의 보관·삭제](https://policies.google.com/technologies/retention?hl=ko).
+지원 메일에 관여하는 업체의 운영 범위와 권리는
 [Cloudflare 개인정보처리방침](https://www.cloudflare.com/privacypolicy/)과
 [Google 개인정보처리방침](https://policies.google.com/privacy?hl=ko)에서 확인하세요.
 
@@ -212,7 +223,7 @@ If you set a file-content condition, Biuja looks for your search terms on your d
 it can inspect. You choose where files go. Moving or copying a file to a synced folder such as
 OneDrive can cause the sync provider to upload it according to your settings. Selecting a
 network share can send files and paths to that file server. To keep files on the device,
-choose a local folder outside synced locations and network shares.
+choose a local folder outside synced locations and network shares. Windows or another backup service may independently copy files or settings. Review the locations included in those backups.
 
 ### 2. Microsoft Store account, payment, and entitlement
 
@@ -328,11 +339,13 @@ remain visible after an email has been deleted. GitHub follows its
 
 Contacting support by email is optional. When you email <mailto:pcssak@pcssak.com>, Cloudflare
 Email Routing forwards your sender address, display name, message, and attachments to the personal
-Gmail account used for customer support. PCSSAK restricts access to its support contact,
-deletes the inquiry email and attachments after replying, and keeps no separate inquiry record.
-A message normally deleted in Gmail may remain in Trash for up to 30 days and can be permanently
-deleted sooner. This period applies to Gmail Trash. Providers' own policies cover their logs
-and backups. [Gmail deletion guidance](https://support.google.com/mail/answer/7401?hl=en)
+Gmail account used for customer support. Only support personnel have access. When an ordinary
+inquiry is resolved, PCSSAK deletes the inbound message, replies, attachments and downloaded copies,
+including permanent removal of the messages from Gmail Trash. If records must be retained by law,
+PCSSAK keeps the necessary parts separately and deletes them at the end of the retention period.
+For example, consumer complaint and dispute records are kept for three years when PCSSAK is subject to
+that duty under Korean electronic commerce law. Gmail's normal 30-day Trash limit is separate from
+providers' log and backup retention. [Korean electronic commerce decree, Article 6](https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=900619372) · [Gmail deletion guidance](https://support.google.com/mail/answer/7401?hl=en)
 
 For file organization issues, include the app and Windows versions, the steps using an
 invented filename, and the error message. Do not send real files, full paths, directory
@@ -365,10 +378,19 @@ them. Microsoft-account, transaction, entitlement deletion, and refunds follow M
 
 ### 8. Third parties, international processing, and children
 
-PCSSAK does not sell app-usage data to advertisers or data brokers. Microsoft, GitHub,
-Cloudflare, Gmail, and other chosen providers can process connection or contact data in countries
-or regions used by their infrastructure and policies. If you wish to avoid international
-processing of support email, you can use the app without contacting support by email.
+PCSSAK does not sell app-usage data to advertisers or data brokers. External services may process
+connection or contact data in countries and regions where their infrastructure operates.
+
+When a message reaches the support address, Cloudflare, Inc. forwards the sender and recipient
+addresses, display name, subject, body and any attachments supplied by the sender to Google LLC's
+Gmail service. Cloudflare states that Email Routing does not store message bodies. Delivery and
+authentication results can appear in activity logs. Gmail stores the inquiry and the reply.
+Google says encrypted disaster-recovery backups can retain deleted data for up to six months.
+The providers' public information does not identify every processing country for this support address
+or the final deletion date for routing logs. Each provider's privacy policy lists its privacy contact.
+You may use organization and rollback without emailing support. If you do not send a message,
+PCSSAK cannot receive or answer that inquiry.
+[Cloudflare Email Routing](https://www.cloudflare.com/products/email-routing/) · [Email activity logs](https://developers.cloudflare.com/email-service/observability/logs/) · [Google retention and deletion](https://policies.google.com/technologies/retention?hl=en).
 See the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/) and
 [Google Privacy Policy](https://policies.google.com/privacy?hl=en) for those providers'
 practices and privacy rights.
