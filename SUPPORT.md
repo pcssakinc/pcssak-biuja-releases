@@ -45,6 +45,12 @@ Do not attach the original affected folder. A synthetic reproduction is safer an
 useful. Exploitable security issues must follow [SECURITY.md](SECURITY.md) and must not be posted
 publicly.
 
+## Recovering a copy after Undo in the Windows Store edition (0.5.0)
+
+Undoing a copy leaves your source file in place and sends the copy to the Windows Recycle Bin. Check the item’s name, deletion time and Original Location. A long path may give the item a temporary name. To choose where it goes, open an empty folder in File Explorer and drag the copy there from the Recycle Bin.
+
+If you already selected **Restore**, check the **Original Location** shown for the item before you restored it. Look in the folder where Biuja had placed the copy. The file may be in a subfolder named `.biuja-recycle-…`, or have a name like `.biuja-recycle-….tmp` if the path was long. Reopening Biuja does not move the copy again as part of that completed Undo. [Microsoft’s explanation of Recycle Bin restore and drag-and-drop](https://devblogs.microsoft.com/oldnewthing/20110901-00/?p=9753/)
+
 ## How feedback is handled
 
 PCSSAK distinguishes received, needs more information, under review, planned, implemented,
@@ -112,6 +118,12 @@ PCssak Biuja는 1인 개발자가 운영합니다. 문의는 접수 순서만이
 
 실제 문제 폴더 전체를 첨부하지 마세요. 합성 재현 자료가 더 안전하고 대체로 더 유용합니다.
 악용 가능한 보안 문제는 공개하지 말고 [보안 정책](SECURITY.md)을 따라주세요.
+
+### 복사 되돌리기 후 복사본을 다시 꺼내려면 (Windows Store판 0.5.0)
+
+비우자에서 복사를 되돌리면 원본 파일은 그대로 있고 복사본이 Windows 휴지통으로 이동합니다. 휴지통에서 이름과 삭제한 시각, 원래 위치를 대조하세요. 경로가 길면 임시 이름으로 표시될 수 있습니다. 복사본을 꺼낼 위치를 직접 정하려면 파일 탐색기에서 원하는 빈 폴더를 열고 휴지통의 해당 파일을 그 폴더로 끌어 놓으세요.
+
+이미 **복원**을 눌렀다면 당시 휴지통에 표시됐던 **원래 위치**를 확인하세요. 비우자가 복사본을 만들었던 폴더 안의 `.biuja-recycle-…` 하위 폴더에 있거나, 경로가 길었다면 복사 대상 폴더 바로 아래에 `.biuja-recycle-….tmp` 같은 임시 이름으로 있을 수 있습니다. 비우자를 다시 열어도 이미 끝난 ‘복사 되돌리기’에서 이 복사본을 찾아 다시 옮기지는 않습니다. [Microsoft의 휴지통 복원과 끌어 놓기 설명](https://devblogs.microsoft.com/oldnewthing/20110901-00/?p=9753/)
 
 ### 의견을 처리하는 방식
 
