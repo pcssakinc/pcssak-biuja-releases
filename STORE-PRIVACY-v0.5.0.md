@@ -145,7 +145,7 @@ WebView2 Runtime은 보안·성능·안정성 유지를 위한 필수 진단 데
 
 이메일 문의는 선택 사항입니다. <mailto:pcssak@pcssak.com>으로 보내면 Cloudflare Email Routing이
 발신 주소·표시 이름·메일 본문과 첨부 자료를 고객지원에 사용하는 Google의 개인용 Gmail
-수신함으로 전달합니다. PCSSAK은 메일 접근을 고객지원 담당자로 제한합니다. 일반 문의는 처리가
+수신함으로 전달합니다. PCSSAK 대표가 고객지원을 직접 담당하며 수신함 접근을 관리합니다. 일반 문의는 처리가
 끝나면 받은 메일과 답변, 첨부 자료 및 내려받은 사본을 삭제하고 Gmail 휴지통에서도 해당 메일을
 영구 삭제합니다. 법령상 보존할 의무가 있는 기록은 필요한 부분만 따로 보관하고 기간 만료 후
 파기합니다. 한국 전자상거래법상 PCSSAK에 의무가 있는 소비자 불만·분쟁처리 기록의 보존 기간은
@@ -346,7 +346,7 @@ remain visible after an email has been deleted. GitHub follows its
 
 Contacting support by email is optional. When you email <mailto:pcssak@pcssak.com>, Cloudflare
 Email Routing forwards your sender address, display name, message, and attachments to the personal
-Gmail account used for customer support. Only support personnel have access. When an ordinary
+Gmail account used for customer support. The owner of PCSSAK handles inquiries directly and manages access to the inbox. When an ordinary
 inquiry is resolved, PCSSAK deletes the inbound message, replies, attachments and downloaded copies,
 including permanent removal of the messages from Gmail Trash. If records must be retained by law,
 PCSSAK keeps the necessary parts separately and deletes them at the end of the retention period.
